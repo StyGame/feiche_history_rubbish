@@ -1,0 +1,88 @@
+__tmpfunc = UI.children.AppEventHandle.OnClose; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;     点X
+ShadowModeProc.OnEscClick()            点esc
+__selfpath='UI.navigation.baseoperator_wgt.shop_btn'; __tmpfunc = UI.children.navigation.children.baseoperator_wgt.children.shop_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;  商城
+__selfpath='UI.SpeedKartOptSecDlg.GaiZhuangBtn'; __tmpfunc = UI.children.SpeedKartOptSecDlg.children.GaiZhuangBtn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end; 进改装
+
+__tmpfunc = UI.children.AppEventHandle.OnPrepareEnterOtherScreen; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc('roomsel', 'startmenu') end;
+__tmpfunc = UI.children.AppEventHandle.OnGotoUIScreen; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc('startmenu') end;
+
+__selfpath='UI.roomsel'; __tmpfunc = UI.children.roomsel.OnDenit; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;
+__selfpath='UI.roomsel.SelfShow_Wgt'; __tmpfunc = UI.children.roomsel.children.SelfShow_Wgt.OnSelfHide; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1) end;
+
+__selfpath='UI.navigation.return_btn'; __tmpfunc = UI.children.navigation.children.return_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;
+
+__selfpath='UI.TaskUIDlg.PackAndTaskMainDlg.start_btn'; __tmpfunc = UI.children.TaskUIDlg.children.PackAndTaskMainDlg.children.start_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;  进任务
+
+__selfpath='UI.LobbyUI.TopMenu.ButtonsList.TopMenuButtonTmp0'; __tmpfunc = UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp0.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;进多人
+
+
+
+__selfpath='UI.TaskUIDlg.PackAndTaskMainDlg.start_btn'; __tmpfunc = UI.children.TaskUIDlg.children.PackAndTaskMainDlg.children.start_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end; 
+__selfpath='UI.LobbyUI.TopMenu.ButtonsList.TopMenuButtonTmp0'; __tmpfunc = UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp0.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;
+
+__selfpath='UI.TaskUIDlg.PackAndTaskMainDlg.start_btn'; __tmpfunc = UI.children.TaskUIDlg.children.PackAndTaskMainDlg.children.start_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进单人
+__selfpath='UI.TaskConfirmMsgBox.affirmbtn'; __tmpfunc = UI.children.TaskConfirmMsgBox.children.affirmbtn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--确认
+
+用lua过实名那个exe 跑这句直接回大厅 __selfpath='UI.TaskConfirmMsgBox.affirmbtn'; __tmpfunc = UI.children.TaskConfirmMsgBox.children.affirmbtn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;
+
+
+__selfpath='UI.TaskConfirmMsgBox.affirmbtn'; __tmpfunc = UI.children.TaskConfirmMsgBox.children.affirmbtn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--回主界面
+__selfpath='UI.LobbyUI.TopMenu.ButtonsList.TopMenuButtonTmp0'; __tmpfunc = UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp0.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进多人大厅
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.RoomListTemplate.RoomList4'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.RoomListTemplate.children.RoomList4.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进一个房间
+__tmpfunc = UI.children.AppEventHandle.OnCrossCommandEx; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(12,1,1,'',0,'',6) end;--创建房间
+
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.channel.channel2'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.channel.children.channel2.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1,0) end;--换初级
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.channel.channel3'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.channel.children.channel3.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1,0) end;--换高级
+__selfpath='UI.ShadowEscDlg.OkBtn'; __tmpfunc = UI.children.ShadowEscDlg.children.OkBtn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--直接回车神界面
+__selfpath='UI.navigation.return_btn'; __tmpfunc = UI.children.navigation.children.return_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--返回
+__selfpath='UI.navigation.return_btn'; __tmpfunc = UI.children.navigation.children.return_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;
+__tmpfunc = UI.children.AppEventHandle.OnEnterUIScreenCallBack; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc('startmenu') end;--回主界面
+
+
+
+__selfpath='UI.sgltaskoverbox'; __tmpfunc = UI.children.sgltaskoverbox.OnOk; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--出界面
+__selfpath='UI.navigation.return_btn'; __tmpfunc = UI.children.navigation.children.return_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--返回
+__selfpath='UI.LobbyUI.TopMenu.ButtonsList.TopMenuButtonTmp0'; __tmpfunc = UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp0.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--到大厅
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.TalkRoomSel'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.TalkRoomSel.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1,0) end;--到交友模式
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.SkateSel'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.SkateSel.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(0,0) end;--退出交友1
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.TalkRoomSel'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.TalkRoomSel.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(0,1) end;--退出交友2
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.KartSel'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.KartSel.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1,0) end;--进经典飞车
+
+
+
+__selfpath='UI.LobbyUI.TopMenu.ButtonsList.TopMenuButtonTmp6'; __tmpfunc = UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp6.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进边境
+__selfpath='UI.challenge.hunterdlg.channelWgt.challengechoice20'; __tmpfunc = UI.children.challenge.children.hunterdlg.children.channelWgt.children.challengechoice20.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--再试一次
+
+
+__selfpath='UI.challenge.hunterdlg.channelWgt.challengechannel5'; __tmpfunc = UI.children.challenge.children.hunterdlg.children.channelWgt.children.challengechannel5.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进专业
+__selfpath='UI.challenge.hunterdlg.channelWgt.challengechoice20'; __tmpfunc = UI.children.challenge.children.hunterdlg.children.channelWgt.children.challengechoice20.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--再试一次
+
+
+
+
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.channel.channel2'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.channel.children.channel2.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1,0) end;--到中级
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.channel.channel3'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.channel.children.channel3.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1,0) end;--到高级
+
+
+__tmpfunc = UI.children.AppEventHandle.OnNotifyGameOver; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--游戏结束
+__tmpfunc = UI.children.AppEventHandle.OnLevelLeave; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--离开
+
+
+__selfpath='UI.TaskConfirmMsgBox.affirmbtn'; __tmpfunc = UI.children.TaskConfirmMsgBox.children.affirmbtn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--回主界面
+__selfpath='UI.LobbyUI.TopMenu.ButtonsList.TopMenuButtonTmp0'; __tmpfunc = UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp0.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进多人大厅
+
+__tmpfunc = UI.children.AppEventHandle.PlayScoreSound; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1) end;--欢呼音
+
+
+__selfpath='UI.TaskConfirmMsgBox.affirmbtn'; __tmpfunc = UI.children.TaskConfirmMsgBox.children.affirmbtn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--回主界面
+__selfpath='UI.LobbyUI.TopMenu.ButtonsList.TopMenuButtonTmp0'; __tmpfunc = UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp0.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进多人大厅
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.RoomListTemplate.RoomList4'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.RoomListTemplate.children.RoomList4.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进一个房间
+__selfpath='UI.navigation.return_btn'; __tmpfunc = UI.children.navigation.children.return_btn.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--返回
+__selfpath='UI.LobbyUI.TopMenu.ButtonsList.TopMenuButtonTmp0'; __tmpfunc = UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp0.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进多人大厅
+
+
+
+
+UI.children.LobbyUI.children.TopMenu.children.ButtonsList.children.TopMenuButtonTmp0.OnClick; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc() end;--进多人大厅
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.channel.channel2'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.channel.children.channel2.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1,0) end;--换初级
+__selfpath='UI.roomsel.MainFrame.RoomListPanel.channel.channel3'; __tmpfunc = UI.children.roomsel.children.MainFrame.children.RoomListPanel.children.channel.children.channel3.OnCheck; __tmpfunc_ret = -1; if __tmpfunc then __tmpfunc_ret = __tmpfunc(1,0) end;--换高级

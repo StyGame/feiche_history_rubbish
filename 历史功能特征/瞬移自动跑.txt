@@ -1,0 +1,738 @@
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 此函数之下
+
+33 33 33 3F CD CC 4C 3E 9A 99 19 3F 之前20字节   车头方向
+55 8B EC 51 89 4D FC 8B 45 FC e9 * * * *  00 8B E55D
+
+Top-Kart.dll+27110 - 55                    - push ebp
+Top-Kart.dll+27111 - 8B EC                 - mov ebp,esp
+Top-Kart.dll+27113 - 51                    - push ecx
+Top-Kart.dll+27114 - 89 4D FC              - mov [ebp-04],ecx
+Top-Kart.dll+27117 - 8B 45 FC              - mov eax,[ebp-04]
+Top-Kart.dll+2711A - 8B 80 880E0000        - mov eax,[eax+00000E88]   //此处第一处跳
+Top-Kart.dll+27120 - 8B E5                 - mov esp,ebp
+Top-Kart.dll+27122 - 	                    - pop ebp
+Top-Kart.dll+27123 - C3                    - ret 
+
+55 8B EC 51 89 4D FC 8B 45 FC 8B 80 88 0E 00 00 8B E5 5D C3 发消息 第一处跳
+
+NxCharacter.NxCreateControllerManager+4920 - 55                    - push ebp
+NxCharacter.NxCreateControllerManager+4921 - 8B EC                 - mov ebp,esp
+NxCharacter.NxCreateControllerManager+4923 - 83 EC 60              - sub esp,60
+NxCharacter.NxCreateControllerManager+4926 - A1 5055F203           - mov eax,[NxCharacter.dll+15550]
+NxCharacter.NxCreateControllerManager+492B - 56                    - push esi
+NxCharacter.NxCreateControllerManager+492C - 33 F6                 - xor esi,esi
+NxCharacter.NxCreateControllerManager+492E - 3B C6                 - cmp eax,esi
+NxCharacter.NxCreateControllerManager+4930 - 57                    - push edi
+NxCharacter.NxCreateControllerManager+4931 - 75 13                 - jne NxCharacter.NxCreateControllerManager+4946
+NxCharacter.NxCreateControllerManager+4933 - FF 15 F820F203        - call dword ptr [NxCharacter.NxCreateControllerManager+7358]
+NxCharacter.NxCreateControllerManager+4939 - 3B C6                 - cmp eax,esi
+NxCharacter.NxCreateControllerManager+493B - A3 5055F203           - mov [NxCharacter.dll+15550],eax
+NxCharacter.NxCreateControllerManager+4940 - 0F84 91040000         - je NxCharacter.NxCreateControllerManager+4DD7
+NxCharacter.NxCreateControllerManager+4946 - 8B 83 54010000        - mov eax,[ebx+00000154]
+NxCharacter.NxCreateControllerManager+494C - 8B 48 04              - mov ecx,[eax+04]
+NxCharacter.NxCreateControllerManager+494F - 8D 7B 28              - lea edi,[ebx+28]
+NxCharacter.NxCreateControllerManager+4952 - 89 0F                 - mov [edi],ecx
+NxCharacter.NxCreateControllerManager+4954 - 8B 53 18              - mov edx,[ebx+18]
+NxCharacter.NxCreateControllerManager+4957 - 89 97 B0000000        - mov [edi+000000B0],edx
+NxCharacter.NxCreateControllerManager+495D - 8B 43 1C              - mov eax,[ebx+1C]
+NxCharacter.NxCreateControllerManager+4960 - 89 87 B4000000        - mov [edi+000000B4],eax
+NxCharacter.NxCreateControllerManager+4966 - 8B 4B 10              - mov ecx,[ebx+10]
+NxCharacter.NxCreateControllerManager+4969 - 89 8F C0000000        - mov [edi+000000C0],ecx
+NxCharacter.NxCreateControllerManager+496F - 8A 93 58010000        - mov dl,[ebx+00000158]
+NxCharacter.NxCreateControllerManager+4975 - 88 97 CA000000        - mov [edi+000000CA],dl
+NxCharacter.NxCreateControllerManager+497B - 8B 43 14              - mov eax,[ebx+14]
+NxCharacter.NxCreateControllerManager+497E - 89 87 AC000000        - mov [edi+000000AC],eax
+NxCharacter.NxCreateControllerManager+4984 - C6 87 CE000000 01     - mov byte ptr [edi+000000CE],01
+NxCharacter.NxCreateControllerManager+498B - 8B 8B 54010000        - mov ecx,[ebx+00000154]
+NxCharacter.NxCreateControllerManager+4991 - 8B 11                 - mov edx,[ecx]
+NxCharacter.NxCreateControllerManager+4993 - 89 75 F8              - mov [ebp-08],esi
+NxCharacter.NxCreateControllerManager+4996 - 89 75 FC              - mov [ebp-04],esi
+NxCharacter.NxCreateControllerManager+4999 - FF 12                 - call dword ptr [edx]
+NxCharacter.NxCreateControllerManager+499B - 8B F0                 - mov esi,eax
+NxCharacter.NxCreateControllerManager+499D - 8B 83 54010000        - mov eax,[ebx+00000154]
+NxCharacter.NxCreateControllerManager+49A3 - 8B 48 08              - mov ecx,[eax+08]
+NxCharacter.NxCreateControllerManager+49A6 - 8B 51 04              - mov edx,[ecx+04]
+NxCharacter.NxCreateControllerManager+49A9 - 8D 04 76              - lea eax,[esi+esi*2]
+NxCharacter.NxCreateControllerManager+49AC - C1 E0 04              - shl eax,04
+NxCharacter.NxCreateControllerManager+49AF - 83 C0 07              - add eax,07
+NxCharacter.NxCreateControllerManager+49B2 - 83 E0 F8              - and eax,-08
+NxCharacter.NxCreateControllerManager+49B5 - 89 55 F4              - mov [ebp-0C],edx
+NxCharacter.NxCreateControllerManager+49B8 - E8 935DFFFF           - call NxCharacter.NxControllerManager::operator=+31D0
+NxCharacter.NxCreateControllerManager+49BD - 8B C6                 - mov eax,esi
+NxCharacter.NxCreateControllerManager+49BF - 6B C0 38              - imul eax,eax,38
+NxCharacter.NxCreateControllerManager+49C2 - 89 65 D8              - mov [ebp-28],esp
+NxCharacter.NxCreateControllerManager+49C5 - E8 865DFFFF           - call NxCharacter.NxControllerManager::operator=+31D0
+NxCharacter.NxCreateControllerManager+49CA - 8D 04 B5 00000000     - lea eax,[esi*4+00000000]
+NxCharacter.NxCreateControllerManager+49D1 - 83 C0 07              - add eax,07
+NxCharacter.NxCreateControllerManager+49D4 - 83 E0 F8              - and eax,-08
+NxCharacter.NxCreateControllerManager+49D7 - 89 65 E0              - mov [ebp-20],esp
+NxCharacter.NxCreateControllerManager+49DA - E8 715DFFFF           - call NxCharacter.NxControllerManager::operator=+31D0
+NxCharacter.NxCreateControllerManager+49DF - 8D 04 B5 00000000     - lea eax,[esi*4+00000000]
+NxCharacter.NxCreateControllerManager+49E6 - 83 C0 07              - add eax,07
+NxCharacter.NxCreateControllerManager+49E9 - 83 E0 F8              - and eax,-08
+NxCharacter.NxCreateControllerManager+49EC - 89 65 DC              - mov [ebp-24],esp
+NxCharacter.NxCreateControllerManager+49EF - E8 5C5DFFFF           - call NxCharacter.NxControllerManager::operator=+31D0
+NxCharacter.NxCreateControllerManager+49F4 - 85 F6                 - test esi,esi
+NxCharacter.NxCreateControllerManager+49F6 - 89 65 E4              - mov [ebp-1C],esp
+NxCharacter.NxCreateControllerManager+49F9 - 0F84 8A010000         - je NxCharacter.NxCreateControllerManager+4B89
+NxCharacter.NxCreateControllerManager+49FF - 8B 4D E0              - mov ecx,[ebp-20]
+NxCharacter.NxCreateControllerManager+4A02 - 8B 45 D8              - mov eax,[ebp-28]
+NxCharacter.NxCreateControllerManager+4A05 - 83 C1 30              - add ecx,30
+NxCharacter.NxCreateControllerManager+4A08 - 89 45 F0              - mov [ebp-10],eax
+NxCharacter.NxCreateControllerManager+4A0B - 89 4D EC              - mov [ebp-14],ecx
+NxCharacter.NxCreateControllerManager+4A0E - 89 75 E8              - mov [ebp-18],esi
+NxCharacter.NxCreateControllerManager+4A11 - 8B 55 F4              - mov edx,[ebp-0C]
+NxCharacter.NxCreateControllerManager+4A14 - 8B 32                 - mov esi,[edx]
+NxCharacter.NxCreateControllerManager+4A16 - 8B CA                 - mov ecx,edx
+NxCharacter.NxCreateControllerManager+4A18 - 83 C1 04              - add ecx,04
+NxCharacter.NxCreateControllerManager+4A1B - 3B F3                 - cmp esi,ebx
+NxCharacter.NxCreateControllerManager+4A1D - 89 4D F4              - mov [ebp-0C],ecx
+NxCharacter.NxCreateControllerManager+4A20 - 0F84 5A010000         - je NxCharacter.NxCreateControllerManager+4B80
+NxCharacter.NxCreateControllerManager+4A26 - 8B 06                 - mov eax,[esi]
+NxCharacter.NxCreateControllerManager+4A28 - 8B CE                 - mov ecx,esi
+NxCharacter.NxCreateControllerManager+4A2A - FF 50 0C              - call dword ptr [eax+0C]
+NxCharacter.NxCreateControllerManager+4A2D - 8B 10                 - mov edx,[eax]
+NxCharacter.NxCreateControllerManager+4A2F - 8B C8                 - mov ecx,eax
+NxCharacter.NxCreateControllerManager+4A31 - 89 45 D4              - mov [ebp-2C],eax
+NxCharacter.NxCreateControllerManager+4A34 - FF 52 4C              - call dword ptr [edx+4C]
+NxCharacter.NxCreateControllerManager+4A37 - 8B 4D D4              - mov ecx,[ebp-2C]
+NxCharacter.NxCreateControllerManager+4A3A - 8B 01                 - mov eax,[ecx]
+NxCharacter.NxCreateControllerManager+4A3C - FF 50 50              - call dword ptr [eax+50]
+NxCharacter.NxCreateControllerManager+4A3F - 8B 08                 - mov ecx,[eax]
+NxCharacter.NxCreateControllerManager+4A41 - 8B 46 0C              - mov eax,[esi+0C]
+NxCharacter.NxCreateControllerManager+4A44 - 83 F8 01              - cmp eax,01
+NxCharacter.NxCreateControllerManager+4A47 - 0F84 33010000         - je NxCharacter.NxCreateControllerManager+4B80
+NxCharacter.NxCreateControllerManager+4A4D - 83 F8 02              - cmp eax,02
+NxCharacter.NxCreateControllerManager+4A50 - 75 1E                 - jne NxCharacter.NxCreateControllerManager+4A70
+NxCharacter.NxCreateControllerManager+4A52 - 8B 11                 - mov edx,[ecx]
+NxCharacter.NxCreateControllerManager+4A54 - FF 52 0C              - call dword ptr [edx+0C]
+NxCharacter.NxCreateControllerManager+4A57 - BA 01000000           - mov edx,00000001
+NxCharacter.NxCreateControllerManager+4A5C - 8B C8                 - mov ecx,eax
+NxCharacter.NxCreateControllerManager+4A5E - 8B 45 10              - mov eax,[ebp+10]
+NxCharacter.NxCreateControllerManager+4A61 - D3 E2                 - shl edx,cl
+NxCharacter.NxCreateControllerManager+4A63 - 85 D0                 - test eax,edx
+NxCharacter.NxCreateControllerManager+4A65 - 0F95 C0               - setne al
+NxCharacter.NxCreateControllerManager+4A68 - 84 C0                 - test al,al
+NxCharacter.NxCreateControllerManager+4A6A - 0F84 10010000         - je NxCharacter.NxCreateControllerManager+4B80
+NxCharacter.NxCreateControllerManager+4A70 - 8B 46 08              - mov eax,[esi+08]
+NxCharacter.NxCreateControllerManager+4A73 - 85 C0                 - test eax,eax
+NxCharacter.NxCreateControllerManager+4A75 - 75 21                 - jne NxCharacter.NxCreateControllerManager+4A98
+NxCharacter.NxCreateControllerManager+4A77 - 8B 45 F0              - mov eax,[ebp-10]
+NxCharacter.NxCreateControllerManager+4A7A - 8B 16                 - mov edx,[esi]
+NxCharacter.NxCreateControllerManager+4A7C - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4A7D - 8B CE                 - mov ecx,esi
+NxCharacter.NxCreateControllerManager+4A7F - FF 52 04              - call dword ptr [edx+04]
+NxCharacter.NxCreateControllerManager+4A82 - 8B 45 F8              - mov eax,[ebp-08]
+NxCharacter.NxCreateControllerManager+4A85 - 8B 4D DC              - mov ecx,[ebp-24]
+NxCharacter.NxCreateControllerManager+4A88 - 89 34 81              - mov [ecx+eax*4],esi
+NxCharacter.NxCreateControllerManager+4A8B - 40                    - inc eax
+NxCharacter.NxCreateControllerManager+4A8C - 89 45 F8              - mov [ebp-08],eax
+NxCharacter.NxCreateControllerManager+4A8F - 83 45 F0 30           - add dword ptr [ebp-10],30
+NxCharacter.NxCreateControllerManager+4A93 - E9 E8000000           - jmp NxCharacter.NxCreateControllerManager+4B80
+NxCharacter.NxCreateControllerManager+4A98 - 83 F8 01              - cmp eax,01
+NxCharacter.NxCreateControllerManager+4A9B - 0F85 DF000000         - jne NxCharacter.NxCreateControllerManager+4B80
+NxCharacter.NxCreateControllerManager+4AA1 - D9 86 64010000        - fld dword ptr [esi+00000164]
+NxCharacter.NxCreateControllerManager+4AA7 - 8D 86 00010000        - lea eax,[esi+00000100]
+NxCharacter.NxCreateControllerManager+4AAD - D8 0D AC36F203        - fmul dword ptr [NxCharacter.dll+136AC]
+NxCharacter.NxCreateControllerManager+4AB3 - 8B D0                 - mov edx,eax
+NxCharacter.NxCreateControllerManager+4AB5 - 8B 0A                 - mov ecx,[edx]
+NxCharacter.NxCreateControllerManager+4AB7 - 89 4D B8              - mov [ebp-48],ecx
+NxCharacter.NxCreateControllerManager+4ABA - 8B 4A 04              - mov ecx,[edx+04]
+NxCharacter.NxCreateControllerManager+4ABD - D9C0                  - fld st(0)
+NxCharacter.NxCreateControllerManager+4ABF - 89 4D BC              - mov [ebp-44],ecx
+NxCharacter.NxCreateControllerManager+4AC2 - 8B 4A 08              - mov ecx,[edx+08]
+NxCharacter.NxCreateControllerManager+4AC5 - 89 4D C0              - mov [ebp-40],ecx
+NxCharacter.NxCreateControllerManager+4AC8 - 8B 4A 0C              - mov ecx,[edx+0C]
+NxCharacter.NxCreateControllerManager+4ACB - 89 4D C4              - mov [ebp-3C],ecx
+NxCharacter.NxCreateControllerManager+4ACE - 8B 4A 10              - mov ecx,[edx+10]
+NxCharacter.NxCreateControllerManager+4AD1 - 8B 52 14              - mov edx,[edx+14]
+NxCharacter.NxCreateControllerManager+4AD4 - 89 4D C8              - mov [ebp-38],ecx
+NxCharacter.NxCreateControllerManager+4AD7 - 8B 08                 - mov ecx,[eax]
+NxCharacter.NxCreateControllerManager+4AD9 - 89 55 CC              - mov [ebp-34],edx
+NxCharacter.NxCreateControllerManager+4ADC - 8B 50 04              - mov edx,[eax+04]
+NxCharacter.NxCreateControllerManager+4ADF - 89 4D A0              - mov [ebp-60],ecx
+NxCharacter.NxCreateControllerManager+4AE2 - 8B 48 08              - mov ecx,[eax+08]
+NxCharacter.NxCreateControllerManager+4AE5 - 89 55 A4              - mov [ebp-5C],edx
+NxCharacter.NxCreateControllerManager+4AE8 - 8B 50 0C              - mov edx,[eax+0C]
+NxCharacter.NxCreateControllerManager+4AEB - 89 4D A8              - mov [ebp-58],ecx
+NxCharacter.NxCreateControllerManager+4AEE - 8B 48 10              - mov ecx,[eax+10]
+NxCharacter.NxCreateControllerManager+4AF1 - 89 55 AC              - mov [ebp-54],edx
+NxCharacter.NxCreateControllerManager+4AF4 - 8B 50 14              - mov edx,[eax+14]
+NxCharacter.NxCreateControllerManager+4AF7 - 8B 87 C0000000        - mov eax,[edi+000000C0]
+NxCharacter.NxCreateControllerManager+4AFD - 89 4D B0              - mov [ebp-50],ecx
+NxCharacter.NxCreateControllerManager+4B00 - 89 55 B4              - mov [ebp-4C],edx
+NxCharacter.NxCreateControllerManager+4B03 - C1 E0 03              - shl eax,03
+NxCharacter.NxCreateControllerManager+4B06 - DC 6C 05 B8           - fsubr qword ptr [ebp+eax-48]
+NxCharacter.NxCreateControllerManager+4B0A - DD 5C 05 B8           - fstp qword ptr [ebp+eax-48]
+NxCharacter.NxCreateControllerManager+4B0E - 8B 55 B8              - mov edx,[ebp-48]
+NxCharacter.NxCreateControllerManager+4B11 - 8D 44 05 A0           - lea eax,[ebp+eax-60]
+NxCharacter.NxCreateControllerManager+4B15 - DC 00                 - fadd qword ptr [eax]
+NxCharacter.NxCreateControllerManager+4B17 - DD 18                 - fstp qword ptr [eax]
+NxCharacter.NxCreateControllerManager+4B19 - 8B 45 EC              - mov eax,[ebp-14]
+NxCharacter.NxCreateControllerManager+4B1C - 8D 48 D0              - lea ecx,[eax-30]
+NxCharacter.NxCreateControllerManager+4B1F - 89 11                 - mov [ecx],edx
+NxCharacter.NxCreateControllerManager+4B21 - 8B 55 BC              - mov edx,[ebp-44]
+NxCharacter.NxCreateControllerManager+4B24 - 89 51 04              - mov [ecx+04],edx
+NxCharacter.NxCreateControllerManager+4B27 - 8B 55 C0              - mov edx,[ebp-40]
+NxCharacter.NxCreateControllerManager+4B2A - 89 51 08              - mov [ecx+08],edx
+NxCharacter.NxCreateControllerManager+4B2D - 8B 55 C4              - mov edx,[ebp-3C]
+NxCharacter.NxCreateControllerManager+4B30 - 89 51 0C              - mov [ecx+0C],edx
+NxCharacter.NxCreateControllerManager+4B33 - 8B 55 C8              - mov edx,[ebp-38]
+NxCharacter.NxCreateControllerManager+4B36 - 89 51 10              - mov [ecx+10],edx
+NxCharacter.NxCreateControllerManager+4B39 - 8B 55 CC              - mov edx,[ebp-34]
+NxCharacter.NxCreateControllerManager+4B3C - 89 51 14              - mov [ecx+14],edx
+NxCharacter.NxCreateControllerManager+4B3F - 8B 55 A0              - mov edx,[ebp-60]
+NxCharacter.NxCreateControllerManager+4B42 - 8D 48 E8              - lea ecx,[eax-18]
+NxCharacter.NxCreateControllerManager+4B45 - 89 11                 - mov [ecx],edx
+NxCharacter.NxCreateControllerManager+4B47 - 8B 55 A4              - mov edx,[ebp-5C]
+NxCharacter.NxCreateControllerManager+4B4A - 89 51 04              - mov [ecx+04],edx
+NxCharacter.NxCreateControllerManager+4B4D - 8B 55 A8              - mov edx,[ebp-58]
+NxCharacter.NxCreateControllerManager+4B50 - 89 51 08              - mov [ecx+08],edx
+NxCharacter.NxCreateControllerManager+4B53 - 8B 55 AC              - mov edx,[ebp-54]
+NxCharacter.NxCreateControllerManager+4B56 - 89 51 0C              - mov [ecx+0C],edx
+NxCharacter.NxCreateControllerManager+4B59 - 8B 55 B0              - mov edx,[ebp-50]
+NxCharacter.NxCreateControllerManager+4B5C - 89 51 10              - mov [ecx+10],edx
+NxCharacter.NxCreateControllerManager+4B5F - 8B 55 B4              - mov edx,[ebp-4C]
+NxCharacter.NxCreateControllerManager+4B62 - 89 51 14              - mov [ecx+14],edx
+NxCharacter.NxCreateControllerManager+4B65 - 8B 8E 60010000        - mov ecx,[esi+00000160]
+NxCharacter.NxCreateControllerManager+4B6B - 8B 55 E4              - mov edx,[ebp-1C]
+NxCharacter.NxCreateControllerManager+4B6E - 89 08                 - mov [eax],ecx
+NxCharacter.NxCreateControllerManager+4B70 - 8B 4D FC              - mov ecx,[ebp-04]
+NxCharacter.NxCreateControllerManager+4B73 - 89 34 8A              - mov [edx+ecx*4],esi
+NxCharacter.NxCreateControllerManager+4B76 - 41                    - inc ecx
+NxCharacter.NxCreateControllerManager+4B77 - 83 C0 38              - add eax,38
+NxCharacter.NxCreateControllerManager+4B7A - 89 4D FC              - mov [ebp-04],ecx
+NxCharacter.NxCreateControllerManager+4B7D - 89 45 EC              - mov [ebp-14],eax
+NxCharacter.NxCreateControllerManager+4B80 - FF 4D E8              - dec [ebp-18]
+NxCharacter.NxCreateControllerManager+4B83 - 0F85 88FEFFFF         - jne NxCharacter.NxCreateControllerManager+4A11
+NxCharacter.NxCreateControllerManager+4B89 - 8B 45 08              - mov eax,[ebp+08]
+NxCharacter.NxCreateControllerManager+4B8C - 83 C0 08              - add eax,08
+NxCharacter.NxCreateControllerManager+4B8F - 89 45 F0              - mov [ebp-10],eax
+NxCharacter.NxCreateControllerManager+4B92 - C6 87 C9000000 00     - mov byte ptr [edi+000000C9],00
+NxCharacter.NxCreateControllerManager+4B99 - 8B 08                 - mov ecx,[eax]
+NxCharacter.NxCreateControllerManager+4B9B - 8B 50 04              - mov edx,[eax+04]
+NxCharacter.NxCreateControllerManager+4B9E - 89 4D B8              - mov [ebp-48],ecx
+NxCharacter.NxCreateControllerManager+4BA1 - 8B 48 08              - mov ecx,[eax+08]
+NxCharacter.NxCreateControllerManager+4BA4 - 89 55 BC              - mov [ebp-44],edx
+NxCharacter.NxCreateControllerManager+4BA7 - 8B 50 0C              - mov edx,[eax+0C]
+NxCharacter.NxCreateControllerManager+4BAA - 89 4D C0              - mov [ebp-40],ecx
+NxCharacter.NxCreateControllerManager+4BAD - 8B 48 10              - mov ecx,[eax+10]
+NxCharacter.NxCreateControllerManager+4BB0 - 89 55 C4              - mov [ebp-3C],edx
+NxCharacter.NxCreateControllerManager+4BB3 - 8B 50 14              - mov edx,[eax+14]
+NxCharacter.NxCreateControllerManager+4BB6 - 89 4D C8              - mov [ebp-38],ecx
+NxCharacter.NxCreateControllerManager+4BB9 - 8B 4D FC              - mov ecx,[ebp-04]
+NxCharacter.NxCreateControllerManager+4BBC - 8B C1                 - mov eax,ecx
+NxCharacter.NxCreateControllerManager+4BBE - F7 D8                 - neg eax
+NxCharacter.NxCreateControllerManager+4BC0 - 1B C0                 - sbb eax,eax
+NxCharacter.NxCreateControllerManager+4BC2 - 89 55 CC              - mov [ebp-34],edx
+NxCharacter.NxCreateControllerManager+4BC5 - 23 45 E4              - and eax,[ebp-1C]
+NxCharacter.NxCreateControllerManager+4BC8 - 8B 55 E0              - mov edx,[ebp-20]
+NxCharacter.NxCreateControllerManager+4BCB - F7 D9                 - neg ecx
+NxCharacter.NxCreateControllerManager+4BCD - 1B C9                 - sbb ecx,ecx
+NxCharacter.NxCreateControllerManager+4BCF - 23 CA                 - and ecx,edx
+NxCharacter.NxCreateControllerManager+4BD1 - 8B 55 F8              - mov edx,[ebp-08]
+NxCharacter.NxCreateControllerManager+4BD4 - 8B F2                 - mov esi,edx
+NxCharacter.NxCreateControllerManager+4BD6 - F7 DE                 - neg esi
+NxCharacter.NxCreateControllerManager+4BD8 - 1B F6                 - sbb esi,esi
+NxCharacter.NxCreateControllerManager+4BDA - 23 75 DC              - and esi,[ebp-24]
+NxCharacter.NxCreateControllerManager+4BDD - F7 DA                 - neg edx
+NxCharacter.NxCreateControllerManager+4BDF - 89 75 DC              - mov [ebp-24],esi
+NxCharacter.NxCreateControllerManager+4BE2 - 8B 75 D8              - mov esi,[ebp-28]
+NxCharacter.NxCreateControllerManager+4BE5 - 1B D2                 - sbb edx,edx
+NxCharacter.NxCreateControllerManager+4BE7 - 23 D6                 - and edx,esi
+NxCharacter.NxCreateControllerManager+4BE9 - 8B 75 24              - mov esi,[ebp+24]
+NxCharacter.NxCreateControllerManager+4BEC - 56                    - push esi
+NxCharacter.NxCreateControllerManager+4BED - 8B 75 20              - mov esi,[ebp+20]
+NxCharacter.NxCreateControllerManager+4BF0 - 56                    - push esi
+NxCharacter.NxCreateControllerManager+4BF1 - 8B 75 18              - mov esi,[ebp+18]
+NxCharacter.NxCreateControllerManager+4BF4 - 56                    - push esi
+NxCharacter.NxCreateControllerManager+4BF5 - 8B 75 14              - mov esi,[ebp+14]
+NxCharacter.NxCreateControllerManager+4BF8 - 56                    - push esi
+NxCharacter.NxCreateControllerManager+4BF9 - 8B 75 10              - mov esi,[ebp+10]
+NxCharacter.NxCreateControllerManager+4BFC - 56                    - push esi
+NxCharacter.NxCreateControllerManager+4BFD - 8B 75 08              - mov esi,[ebp+08]
+NxCharacter.NxCreateControllerManager+4C00 - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4C01 - 51                    - push ecx
+NxCharacter.NxCreateControllerManager+4C02 - 89 45 D4              - mov [ebp-2C],eax
+NxCharacter.NxCreateControllerManager+4C05 - 8B 45 FC              - mov eax,[ebp-04]
+NxCharacter.NxCreateControllerManager+4C08 - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4C09 - 8B 45 0C              - mov eax,[ebp+0C]
+NxCharacter.NxCreateControllerManager+4C0C - 89 4D E0              - mov [ebp-20],ecx
+NxCharacter.NxCreateControllerManager+4C0F - 8B 4D DC              - mov ecx,[ebp-24]
+NxCharacter.NxCreateControllerManager+4C12 - 51                    - push ecx
+NxCharacter.NxCreateControllerManager+4C13 - 8B 8B 50010000        - mov ecx,[ebx+00000150]
+NxCharacter.NxCreateControllerManager+4C19 - 52                    - push edx
+NxCharacter.NxCreateControllerManager+4C1A - 89 55 D8              - mov [ebp-28],edx
+NxCharacter.NxCreateControllerManager+4C1D - 8B 55 F8              - mov edx,[ebp-08]
+NxCharacter.NxCreateControllerManager+4C20 - 52                    - push edx
+NxCharacter.NxCreateControllerManager+4C21 - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4C22 - 53                    - push ebx
+NxCharacter.NxCreateControllerManager+4C23 - 51                    - push ecx
+NxCharacter.NxCreateControllerManager+4C24 - 8B C7                 - mov eax,edi
+NxCharacter.NxCreateControllerManager+4C26 - E8 45F2FFFF           - call NxCharacter.NxCreateControllerManager+3E70
+NxCharacter.NxCreateControllerManager+4C2B - 8A 87 C8000000        - mov al,[edi+000000C8]
+NxCharacter.NxCreateControllerManager+4C31 - 84 C0                 - test al,al
+NxCharacter.NxCreateControllerManager+4C33 - 74 73                 - je NxCharacter.NxCreateControllerManager+4CA8
+NxCharacter.NxCreateControllerManager+4C35 - 8B 45 B8              - mov eax,[ebp-48]
+NxCharacter.NxCreateControllerManager+4C38 - 8B 55 F0              - mov edx,[ebp-10]
+NxCharacter.NxCreateControllerManager+4C3B - 8B 4D BC              - mov ecx,[ebp-44]
+NxCharacter.NxCreateControllerManager+4C3E - C6 87 C9000000 01     - mov byte ptr [edi+000000C9],01
+NxCharacter.NxCreateControllerManager+4C45 - 89 02                 - mov [edx],eax
+NxCharacter.NxCreateControllerManager+4C47 - 8B 45 C0              - mov eax,[ebp-40]
+NxCharacter.NxCreateControllerManager+4C4A - 89 4A 04              - mov [edx+04],ecx
+NxCharacter.NxCreateControllerManager+4C4D - 8B 4D C4              - mov ecx,[ebp-3C]
+NxCharacter.NxCreateControllerManager+4C50 - 89 42 08              - mov [edx+08],eax
+NxCharacter.NxCreateControllerManager+4C53 - 8B 45 C8              - mov eax,[ebp-38]
+NxCharacter.NxCreateControllerManager+4C56 - 89 4A 0C              - mov [edx+0C],ecx
+NxCharacter.NxCreateControllerManager+4C59 - 8B 4D CC              - mov ecx,[ebp-34]
+NxCharacter.NxCreateControllerManager+4C5C - 89 42 10              - mov [edx+10],eax
+NxCharacter.NxCreateControllerManager+4C5F - 8B 45 20              - mov eax,[ebp+20]
+NxCharacter.NxCreateControllerManager+4C62 - 89 4A 14              - mov [edx+14],ecx
+NxCharacter.NxCreateControllerManager+4C65 - 8B 55 24              - mov edx,[ebp+24]
+NxCharacter.NxCreateControllerManager+4C68 - 8B 4D 18              - mov ecx,[ebp+18]
+NxCharacter.NxCreateControllerManager+4C6B - 52                    - push edx
+NxCharacter.NxCreateControllerManager+4C6C - 8B 55 14              - mov edx,[ebp+14]
+NxCharacter.NxCreateControllerManager+4C6F - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4C70 - 8B 45 10              - mov eax,[ebp+10]
+NxCharacter.NxCreateControllerManager+4C73 - 51                    - push ecx
+NxCharacter.NxCreateControllerManager+4C74 - 8B 4D D4              - mov ecx,[ebp-2C]
+NxCharacter.NxCreateControllerManager+4C77 - 52                    - push edx
+NxCharacter.NxCreateControllerManager+4C78 - 8B 55 E0              - mov edx,[ebp-20]
+NxCharacter.NxCreateControllerManager+4C7B - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4C7C - 8B 45 FC              - mov eax,[ebp-04]
+NxCharacter.NxCreateControllerManager+4C7F - 51                    - push ecx
+NxCharacter.NxCreateControllerManager+4C80 - 8B 4D DC              - mov ecx,[ebp-24]
+NxCharacter.NxCreateControllerManager+4C83 - 52                    - push edx
+NxCharacter.NxCreateControllerManager+4C84 - 8B 55 D8              - mov edx,[ebp-28]
+NxCharacter.NxCreateControllerManager+4C87 - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4C88 - 8B 45 F8              - mov eax,[ebp-08]
+NxCharacter.NxCreateControllerManager+4C8B - 51                    - push ecx
+NxCharacter.NxCreateControllerManager+4C8C - 8B 4D 0C              - mov ecx,[ebp+0C]
+NxCharacter.NxCreateControllerManager+4C8F - 52                    - push edx
+NxCharacter.NxCreateControllerManager+4C90 - 8B 93 50010000        - mov edx,[ebx+00000150]
+NxCharacter.NxCreateControllerManager+4C96 - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4C97 - 51                    - push ecx
+NxCharacter.NxCreateControllerManager+4C98 - 53                    - push ebx
+NxCharacter.NxCreateControllerManager+4C99 - 52                    - push edx
+NxCharacter.NxCreateControllerManager+4C9A - 8B C7                 - mov eax,edi
+NxCharacter.NxCreateControllerManager+4C9C - E8 CFF1FFFF           - call NxCharacter.NxCreateControllerManager+3E70
+NxCharacter.NxCreateControllerManager+4CA1 - C6 87 C9000000 00     - mov byte ptr [edi+000000C9],00
+NxCharacter.NxCreateControllerManager+4CA8 - 0F57 C0               - xorps xmm0,xmm0
+NxCharacter.NxCreateControllerManager+4CAB - 0F2F 45 1C            - comiss xmm0,[ebp+1C]
+NxCharacter.NxCreateControllerManager+4CAF - 8B 45 F0              - mov eax,[ebp-10]
+NxCharacter.NxCreateControllerManager+4CB2 - 76 25                 - jna NxCharacter.NxCreateControllerManager+4CD9
+NxCharacter.NxCreateControllerManager+4CB4 - 8B 55 B8              - mov edx,[ebp-48]
+NxCharacter.NxCreateControllerManager+4CB7 - 8B C8                 - mov ecx,eax
+NxCharacter.NxCreateControllerManager+4CB9 - 89 11                 - mov [ecx],edx
+NxCharacter.NxCreateControllerManager+4CBB - 8B 55 BC              - mov edx,[ebp-44]
+NxCharacter.NxCreateControllerManager+4CBE - 89 51 04              - mov [ecx+04],edx
+NxCharacter.NxCreateControllerManager+4CC1 - 8B 55 C0              - mov edx,[ebp-40]
+NxCharacter.NxCreateControllerManager+4CC4 - 89 51 08              - mov [ecx+08],edx
+NxCharacter.NxCreateControllerManager+4CC7 - 8B 55 C4              - mov edx,[ebp-3C]
+NxCharacter.NxCreateControllerManager+4CCA - 89 51 0C              - mov [ecx+0C],edx
+NxCharacter.NxCreateControllerManager+4CCD - 8B 55 C8              - mov edx,[ebp-38]
+NxCharacter.NxCreateControllerManager+4CD0 - 89 51 10              - mov [ecx+10],edx
+NxCharacter.NxCreateControllerManager+4CD3 - 8B 55 CC              - mov edx,[ebp-34]
+NxCharacter.NxCreateControllerManager+4CD6 - 89 51 14              - mov [ecx+14],edx
+NxCharacter.NxCreateControllerManager+4CD9 - DD 45 B8              - fld qword ptr [ebp-48]
+NxCharacter.NxCreateControllerManager+4CDC - 8B C8                 - mov ecx,eax
+NxCharacter.NxCreateControllerManager+4CDE - 8B 39                 - mov edi,[ecx]   ////此处第二个跳转  打开线程远程调用
+NxCharacter.NxCreateControllerManager+4CE0 - 8D B3 00010000        - lea esi,[ebx+00000100]
+NxCharacter.NxCreateControllerManager+4CE6 - 8B D6                 - mov edx,esi
+NxCharacter.NxCreateControllerManager+4CE8 - 89 3A                 - mov [edx],edi
+NxCharacter.NxCreateControllerManager+4CEA - 8B 79 04              - mov edi,[ecx+04]
+NxCharacter.NxCreateControllerManager+4CED - 89 7A 04              - mov [edx+04],edi
+NxCharacter.NxCreateControllerManager+4CF0 - 8B 79 08              - mov edi,[ecx+08]
+NxCharacter.NxCreateControllerManager+4CF3 - 89 7A 08              - mov [edx+08],edi
+NxCharacter.NxCreateControllerManager+4CF6 - 8B 79 0C              - mov edi,[ecx+0C]
+NxCharacter.NxCreateControllerManager+4CF9 - 89 7A 0C              - mov [edx+0C],edi
+NxCharacter.NxCreateControllerManager+4CFC - 8B 79 10              - mov edi,[ecx+10]
+NxCharacter.NxCreateControllerManager+4CFF - 89 7A 10              - mov [edx+10],edi
+NxCharacter.NxCreateControllerManager+4D02 - 8B 49 14              - mov ecx,[ecx+14]
+NxCharacter.NxCreateControllerManager+4D05 - 89 4A 14              - mov [edx+14],ecx
+NxCharacter.NxCreateControllerManager+4D08 - DC 20                 - fsub qword ptr [eax]
+NxCharacter.NxCreateControllerManager+4D0A - DD 45 C0              - fld qword ptr [ebp-40]
+NxCharacter.NxCreateControllerManager+4D0D - DC 60 08              - fsub qword ptr [eax+08]
+NxCharacter.NxCreateControllerManager+4D10 - DD 45 C8              - fld qword ptr [ebp-38]
+NxCharacter.NxCreateControllerManager+4D13 - DC 60 10              - fsub qword ptr [eax+10]
+NxCharacter.NxCreateControllerManager+4D16 - D9C0                  - fld st(0)
+NxCharacter.NxCreateControllerManager+4D18 - D8C9                  - fmul st(0),st(1)
+NxCharacter.NxCreateControllerManager+4D1A - D9C2                  - fld st(2)
+NxCharacter.NxCreateControllerManager+4D1C - D8CB                  - fmul st(0),st(3)
+NxCharacter.NxCreateControllerManager+4D1E - DEC1                  - faddp 
+NxCharacter.NxCreateControllerManager+4D20 - D9C3                  - fld st(3)
+NxCharacter.NxCreateControllerManager+4D22 - D8CC                  - fmul st(0),st(4)
+NxCharacter.NxCreateControllerManager+4D24 - DEC1                  - faddp 
+NxCharacter.NxCreateControllerManager+4D26 - D9 05 D836F203        - fld dword ptr [NxCharacter.dll+136D8]
+NxCharacter.NxCreateControllerManager+4D2C - DFE9                  - fucomip st(0),st(1)
+NxCharacter.NxCreateControllerManager+4D2E - DDDB                  - fstp st(3)
+NxCharacter.NxCreateControllerManager+4D30 - DDD8                  - fstp st(0)
+NxCharacter.NxCreateControllerManager+4D32 - 9F                    - lahf 
+NxCharacter.NxCreateControllerManager+4D33 - F6 C4 44              - test ah,44
+NxCharacter.NxCreateControllerManager+4D36 - DDD8                  - fstp st(0)
+NxCharacter.NxCreateControllerManager+4D38 - DDD8                  - fstp st(0)
+NxCharacter.NxCreateControllerManager+4D3A - 7B 2A                 - jnp NxCharacter.NxCreateControllerManager+4D66
+NxCharacter.NxCreateControllerManager+4D3C - 8B 8B F8000000        - mov ecx,[ebx+000000F8]
+NxCharacter.NxCreateControllerManager+4D42 - 85 C9                 - test ecx,ecx
+NxCharacter.NxCreateControllerManager+4D44 - 74 20                 - je NxCharacter.NxCreateControllerManager+4D66
+NxCharacter.NxCreateControllerManager+4D46 - DD 06                 - fld qword ptr [esi]
+NxCharacter.NxCreateControllerManager+4D48 - 8D 45 C4              - lea eax,[ebp-3C]
+NxCharacter.NxCreateControllerManager+4D4B - D9 5D C4              - fstp dword ptr [ebp-3C]
+NxCharacter.NxCreateControllerManager+4D4E - 50                    - push eax
+NxCharacter.NxCreateControllerManager+4D4F - DD 83 08010000        - fld qword ptr [ebx+00000108]
+NxCharacter.NxCreateControllerManager+4D55 - D9 5D C8              - fstp dword ptr [ebp-38]
+NxCharacter.NxCreateControllerManager+4D58 - DD 83 10010000        - fld qword ptr [ebx+00000110]
+NxCharacter.NxCreateControllerManager+4D5E - D9 5D CC              - fstp dword ptr [ebp-34]
+NxCharacter.NxCreateControllerManager+4D61 - 8B 11                 - mov edx,[ecx]
+NxCharacter.NxCreateControllerManager+4D63 - FF 52 38              - call dword ptr [edx+38]
+NxCharacter.NxCreateControllerManager+4D66 - 8B 16                 - mov edx,[esi]
+NxCharacter.NxCreateControllerManager+4D68 - D9 45 1C              - fld dword ptr [ebp+1C]
+NxCharacter.NxCreateControllerManager+4D6B - 8B 46 04              - mov eax,[esi+04]
+NxCharacter.NxCreateControllerManager+4D6E - D9E1                  - fabs 
+NxCharacter.NxCreateControllerManager+4D70 - 8D 8B 18010000        - lea ecx,[ebx+00000118]
+NxCharacter.NxCreateControllerManager+4D76 - 89 11                 - mov [ecx],edx
+NxCharacter.NxCreateControllerManager+4D78 - 8B 56 08              - mov edx,[esi+08]
+NxCharacter.NxCreateControllerManager+4D7B - 89 41 04              - mov [ecx+04],eax
+NxCharacter.NxCreateControllerManager+4D7E - 8B 46 0C              - mov eax,[esi+0C]
+NxCharacter.NxCreateControllerManager+4D81 - 89 51 08              - mov [ecx+08],edx
+NxCharacter.NxCreateControllerManager+4D84 - 8B 56 10              - mov edx,[esi+10]
+NxCharacter.NxCreateControllerManager+4D87 - 89 41 0C              - mov [ecx+0C],eax
+NxCharacter.NxCreateControllerManager+4D8A - 8B 46 14              - mov eax,[esi+14]
+NxCharacter.NxCreateControllerManager+4D8D - D9C0                  - fld st(0)
+NxCharacter.NxCreateControllerManager+4D8F - D9 05 A036F203        - fld dword ptr [NxCharacter.dll+136A0]
+NxCharacter.NxCreateControllerManager+4D95 - 89 51 10              - mov [ecx+10],edx
+NxCharacter.NxCreateControllerManager+4D98 - DFF1                  - fcomip st(0),st(1)
+NxCharacter.NxCreateControllerManager+4D9A - DDD8                  - fstp st(0)
+NxCharacter.NxCreateControllerManager+4D9C - 89 41 14              - mov [ecx+14],eax
+NxCharacter.NxCreateControllerManager+4D9F - 76 34                 - jna NxCharacter.NxCreateControllerManager+4DD5
+NxCharacter.NxCreateControllerManager+4DA1 - 8B 73 10              - mov esi,[ebx+10]
+NxCharacter.NxCreateControllerManager+4DA4 - 83 EC 10              - sub esp,10
+NxCharacter.NxCreateControllerManager+4DA7 - DD 5C 24 08           - fstp qword ptr [esp+08]
+NxCharacter.NxCreateControllerManager+4DAB - 8D 83 48010000        - lea eax,[ebx+00000148]
+NxCharacter.NxCreateControllerManager+4DB1 - DD 84 F3 00010000     - fld qword ptr [ebx+esi*8+00000100]
+NxCharacter.NxCreateControllerManager+4DB8 - DD 1C 24              - fstp qword ptr [esp]
+NxCharacter.NxCreateControllerManager+4DBB - E8 3028FFFF           - call NxCharacter.NxControllerManager::operator=+70
+NxCharacter.NxCreateControllerManager+4DC0 - DD 9C F3 18010000     - fstp qword ptr [ebx+esi*8+00000118]
+NxCharacter.NxCreateControllerManager+4DC7 - 83 C4 10              - add esp,10
+NxCharacter.NxCreateControllerManager+4DCA - 8D 65 98              - lea esp,[ebp-68]
+NxCharacter.NxCreateControllerManager+4DCD - 5F                    - pop edi
+NxCharacter.NxCreateControllerManager+4DCE - 5E                    - pop esi
+NxCharacter.NxCreateControllerManager+4DCF - 8B E5                 - mov esp,ebp
+NxCharacter.NxCreateControllerManager+4DD1 - 5D                    - pop ebp
+NxCharacter.NxCreateControllerManager+4DD2 - C2 2000               - ret 0020
+NxCharacter.NxCreateControllerManager+4DD5 - DDD8                  - fstp st(0)
+NxCharacter.NxCreateControllerManager+4DD7 - 8D 65 98              - lea esp,[ebp-68]
+NxCharacter.NxCreateControllerManager+4DDA - 5F                    - pop edi
+NxCharacter.NxCreateControllerManager+4DDB - 5E                    - pop esi
+NxCharacter.NxCreateControllerManager+4DDC - 8B E5                 - mov esp,ebp
+NxCharacter.NxCreateControllerManager+4DDE - 5D                    - pop ebp
+NxCharacter.NxCreateControllerManager+4DDF - C2 2000               - ret 0020
+
+8B 39 8D B3 00 01 00 00 第二处跳 远程调用
+
+sendmessageA ：
+0F9F0000 - 89 05 0000A00F        - mov [0FA00000],eax
+0F9F0006 - 89 0D 0400A00F        - mov [0FA00004],ecx
+0F9F000C - 89 15 0800A00F        - mov [0FA00008],edx
+0F9F0012 - 89 1D 0C00A00F        - mov [0FA0000C],ebx
+0F9F0018 - 89 25 1000A00F        - mov [0FA00010],esp
+0F9F001E - 89 2D 1400A00F        - mov [0FA00014],ebp
+0F9F0024 - 89 35 1800A00F        - mov [0FA00018],esi
+0F9F002A - 89 3D 1C00A00F        - mov [0FA0001C],edi
+0F9F0030 - 60                    - pushad 
+0F9F0031 - 68 33F1FA03           - push BugTrace.?????1+33B11
+0F9F0036 - 68 F459DC0B           - push 0BDC59F4 : [0000001F]
+0F9F003B - 68 F4C20000           - push 0000C2F4
+0F9F0040 - A1 0000A10F           - mov eax,[0FA10000] : [004709EA]
+0F9F0045 - 50                    - push eax
+0F9F0046 - E8 E360C966           - call USER32.SendMessageA
+0F9F004B - 61                    - popad 
+0F9F004C - 8B 80 880E0000        - mov eax,[eax+00000E88]
+0F9F0052 - E9 C970EEF8           - jmp Top-Kart.dll+27120
+0F9F0057 - 00 00                 - add [eax],al
+0F9F0059 - 00 00                 - add [eax],al
+0F9F005B - 00 00                 - add [eax],al
+
+89 05 00 00 A0 0F 89 0D 04 00 A0 0F 89 15 08 00 A0 0F 89 1D 0C 00 A0 0F 89 25 10 00 A0 0F 89 2D 14 00 A0 0F 89 35 18 00 A0 0F 89 3D 1C 00 A0 0F 60 68 33 F1 FA 03 68 F4 59 DC 0B 68 F4 C2 00 00 A1 00 00 A1 0F 50 E8 E3 60 C9 66 61 8B 80 88 0E 00 00 E9 C9 70 EE F8
+
+远程调用：
+0F9C0000 - 89 05 00009D0F        - mov [0F9D0000],eax
+0F9C0006 - 89 0D 04009D0F        - mov [0F9D0004],ecx
+0F9C000C - 89 15 08009D0F        - mov [0F9D0008],edx
+0F9C0012 - 89 1D 0C009D0F        - mov [0F9D000C],ebx
+0F9C0018 - 89 25 10009D0F        - mov [0F9D0010],esp
+0F9C001E - 89 2D 14009D0F        - mov [0F9D0014],ebp
+0F9C0024 - 89 35 18009D0F        - mov [0F9D0018],esi
+0F9C002A - 89 3D 1C009D0F        - mov [0F9D001C],edi
+0F9C0030 - 60                    - pushad 
+0F9C0031 - 8B 05 00009E0F        - mov eax,[0F9E0000] : [00001FD8]
+0F9C0037 - 50                    - push eax
+0F9C0038 - 68 00000000           - push 00000000
+0F9C003D - 68 FF0F1F00           - push 001F0FFF : [00000000]
+0F9C0042 - E8 3F194E65           - call kernel32.OpenProcess
+0F9C0047 - 89 05 04009E0F        - mov [0F9E0004],eax
+0F9C004D - 8B 0D 08009E0F        - mov ecx,[0F9E0008] : [00000000]
+0F9C0053 - 51                    - push ecx
+0F9C0054 - 68 00000000           - push 00000000
+0F9C0059 - 68 00000000           - push 00000000
+0F9C005E - 68 DAEEFA03           - push BugTrace.?????1+338B8
+0F9C0063 - 68 00000000           - push 00000000
+0F9C0068 - 68 00000000           - push 00000000
+0F9C006D - 50                    - push eax
+0F9C006E - E8 F8405665           - call kernel32.CreateRemoteThread
+0F9C0073 - 89 05 0C009E0F        - mov [0F9E000C],eax
+0F9C0079 - 68 FFFFFFFF           - push FFFFFFFF
+0F9C007E - 50                    - push eax
+0F9C007F - E8 B2104E65           - call kernel32.WaitForSingleObject
+0F9C0084 - 8B 05 0C009E0F        - mov eax,[0F9E000C] : [00000000]
+0F9C008A - 50                    - push eax
+0F9C008B - E8 80134E65           - call kernel32.CloseHandle
+0F9C0090 - 8B 05 04009E0F        - mov eax,[0F9E0004] : [00000000]
+0F9C0096 - 50                    - push eax
+0F9C0097 - E8 74134E65           - call kernel32.CloseHandle
+0F9C009C - 61                    - popad 
+0F9C009D - 8B 39                 - mov edi,[ecx]
+0F9C009F - 8D B3 00010000        - lea esi,[ebx+00000100] : (float)1455.7969
+0F9C00A5 - E9 DCF91CFB           - jmp NxCharacter.NxCreateControllerManager+4CE6
+0F9C00AA - 00 00                 - add [eax],al
+0F9C00AC - 00 00                 - add [eax],al
+
+89 05 00 00 9D 0F 89 0D 04 00 9D 0F 89 15 08 00 9D 0F 89 1D 0C 00 9D 0F 89 25 10 00 9D 0F 89 2D 14 00 9D 0F 89 35 18 00 9D 0F 89 3D 1C 00 9D 0F 60 8B 05 00 00 9E 0F 50 68 00 00 00 00 68 FF 0F 1F 00 E8 3F 19 4E 65 89 05 04 00 9E 0F 8B 0D 08 00 9E 0F 51 68 00 00 00 00 68 00 00 00 00 68 DA EE FA 03 68 00 00 00 00 68 00 00 00 00 50 E8 F8 40 56 65 89 05 0C 00 9E 0F 68 FF FF FF FF 50 E8 B2 10 4E 65 8B 05 0C 00 9E 0F 50 E8 80 13 4E 65 8B 05 04 00 9E 0F 50 E8 74 13 4E 65 61 8B 39 8D B3 00 01 00 00 E9 DC F9 1C FB 00 00
+
+
+
+第一处写4个90
+Top-Kart.dll+2074D78 - 9C                    - pushfd 
+Top-Kart.dll+2074D79 - 89 85 6CFFFFFF        - mov [ebp-00000094],eax
+Top-Kart.dll+2074D7F - C7 45 88 00000000     - mov [ebp-78],00000000
+Top-Kart.dll+2074D86 - C7 45 84 00000000     - mov [ebp-7C],00000000
+Top-Kart.dll+2074D8D - E9 59780000           - jmp Top-Kart.dll+207C5EB
+Top-Kart.dll+2074D92 - 76 8B                 - jna Top-Kart.dll+2074D1F
+Top-Kart.dll+2074D94 - 55                    - push ebp
+Top-Kart.dll+2074D95 - F8                    - clc 
+Top-Kart.dll+2074D96 - 2B 55 F0              - sub edx,[ebp-10]
+Top-Kart.dll+2074D99 - 89 55 F4              - mov [ebp-0C],edx
+Top-Kart.dll+2074D9C - 8B 45 F4              - mov eax,[ebp-0C]
+Top-Kart.dll+2074D9F - 50                    - push eax
+Top-Kart.dll+2074DA0 - E8 BBC221FF           - call Top-Kart.luaopen_API+CFDE50    //第一处E8 BB C2 21 写90909090
+Top-Kart.dll+2074DA5 - 83 C4 04              - add esp,04
+Top-Kart.dll+2074DA8 - 8B 4D F4              - mov ecx,[ebp-0C]
+Top-Kart.dll+2074DAB - 51                    - push ecx
+Top-Kart.dll+2074DAC - E8 014424FF           - call Top-Kart.luaopen_API+D25FA2  //第二处E8 01 44 24 写90909090
+Top-Kart.dll+2074DB1 - 83 C4 04              - add esp,04
+Top-Kart.dll+2074DB4 - E8 38C223FF           - call Top-Kart.luaopen_API+D1DDE1
+Top-Kart.dll+2074DB9 - E8 427521FF           - call Top-Kart.luaopen_API+CF90F0
+Top-Kart.dll+2074DBE - E8 64110900           - call Top-Kart.dll+2105F27
+Top-Kart.dll+2074DC3 - E9 7ED220FF           - jmp Top-Kart.luaopen_API+CEEE36
+Top-Kart.dll+2074DC8 - E0 66                 - loopnz Top-Kart.dll+2074E2F
+Top-Kart.dll+2074DCA - 8B 55 0C              - mov edx,[ebp+0C]
+Top-Kart.dll+2074DCD - 66 89 55 F4           - mov [ebp-0C],dx
+Top-Kart.dll+2074DD1 - 0FB7 45 F4            - movzx eax,word ptr [ebp-0C]
+Top-Kart.dll+2074DD5 - 68 F8C5873C           - push 3C87C5F8
+Top-Kart.dll+2074DDA - 53                    - push ebx
+Top-Kart.dll+2074DDB - 8D A4 24 FCFFFFFF     - lea esp,[esp-00000004]
+Top-Kart.dll+2074DE2 - 89 8C 24 08000000     - mov [esp+00000008],ecx
+Top-Kart.dll+2074DE9 - 8D A4 24 04000000     - lea esp,[esp+00000004]
+Top-Kart.dll+2074DF0 - 5B                    - pop ebx
+Top-Kart.dll+2074DF1 - C7 C1 797C263F        - mov ecx,3F267C79
+Top-Kart.dll+2074DF7 - 8D 89 8782DAC0        - lea ecx,[ecx-3F257D79]
+Top-Kart.dll+2074DFD - 21 C8                 - and eax,ecx
+
+
+Top-Kart.dll+2069CAC - 04 24                 - add al,24
+Top-Kart.dll+2069CAE - 8F                    - db 8f
+Top-Kart.dll+2069CAF - A8 00                 - test al,00
+Top-Kart.dll+2069CB1 - 00 C3                 - add bl,al
+Top-Kart.dll+2069CB3 - 74 51                 - je Top-Kart.dll+2069D06
+Top-Kart.dll+2069CB5 - 87 2C 24              - xchg [esp],ebp
+Top-Kart.dll+2069CB8 - 8B 2C 24              - mov ebp,[esp]
+Top-Kart.dll+2069CBB - 8B EC                 - mov ebp,esp
+Top-Kart.dll+2069CBD - E8 F6F721FF           - call Top-Kart.luaopen_API+CF62A8   //第三处 E8 F6 F7 21 写90909090
+Top-Kart.dll+2069CC2 - E8 69ED21FF           - call Top-Kart.luaopen_API+CF5820
+Top-Kart.dll+2069CC7 - 8B 2C 24              - mov ebp,[esp]
+Top-Kart.dll+2069CCA - 8D A4 24 04000000     - lea esp,[esp+00000004]
+Top-Kart.dll+2069CD1 - 53                    - push ebx
+Top-Kart.dll+2069CD2 - 8B 9C 24 04000000     - mov ebx,[esp+00000004]
+Top-Kart.dll+2069CD9 - 50                    - push eax
+Top-Kart.dll+2069CDA - E8 01000000           - call Top-Kart.dll+2069CE0
+Top-Kart.dll+2069CDF - 7F 58                 - jg Top-Kart.dll+2069D39
+Top-Kart.dll+2069CE1 - 8D 80 326C0000        - lea eax,[eax+00006C32]
+Top-Kart.dll+2069CE7 - FF D0                 - call eax
+Top-Kart.dll+2069CE9 - 78 58                 - js Top-Kart.dll+2069D43
+Top-Kart.dll+2069CEB - 8B 55 D8              - mov edx,[ebp-28]
+Top-Kart.dll+2069CEE - 81 E2 0000FF00        - and edx,00FF0000
+Top-Kart.dll+2069CF4 - C1 EA 08              - shr edx,08
+Top-Kart.dll+2069CF7 - 0B CA                 - or ecx,edx
+Top-Kart.dll+2069CF9 - 8B 45 D8              - mov eax,[ebp-28]
+Top-Kart.dll+2069CFC - 25 00FF0000           - and eax,0000FF00
+Top-Kart.dll+2069D01 - C1 E0 08              - shl eax,08
+Top-Kart.dll+2069D04 - 0B C8                 - or ecx,eax
+Top-Kart.dll+2069D06 - 8B 55 D8              - mov edx,[ebp-28]
+Top-Kart.dll+2069D09 - 81 E2 FF000000        - and edx,000000FF
+
+
+Top-Kart.luaopen_API+CFBE9A - 8D 80 6B98DD00        - lea eax,[eax+00DD986B]
+Top-Kart.luaopen_API+CFBEA0 - FF D0                 - call eax
+Top-Kart.luaopen_API+CFBEA2 - 72 E8                 - jb Top-Kart.luaopen_API+CFBE8C
+Top-Kart.luaopen_API+CFBEA4 - 98                    - cwde 
+Top-Kart.luaopen_API+CFBEA5 - 99                    - cdq 
+Top-Kart.luaopen_API+CFBEA6 - FF                    - db -01
+Top-Kart.luaopen_API+CFBEA7 - FF E8                 - jmp far eax
+Top-Kart.luaopen_API+CFBEA9 - E8 25DE000F           - call 1735CEE3    ///第四处 E8 E8 25 DE 写90909090
+Top-Kart.luaopen_API+CFBEAE - B6 55                 - mov dh,55
+Top-Kart.luaopen_API+CFBEB0 - FF 85 D251E801        - inc [ebp+01E851D2]
+Top-Kart.luaopen_API+CFBEB6 - 00 00                 - add [eax],al
+Top-Kart.luaopen_API+CFBEB8 - 00 70 59              - add [eax+59],dh
+Top-Kart.luaopen_API+CFBEBB - 8D 89 8489FFFF        - lea ecx,[ecx-0000767C]
+Top-Kart.luaopen_API+CFBEC1 - FF D1                 - call ecx
+Top-Kart.luaopen_API+CFBEC3 - 79 E9                 - jns Top-Kart.luaopen_API+CFBEAE
+Top-Kart.luaopen_API+CFBEC5 - FB                    - sti 
+Top-Kart.luaopen_API+CFBEC6 - F7 DD                 - neg ebp
+Top-Kart.luaopen_API+CFBEC8 - 00 E0                 - add al,ah
+Top-Kart.luaopen_API+CFBECA - 8B 8D 5CFEFFFF        - mov ecx,[ebp-000001A4]
+Top-Kart.luaopen_API+CFBED0 - 89 4D B0              - mov [ebp-50],ecx
+Top-Kart.luaopen_API+CFBED3 - 8B 55 AC              - mov edx,[ebp-54]
+Top-Kart.luaopen_API+CFBED6 - 2B 55 B0              - sub edx,[ebp-50]
+
+两个检测 1 键盘
+DINPUT8.dll+3FAC - 55                    - push ebp
+DINPUT8.dll+3FAD - 8B EC                 - mov ebp,esp
+DINPUT8.dll+3FAF - 56                    - push esi
+DINPUT8.dll+3FB0 - 8B 75 08              - mov esi,[ebp+08]
+DINPUT8.dll+3FB3 - F6 46 14 04           - test byte ptr [esi+14],04
+DINPUT8.dll+3FB7 - 74 42                 - je DINPUT8.dll+3FFB
+DINPUT8.dll+3FB9 - FF 15 6C121F74        - call dword ptr [DINPUT8.dll+126C]
+DINPUT8.dll+3FBF - 8B 4E 10              - mov ecx,[esi+10]
+DINPUT8.dll+3FC2 - 3B C8                 - cmp ecx,eax   ///   c8改c9
+DINPUT8.dll+3FC4 - 75 2E                 - jne DINPUT8.dll+3FF4
+DINPUT8.dll+3FC6 - 51                    - push ecx
+DINPUT8.dll+3FC7 - FF 15 68121F74        - call dword ptr [DINPUT8.dll+1268]
+DINPUT8.dll+3FCD - 85 C0                 - test eax,eax
+DINPUT8.dll+3FCF - 75 23                 - jne DINPUT8.dll+3FF4
+DINPUT8.dll+3FD1 - 8D 45 08              - lea eax,[ebp+08]
+DINPUT8.dll+3FD4 - 50                    - push eax
+DINPUT8.dll+3FD5 - FF 76 10              - push [esi+10]
+DINPUT8.dll+3FD8 - FF 15 64121F74        - call dword ptr [DINPUT8.dll+1264]
+DINPUT8.dll+3FDE - FF 15 AC101F74        - call dword ptr [DINPUT8.dll+10AC]
+DINPUT8.dll+3FE4 - 39 45 08              - cmp [ebp+08],eax
+DINPUT8.dll+3FE7 - 74 12                 - je DINPUT8.dll+3FFB
+DINPUT8.dll+3FE9 - 83 4E 10 FF           - or dword ptr [esi+10],-01
+DINPUT8.dll+3FED - B8 57000780           - mov eax,80070057
+DINPUT8.dll+3FF2 - EB 09                 - jmp DINPUT8.dll+3FFD
+DINPUT8.dll+3FF4 - B8 05000780           - mov eax,80070005
+DINPUT8.dll+3FF9 - EB 02                 - jmp DINPUT8.dll+3FFD
+DINPUT8.dll+3FFB - 33 C0                 - xor eax,eax
+DINPUT8.dll+3FFD - 5E                    - pop esi
+DINPUT8.dll+3FFE - 5D                    - pop ebp
+DINPUT8.dll+3FFF - C2 0400               - ret 0004
+
+
+
+DINPUT8.dll+51EE - 55                    - push ebp
+DINPUT8.dll+51EF - 8B EC                 - mov ebp,esp
+DINPUT8.dll+51F1 - 53                    - push ebx
+DINPUT8.dll+51F2 - 56                    - push esi
+DINPUT8.dll+51F3 - 8B 75 08              - mov esi,[ebp+08]
+DINPUT8.dll+51F6 - 57                    - push edi
+DINPUT8.dll+51F7 - 68 24192174           - push DINPUT8.dll+21924
+DINPUT8.dll+51FC - 56                    - push esi
+DINPUT8.dll+51FD - E8 DBD7FFFF           - call DINPUT8.dll+29DD
+DINPUT8.dll+5202 - 8B F8                 - mov edi,eax
+DINPUT8.dll+5204 - 33 DB                 - xor ebx,ebx
+DINPUT8.dll+5206 - 3B FB                 - cmp edi,ebx
+DINPUT8.dll+5208 - 0F8C D9000000         - jl DINPUT8.dll+52E7
+DINPUT8.dll+520E - 8B 06                 - mov eax,[esi]
+DINPUT8.dll+5210 - 2B 70 FC              - sub esi,[eax-04]
+DINPUT8.dll+5213 - 53                    - push ebx
+DINPUT8.dll+5214 - 53                    - push ebx
+DINPUT8.dll+5215 - 56                    - push esi
+DINPUT8.dll+5216 - E8 98E3FFFF           - call DINPUT8.dll+35B3
+DINPUT8.dll+521B - C7 46 74 0C000780     - mov [esi+74],8007000C
+DINPUT8.dll+5222 - 39 5E 24              - cmp [esi+24],ebx
+DINPUT8.dll+5225 - 0F84 AF000000         - je DINPUT8.dll+52DA
+DINPUT8.dll+522B - 8B 46 60              - mov eax,[esi+60]
+DINPUT8.dll+522E - 3B C3                 - cmp eax,ebx
+DINPUT8.dll+5230 - 0F84 A4000000         - je DINPUT8.dll+52DA
+DINPUT8.dll+5236 - F6 00 02              - test byte ptr [eax],02
+DINPUT8.dll+5239 - 74 08                 - je DINPUT8.dll+5243        //74改E8
+DINPUT8.dll+523B - 33 FF                 - xor edi,edi
+DINPUT8.dll+523D - 47                    - inc edi
+DINPUT8.dll+523E - E9 9C000000           - jmp DINPUT8.dll+52DF
+DINPUT8.dll+5243 - 56                    - push esi
+DINPUT8.dll+5244 - E8 61EDFFFF           - call DINPUT8.dll+3FAA
+DINPUT8.dll+5249 - 8B F8                 - mov edi,eax
+DINPUT8.dll+524B - 3B FB                 - cmp edi,ebx
+DINPUT8.dll+524D - 0F8C 8C000000         - jl DINPUT8.dll+52DF
+DINPUT8.dll+5253 - FF 76 14              - push [esi+14]
+DINPUT8.dll+5256 - 8D 86 FC000000        - lea eax,[esi+000000FC]
+DINPUT8.dll+525C - FF 76 10              - push [esi+10]
+DINPUT8.dll+525F - 50                    - push eax
+DINPUT8.dll+5260 - E8 BA540100           - call DINPUT8.dll+1A71F
+DINPUT8.dll+5265 - 8B F8                 - mov edi,eax
+DINPUT8.dll+5267 - 3B FB                 - cmp edi,ebx
+DINPUT8.dll+5269 - 7C 74                 - jnge DINPUT8.dll+52DF
+DINPUT8.dll+526B - 56                    - push esi
+DINPUT8.dll+526C - E8 C6EDFFFF           - call DINPUT8.dll+4037
+DINPUT8.dll+5271 - 8B F8                 - mov edi,eax
+DINPUT8.dll+5273 - 3B FB                 - cmp edi,ebx
+DINPUT8.dll+5275 - 7C 68                 - jnge DINPUT8.dll+52DF
+DINPUT8.dll+5277 - 8B 46 08              - mov eax,[esi+08]
+DINPUT8.dll+527A - 8B 08                 - mov ecx,[eax]
+DINPUT8.dll+527C - 50                    - push eax
+DINPUT8.dll+527D - FF 51 20              - call dword ptr [ecx+20]
+DINPUT8.dll+5280 - 8B F8                 - mov edi,eax
+DINPUT8.dll+5282 - 3B FB                 - cmp edi,ebx
+DINPUT8.dll+5284 - 7C 4C                 - jnge DINPUT8.dll+52D2
+DINPUT8.dll+5286 - 83 FF 01              - cmp edi,01
+DINPUT8.dll+5289 - 75 2C                 - jne DINPUT8.dll+52B7
+DINPUT8.dll+528B - FF 76 60              - push [esi+60]
+DINPUT8.dll+528E - E8 4B730000           - call DINPUT8.dll+C5DE
+DINPUT8.dll+5293 - 8B F8                 - mov edi,eax
+DINPUT8.dll+5295 - 3B FB                 - cmp edi,ebx
+DINPUT8.dll+5297 - 7C 39                 - jnge DINPUT8.dll+52D2
+DINPUT8.dll+5299 - 8B 46 60              - mov eax,[esi+60]
+DINPUT8.dll+529C - 83 4E 0C 02           - or dword ptr [esi+0C],02
+DINPUT8.dll+52A0 - F6 00 04              - test byte ptr [eax],04
+DINPUT8.dll+52A3 - 74 12                 - je DINPUT8.dll+52B7
+DINPUT8.dll+52A5 - 8B 46 08              - mov eax,[esi+08]
+DINPUT8.dll+52A8 - FF 76 5C              - push [esi+5C]
+DINPUT8.dll+52AB - 8B 08                 - mov ecx,[eax]
+DINPUT8.dll+52AD - 50                    - push eax
+DINPUT8.dll+52AE - FF 51 28              - call dword ptr [ecx+28]
+DINPUT8.dll+52B1 - 8B F8                 - mov edi,eax
+DINPUT8.dll+52B3 - 3B FB                 - cmp edi,ebx
+DINPUT8.dll+52B5 - 7C 1B                 - jnge DINPUT8.dll+52D2
+DINPUT8.dll+52B7 - 56                    - push esi
+DINPUT8.dll+52B8 - E8 9FFEFFFF           - call DINPUT8.dll+515C
+DINPUT8.dll+52BD - 8B F8                 - mov edi,eax
+DINPUT8.dll+52BF - 3B FB                 - cmp edi,ebx
+DINPUT8.dll+52C1 - 7C 0F                 - jnge DINPUT8.dll+52D2
+DINPUT8.dll+52C3 - 83 4E 0C 21           - or dword ptr [esi+0C],21
+DINPUT8.dll+52C7 - C7 46 74 1E000780     - mov [esi+74],8007001E
+DINPUT8.dll+52CE - 33 FF                 - xor edi,edi
+DINPUT8.dll+52D0 - EB 0D                 - jmp DINPUT8.dll+52DF
+DINPUT8.dll+52D2 - 56                    - push esi
+DINPUT8.dll+52D3 - E8 2AEDFFFF           - call DINPUT8.dll+4002
+DINPUT8.dll+52D8 - EB 05                 - jmp DINPUT8.dll+52DF
+DINPUT8.dll+52DA - BF 57000780           - mov edi,80070057
+DINPUT8.dll+52DF - 53                    - push ebx
+DINPUT8.dll+52E0 - 53                    - push ebx
+DINPUT8.dll+52E1 - 56                    - push esi
+DINPUT8.dll+52E2 - E8 00E3FFFF           - call DINPUT8.dll+35E7
+DINPUT8.dll+52E7 - 8B C7                 - mov eax,edi
+DINPUT8.dll+52E9 - 5F                    - pop edi
+DINPUT8.dll+52EA - 5E                    - pop esi
+DINPUT8.dll+52EB - 5B                    - pop ebx
+DINPUT8.dll+52EC - 5D                    - pop ebp
+DINPUT8.dll+52ED - C2 0400               - ret 0004
+
+
+四个方向：
+0F 00 00 00 E4 EA 28 00 32 2E 30 30 20 42 65 74 61 32 39 20 42 75 69 6C 64 38 35 此之上AE4（2788）字节
+函数地址-AE4 
+函数地址-ADC
+函数地址-AD8
+函数地址-AD4
+
+1086294838
+

@@ -1,0 +1,33 @@
+Top-Kart.dll+3AF28 - 8B 45 E0              - mov eax,[ebp-20]
+Top-Kart.dll+3AF2B - 8B 48 08              - mov ecx,[eax+08]
+Top-Kart.dll+3AF2E - D9 41 48              - fld dword ptr [ecx+48]
+Top-Kart.dll+3AF31 - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.dll+3AF34 - 8B 55 E0              - mov edx,[ebp-20]
+Top-Kart.dll+3AF37 - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.dll+3AF3A - D9 40 4C              - fld dword ptr [eax+4C]
+Top-Kart.dll+3AF3D - D9 5D EC              - fstp dword ptr [ebp-14]
+Top-Kart.dll+3AF40 - 8B 4D E0              - mov ecx,[ebp-20]
+Top-Kart.dll+3AF43 - 8B 51 08              - mov edx,[ecx+08]
+Top-Kart.dll+3AF46 - D9 42 50              - fld dword ptr [edx+50]
+Top-Kart.dll+3AF49 - D9 5D E4              - fstp dword ptr [ebp-1C]
+Top-Kart.dll+3AF4C - 8B 45 E0              - mov eax,[ebp-20]
+Top-Kart.dll+3AF4F - 8B 48 04              - mov ecx,[eax+04]
+Top-Kart.dll+3AF52 - E8 5944FFFF           - call Top-Kart.dll+2F3B0
+Top-Kart.dll+3AF57 - D9 5D F4              - fstp dword ptr [ebp-0C]
+Top-Kart.dll+3AF5A - D9 45 EC              - fld dword ptr [ebp-14]
+Top-Kart.dll+3AF5D - D8 4D F4              - fmul dword ptr [ebp-0C]
+Top-Kart.dll+3AF60 - D8 4D F4              - fmul dword ptr [ebp-0C]
+Top-Kart.dll+3AF63 - D8 75 E4              - fdiv dword ptr [ebp-1C]
+Top-Kart.dll+3AF66 - D8 45 FC              - fadd dword ptr [ebp-04] ----------->fadd dword ptr [ebp-0C]
+Top-Kart.dll+3AF69 - D9 5D F8              - fstp dword ptr [ebp-08]
+Top-Kart.dll+3AF6C - 6A 01                 - push 01 { 1 }
+Top-Kart.dll+3AF6E - 6A 01                 - push 01 { 1 }
+Top-Kart.dll+3AF70 - 8B 4D E0              - mov ecx,[ebp-20]
+Top-Kart.dll+3AF73 - 8B 49 04              - mov ecx,[ecx+04]
+Top-Kart.dll+3AF76 - E8 B548FFFF           - call Top-Kart.dll+2F830
+Top-Kart.dll+3AF7B - D9 5D E8              - fstp dword ptr [ebp-18]
+Top-Kart.dll+3AF7E - D9 05 A4360314        - fld dword ptr [Top-Kart.dll+1FA36A4] { (3.14) }
+Top-Kart.dll+3AF84 - DC 3D 60280314        - fdivr qword ptr [Top-Kart.dll+1FA2860] { (4.00) }
+Top-Kart.dll+3AF8A - D8 4D E8              - fmul dword ptr [ebp-18]
+Top-Kart.dll+3AF8D - DC 25 38230314        - fsub qword ptr [Top-Kart.dll+1FA2338] { (1.00) }
+Top-Kart.dll+3AF93 - D9 5D F0              - fstp dword ptr [ebp-10]

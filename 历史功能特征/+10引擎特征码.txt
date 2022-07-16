@@ -1,0 +1,73 @@
+﻿Top-Kart.dll+A79D9 - 51                    - push ecx
+Top-Kart.dll+A79DA - D9 00                 - fld dword ptr [eax]
+Top-Kart.dll+A79DC - D9 1C 24              - fstp dword ptr [esp]
+
+
+51 D9 00 D9 1C 24 8B 4D CC 8B
+D9 00 D9 1C 24 8B 4D CC 8B 89
+D9 1C 24 8B 4D CC 8B 89 44 01
+
+
+Top-Kart.dll+A79DA - D9 00                 - fld dword ptr [eax]  +5..10引擎地址   2019.4.27
+
+原值：483983577 改值：483983579 
+
+
+
+Top-Kart.dll+270AD18 - D9 00                 - fld dword ptr [eax]   ------fild dword ptr [eax]
+Top-Kart.dll+270AD1A - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.dll+270AD1D - 8B 4D CC              - mov ecx,[ebp-34]
+Top-Kart.dll+270AD20 - 8B 89 44010000        - mov ecx,[ecx+00000144]
+Top-Kart.dll+270AD26 - E8 05F190FD           - call Top-Kart.dll+19E30
+Top-Kart.dll+270AD2B - D9 5D F0              - fstp dword ptr [ebp-10]
+Top-Kart.dll+270AD2E - 8B 55 FC              - mov edx,[ebp-04]
+Top-Kart.dll+270AD31 - 52                    - push edx
+Top-Kart.dll+270AD32 - 8D 45 D0              - lea eax,[ebp-30]
+Top-Kart.dll+270AD35 - 50                    - push eax
+Top-Kart.dll+270AD36 - 8B 4D CC              - mov ecx,[ebp-34]
+Top-Kart.dll+270AD39 - E8 522E90FD           - call Top-Kart.dll+DB90
+Top-Kart.dll+270AD3E - 51                    - push ecx
+Top-Kart.dll+270AD3F - D9 00                 - fld dword ptr [eax]
+Top-Kart.dll+270AD41 - E9 2170FFFF           - jmp Top-Kart.dll+2701D67
+Top-Kart.dll+270AD46 - 74 9D                 - je Top-Kart.dll+270ACE5
+Top-Kart.dll+270AD48 - 8B 04 24              - mov eax,[esp]
+Top-Kart.dll+270AD4B - 89 84 24 04000000     - mov [esp+00000004],eax
+Top-Kart.dll+270AD52 - 57                    - push edi
+Top-Kart.dll+270AD53 - 8B 84 24 04000000     - mov eax,[esp+00000004]
+Top-Kart.dll+270AD5A - 8D A4 24 08000000     - lea esp,[esp+00000008]
+Top-Kart.dll+270AD61 - 8B 0C 24              - mov ecx,[esp]
+Top-Kart.dll+270AD64 - 8D A4 24 04000000     - lea esp,[esp+00000004]
+Top-Kart.dll+270AD6B - E8 50C78FFD           - call Top-Kart.dll+74C0
+Top-Kart.dll+270AD70 - 50                    - push eax
+Top-Kart.dll+270AD71 - 89 04 24              - mov [esp],eax
+Top-Kart.dll+270AD74 - 8B 04 24              - mov eax,[esp]
+Top-Kart.dll+270AD77 - 50                    - push eax
+Top-Kart.dll+270AD78 - C7 C0 0FE37332        - mov eax,3273E30F
+Top-Kart.dll+270AD7E - 8D 80 01BF33FB        - lea eax,[eax-04CC40FF]
+Top-Kart.dll+270AD84 - 87 04 24              - xchg [esp],eax
+Top-Kart.dll+270AD87 - 9C                    - pushfd 
+Top-Kart.dll+270AD88 - 89 BC 24 04000000     - mov [esp+00000004],edi
+Top-Kart.dll+270AD8F - 9D                    - popfd 
+Top-Kart.dll+270AD90 - 9C                    - pushfd 
+Top-Kart.dll+270AD91 - 9C                    - pushfd 
+Top-Kart.dll+270AD92 - 50                    - push eax
+Top-Kart.dll+270AD93 - E8 01000000           - call Top-Kart.dll+270AD99
+Top-Kart.dll+270AD98 - 75 58                 - jne Top-Kart.dll+270ADF2
+Top-Kart.dll+270AD9A - 8D 80 46D4FFFF        - lea eax,[eax-00002BBA]
+Top-Kart.dll+270ADA0 - FF D0                 - call eax
+Top-Kart.dll+270ADA2 - 75 55                 - jne Top-Kart.dll+270ADF9
+Top-Kart.dll+270ADA4 - 8B 2C 24              - mov ebp,[esp]
+Top-Kart.dll+270ADA7 - 55                    - push ebp
+Top-Kart.dll+270ADA8 - 8B 2C 24              - mov ebp,[esp]
+Top-Kart.dll+270ADAB - 89 AC 24 04000000     - mov [esp+00000004],ebp
+Top-Kart.dll+270ADB2 - 5D                    - pop ebp
+Top-Kart.dll+270ADB3 - 8B EC                 - mov ebp,esp
+Top-Kart.dll+270ADB5 - 83 EC 24              - sub esp,24
+Top-Kart.dll+270ADB8 - 51                    - push ecx
+Top-Kart.dll+270ADB9 - 8B 0C 24              - mov ecx,[esp]
+Top-Kart.dll+270ADBC - 56                    - push esi
+Top-Kart.dll+270ADBD - 55                    - push ebp
+Top-Kart.dll+270ADBE - 9C                    - pushfd 
+Top-Kart.dll+270ADBF - 33 F6                 - xor esi,esi
+Top-Kart.dll+270ADC1 - 03 B4 24 04000000     - add esi,[esp+00000004]
+Top-Kart.dll+270ADC8 - E8 8E89FFFF           - call Top-Kart.dll+270375B

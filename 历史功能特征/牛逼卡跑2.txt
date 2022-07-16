@@ -1,0 +1,306 @@
+zlib1.dll+DDBC - 8D 74 26 00           - lea esi,[esi+00]
+zlib1.dll+DDC0 - 39 7C 24 18           - cmp [esp+18],edi
+zlib1.dll+DDC4 - 0F86 77020000         - jbe zlib1.dll+E041
+zlib1.dll+DDCA - 39 74 24 0C           - cmp [esp+0C],esi
+zlib1.dll+DDCE - 0F86 6D020000         - jbe zlib1.dll+E041
+zlib1.dll+DDD4 - 80 FB 0F              - cmp bl,0F
+zlib1.dll+DDD7 - 77 0D                 - ja zlib1.dll+DDE6
+zlib1.dll+DDD9 - 31 C0                 - xor eax,eax
+zlib1.dll+DDDB - 66 AD                 - lodsw 
+zlib1.dll+DDDD - 88 D9                 - mov cl,bl
+zlib1.dll+DDDF - 80 C3 10              - add bl,10
+zlib1.dll+DDE2 - D3 E0                 - shl eax,cl
+zlib1.dll+DDE4 - 09 C2                 - or edx,eax
+zlib1.dll+DDE6 - 8B 44 24 38           - mov eax,[esp+38]
+zlib1.dll+DDEA - 21 D0                 - and eax,edx
+zlib1.dll+DDEC - 8B 44 85 00           - mov eax,[ebp+eax*4+00]
+zlib1.dll+DDF0 - 88 E1                 - mov cl,ah
+zlib1.dll+DDF2 - 28 E3                 - sub bl,ah
+zlib1.dll+DDF4 - D3 EA                 - shr edx,cl
+zlib1.dll+DDF6 - 84 C0                 - test al,al
+zlib1.dll+DDF8 - 75 06                 - jne zlib1.dll+DE00
+zlib1.dll+DDFA - C1 E8 10              - shr eax,10
+zlib1.dll+DDFD - AA                    - stosb 
+zlib1.dll+DDFE - EB C0                 - jmp zlib1.dll+DDC0
+zlib1.dll+DE00 - 89 C1                 - mov ecx,eax
+zlib1.dll+DE02 - C1 E9 10              - shr ecx,10
+zlib1.dll+DE05 - 89 4C 24 40           - mov [esp+40],ecx
+zlib1.dll+DE09 - 88 C1                 - mov cl,al
+zlib1.dll+DE0B - A8 10                 - test al,10
+zlib1.dll+DE0D - 0F84 0D010000         - je zlib1.dll+DF20
+zlib1.dll+DE13 - 80 E1 0F              - and cl,0F
+zlib1.dll+DE16 - 74 25                 - je zlib1.dll+DE3D
+zlib1.dll+DE18 - 38 CB                 - cmp bl,cl
+zlib1.dll+DE1A - 73 11                 - jae zlib1.dll+DE2D
+zlib1.dll+DE1C - 88 CD                 - mov ch,cl
+zlib1.dll+DE1E - 31 C0                 - xor eax,eax
+zlib1.dll+DE20 - 66 AD                 - lodsw 
+zlib1.dll+DE22 - 88 D9                 - mov cl,bl
+zlib1.dll+DE24 - 80 C3 10              - add bl,10
+zlib1.dll+DE27 - D3 E0                 - shl eax,cl
+zlib1.dll+DE29 - 09 C2                 - or edx,eax
+zlib1.dll+DE2B - 88 E9                 - mov cl,ch
+zlib1.dll+DE2D - 28 CB                 - sub bl,cl
+zlib1.dll+DE2F - 31 C0                 - xor eax,eax
+zlib1.dll+DE31 - 40                    - inc eax
+zlib1.dll+DE32 - D3 E0                 - shl eax,cl
+zlib1.dll+DE34 - 48                    - dec eax
+zlib1.dll+DE35 - 21 D0                 - and eax,edx
+zlib1.dll+DE37 - D3 EA                 - shr edx,cl
+zlib1.dll+DE39 - 01 44 24 40           - add [esp+40],eax
+zlib1.dll+DE3D - 80 FB 0F              - cmp bl,0F
+zlib1.dll+DE40 - 77 0D                 - ja zlib1.dll+DE4F
+zlib1.dll+DE42 - 31 C0                 - xor eax,eax
+zlib1.dll+DE44 - 66 AD                 - lodsw 
+zlib1.dll+DE46 - 88 D9                 - mov cl,bl
+zlib1.dll+DE48 - 80 C3 10              - add bl,10 /////////////////////////////////////and
+zlib1.dll+DE4B - D3 E0                 - shl eax,cl
+zlib1.dll+DE4D - 09 C2                 - or edx,eax
+zlib1.dll+DE4F - 8B 44 24 3C           - mov eax,[esp+3C]
+zlib1.dll+DE53 - 8B 4C 24 24           - mov ecx,[esp+24]
+zlib1.dll+DE57 - 21 D0                 - and eax,edx
+zlib1.dll+DE59 - 8B 04 81              - mov eax,[ecx+eax*4]
+zlib1.dll+DE5C - 89 C5                 - mov ebp,eax
+zlib1.dll+DE5E - C1 ED 10              - shr ebp,10
+zlib1.dll+DE61 - 88 E1                 - mov cl,ah
+zlib1.dll+DE63 - 28 E3                 - sub bl,ah
+zlib1.dll+DE65 - D3 EA                 - shr edx,cl
+zlib1.dll+DE67 - 88 C1                 - mov cl,al
+zlib1.dll+DE69 - A8 10                 - test al,10
+zlib1.dll+DE6B - 0F84 CF000000         - je zlib1.dll+DF40
+zlib1.dll+DE71 - 80 E1 0F              - and cl,0F
+zlib1.dll+DE74 - 74 6A                 - je zlib1.dll+DEE0
+zlib1.dll+DE76 - 38 CB                 - cmp bl,cl
+zlib1.dll+DE78 - 73 11                 - jae zlib1.dll+DE8B
+zlib1.dll+DE7A - 88 CD                 - mov ch,cl
+zlib1.dll+DE7C - 31 C0                 - xor eax,eax
+zlib1.dll+DE7E - 66 AD                 - lodsw 
+zlib1.dll+DE80 - 88 D9                 - mov cl,bl
+zlib1.dll+DE82 - 80 C3 10              - add bl,10
+zlib1.dll+DE85 - D3 E0                 - shl eax,cl
+zlib1.dll+DE87 - 09 C2                 - or edx,eax
+zlib1.dll+DE89 - 88 E9                 - mov cl,ch
+zlib1.dll+DE8B - 28 CB                 - sub bl,cl
+zlib1.dll+DE8D - 31 C0                 - xor eax,eax
+zlib1.dll+DE8F - 40                    - inc eax
+zlib1.dll+DE90 - D3 E0                 - shl eax,cl
+zlib1.dll+DE92 - 48                    - dec eax
+zlib1.dll+DE93 - 21 D0                 - and eax,edx
+zlib1.dll+DE95 - D3 EA                 - shr edx,cl
+zlib1.dll+DE97 - 01 C5                 - add ebp,eax
+zlib1.dll+DE99 - 89 74 24 08           - mov [esp+08],esi
+zlib1.dll+DE9D - 89 F8                 - mov eax,edi
+zlib1.dll+DE9F - 2B 44 24 14           - sub eax,[esp+14]
+zlib1.dll+DEA3 - 39 E8                 - cmp eax,ebp
+zlib1.dll+DEA5 - 0F82 B5000000         - jb zlib1.dll+DF60
+zlib1.dll+DEAB - 8B 4C 24 40           - mov ecx,[esp+40]
+zlib1.dll+DEAF - 89 FE                 - mov esi,edi
+zlib1.dll+DEB1 - 29 EE                 - sub esi,ebp
+zlib1.dll+DEB3 - D1 F9                 - sar ecx,1
+zlib1.dll+DEB5 - 73 15                 - jae zlib1.dll+DECC
+zlib1.dll+DEB7 - 66 F3 A5              - repe movsw 
+zlib1.dll+DEBA - 8A 06                 - mov al,[esi]
+zlib1.dll+DEBC - 88 07                 - mov [edi],al
+zlib1.dll+DEBE - 47                    - inc edi
+zlib1.dll+DEBF - 8B 74 24 08           - mov esi,[esp+08]
+zlib1.dll+DEC3 - 8B 6C 24 20           - mov ebp,[esp+20]
+zlib1.dll+DEC7 - E9 F4FEFFFF           - jmp zlib1.dll+DDC0
+zlib1.dll+DECC - 66 F3 A5              - repe movsw 
+zlib1.dll+DECF - 8B 74 24 08           - mov esi,[esp+08]
+zlib1.dll+DED3 - 8B 6C 24 20           - mov ebp,[esp+20]
+zlib1.dll+DED7 - E9 E4FEFFFF           - jmp zlib1.dll+DDC0
+zlib1.dll+DEDC - 8D 74 26 00           - lea esi,[esi+00]
+zlib1.dll+DEE0 - 83 FD 01              - cmp ebp,01
+zlib1.dll+DEE3 - 75 B4                 - jne zlib1.dll+DE99
+zlib1.dll+DEE5 - 39 7C 24 14           - cmp [esp+14],edi
+zlib1.dll+DEE9 - 74 AE                 - je zlib1.dll+DE99
+zlib1.dll+DEEB - 8B 4C 24 40           - mov ecx,[esp+40]
+zlib1.dll+DEEF - 8A 47 FF              - mov al,[edi-01]
+zlib1.dll+DEF2 - 88 C4                 - mov ah,al
+zlib1.dll+DEF4 - D1 F9                 - sar ecx,1
+zlib1.dll+DEF6 - 73 03                 - jae zlib1.dll+DEFB
+zlib1.dll+DEF8 - 88 07                 - mov [edi],al
+zlib1.dll+DEFA - 47                    - inc edi
+zlib1.dll+DEFB - 66 F3 AB              - repe stosw 
+zlib1.dll+DEFE - 8B 6C 24 20           - mov ebp,[esp+20]
+zlib1.dll+DF02 - E9 B9FEFFFF           - jmp zlib1.dll+DDC0
+zlib1.dll+DF07 - EB 17                 - jmp zlib1.dll+DF20
+zlib1.dll+DF09 - 90                    - nop 
+zlib1.dll+DF0A - 90                    - nop 
+zlib1.dll+DF0B - 90                    - nop 
+zlib1.dll+DF0C - 90                    - nop 
+zlib1.dll+DF0D - 90                    - nop 
+zlib1.dll+DF0E - 90                    - nop 
+zlib1.dll+DF0F - 90                    - nop 
+zlib1.dll+DF10 - 90                    - nop 
+zlib1.dll+DF11 - 90                    - nop 
+zlib1.dll+DF12 - 90                    - nop 
+zlib1.dll+DF13 - 90                    - nop 
+zlib1.dll+DF14 - 90                    - nop 
+zlib1.dll+DF15 - 90                    - nop 
+zlib1.dll+DF16 - 90                    - nop 
+zlib1.dll+DF17 - 90                    - nop 
+zlib1.dll+DF18 - 90                    - nop 
+zlib1.dll+DF19 - 90                    - nop 
+zlib1.dll+DF1A - 90                    - nop 
+zlib1.dll+DF1B - 90                    - nop 
+zlib1.dll+DF1C - 90                    - nop 
+zlib1.dll+DF1D - 90                    - nop 
+zlib1.dll+DF1E - 90                    - nop 
+zlib1.dll+DF1F - 90                    - nop 
+zlib1.dll+DF20 - A8 40                 - test al,40
+zlib1.dll+DF22 - 0F85 E9000000         - jne zlib1.dll+E011
+zlib1.dll+DF28 - 31 C0                 - xor eax,eax
+zlib1.dll+DF2A - 40                    - inc eax
+zlib1.dll+DF2B - D3 E0                 - shl eax,cl
+zlib1.dll+DF2D - 48                    - dec eax
+zlib1.dll+DF2E - 21 D0                 - and eax,edx
+zlib1.dll+DF30 - 03 44 24 40           - add eax,[esp+40]
+zlib1.dll+DF34 - 8B 44 85 00           - mov eax,[ebp+eax*4+00]
+zlib1.dll+DF38 - E9 B3FEFFFF           - jmp zlib1.dll+DDF0
+zlib1.dll+DF3D - 8D 76 00              - lea esi,[esi+00]
+zlib1.dll+DF40 - A8 40                 - test al,40
+zlib1.dll+DF42 - 0F85 E1000000         - jne zlib1.dll+E029
+zlib1.dll+DF48 - 31 C0                 - xor eax,eax
+zlib1.dll+DF4A - 40                    - inc eax
+zlib1.dll+DF4B - D3 E0                 - shl eax,cl
+zlib1.dll+DF4D - 48                    - dec eax
+zlib1.dll+DF4E - 21 D0                 - and eax,edx
+zlib1.dll+DF50 - 01 E8                 - add eax,ebp
+zlib1.dll+DF52 - 8B 4C 24 24           - mov ecx,[esp+24]
+zlib1.dll+DF56 - 8B 04 81              - mov eax,[ecx+eax*4]
+zlib1.dll+DF59 - E9 FEFEFFFF           - jmp zlib1.dll+DE5C
+zlib1.dll+DF5E - 66 90                 - nop 
+zlib1.dll+DF60 - 89 C1                 - mov ecx,eax
+zlib1.dll+DF62 - 8B 44 24 30           - mov eax,[esp+30]
+zlib1.dll+DF66 - F7 D9                 - neg ecx
+zlib1.dll+DF68 - 8B 74 24 1C           - mov esi,[esp+1C]
+zlib1.dll+DF6C - 39 E8                 - cmp eax,ebp
+zlib1.dll+DF6E - 0F82 BF000000         - jb zlib1.dll+E033
+zlib1.dll+DF74 - 01 E9                 - add ecx,ebp
+zlib1.dll+DF76 - 83 7C 24 34 00        - cmp dword ptr [esp+34],00
+zlib1.dll+DF7B - 75 23                 - jne zlib1.dll+DFA0
+zlib1.dll+DF7D - 29 C8                 - sub eax,ecx
+zlib1.dll+DF7F - 01 C6                 - add esi,eax
+zlib1.dll+DF81 - 8B 44 24 40           - mov eax,[esp+40]
+zlib1.dll+DF85 - 39 C8                 - cmp eax,ecx
+zlib1.dll+DF87 - 76 77                 - jna zlib1.dll+E000
+zlib1.dll+DF89 - 29 C8                 - sub eax,ecx
+zlib1.dll+DF8B - F3 A4                 - repe movsb 
+zlib1.dll+DF8D - 89 FE                 - mov esi,edi
+zlib1.dll+DF8F - 29 EE                 - sub esi,ebp
+zlib1.dll+DF91 - EB 6D                 - jmp zlib1.dll+E000
+zlib1.dll+DF93 - 8D B6 00000000        - lea esi,[esi+00000000]
+zlib1.dll+DF99 - 8D BC 27 00000000     - lea edi,[edi+00000000]
+zlib1.dll+DFA0 - 8B 44 24 34           - mov eax,[esp+34]
+zlib1.dll+DFA4 - 39 C1                 - cmp ecx,eax
+zlib1.dll+DFA6 - 76 38                 - jna zlib1.dll+DFE0
+zlib1.dll+DFA8 - 03 74 24 30           - add esi,[esp+30]
+zlib1.dll+DFAC - 01 C6                 - add esi,eax
+zlib1.dll+DFAE - 29 CE                 - sub esi,ecx
+zlib1.dll+DFB0 - 29 C1                 - sub ecx,eax
+zlib1.dll+DFB2 - 8B 44 24 40           - mov eax,[esp+40]
+zlib1.dll+DFB6 - 39 C8                 - cmp eax,ecx
+zlib1.dll+DFB8 - 76 46                 - jna zlib1.dll+E000
+zlib1.dll+DFBA - 29 C8                 - sub eax,ecx
+zlib1.dll+DFBC - F3 A4                 - repe movsb 
+zlib1.dll+DFBE - 8B 74 24 1C           - mov esi,[esp+1C]
+zlib1.dll+DFC2 - 8B 4C 24 34           - mov ecx,[esp+34]
+zlib1.dll+DFC6 - 39 C8                 - cmp eax,ecx
+zlib1.dll+DFC8 - 76 36                 - jna zlib1.dll+E000
+zlib1.dll+DFCA - 29 C8                 - sub eax,ecx
+zlib1.dll+DFCC - F3 A4                 - repe movsb 
+zlib1.dll+DFCE - 89 FE                 - mov esi,edi
+zlib1.dll+DFD0 - 29 EE                 - sub esi,ebp
+zlib1.dll+DFD2 - EB 2C                 - jmp zlib1.dll+E000
+zlib1.dll+DFD4 - 8D B6 00000000        - lea esi,[esi+00000000]
+zlib1.dll+DFDA - 8D BF 00000000        - lea edi,[edi+00000000]
+zlib1.dll+DFE0 - 01 C6                 - add esi,eax
+zlib1.dll+DFE2 - 29 CE                 - sub esi,ecx
+zlib1.dll+DFE4 - 8B 44 24 40           - mov eax,[esp+40]
+zlib1.dll+DFE8 - 39 C8                 - cmp eax,ecx
+zlib1.dll+DFEA - 76 14                 - jna zlib1.dll+E000
+zlib1.dll+DFEC - 29 C8                 - sub eax,ecx
+zlib1.dll+DFEE - F3 A4                 - repe movsb 
+zlib1.dll+DFF0 - 89 FE                 - mov esi,edi
+zlib1.dll+DFF2 - 29 EE                 - sub esi,ebp
+zlib1.dll+DFF4 - EB 0A                 - jmp zlib1.dll+E000
+zlib1.dll+DFF6 - 8D 76 00              - lea esi,[esi+00]
+zlib1.dll+DFF9 - 8D BC 27 00000000     - lea edi,[edi+00000000]
+zlib1.dll+E000 - 89 C1                 - mov ecx,eax
+zlib1.dll+E002 - F3 A4                 - repe movsb 
+zlib1.dll+E004 - 8B 74 24 08           - mov esi,[esp+08]
+zlib1.dll+E008 - 8B 6C 24 20           - mov ebp,[esp+20]
+zlib1.dll+E00C - E9 AFFDFFFF           - jmp zlib1.dll+DDC0
+zlib1.dll+E011 - A8 20                 - test al,20
+zlib1.dll+E013 - 74 0A                 - je zlib1.dll+E01F
+zlib1.dll+E015 - C7 44 24 48 01000000  - mov [esp+48],00000001
+zlib1.dll+E01D - EB 2A                 - jmp zlib1.dll+E049
+zlib1.dll+E01F - C7 44 24 48 02000000  - mov [esp+48],00000002
+zlib1.dll+E027 - EB 20                 - jmp zlib1.dll+E049
+zlib1.dll+E029 - C7 44 24 48 03000000  - mov [esp+48],00000003
+zlib1.dll+E031 - EB 16                 - jmp zlib1.dll+E049
+zlib1.dll+E033 - 8B 74 24 08           - mov esi,[esp+08]
+zlib1.dll+E037 - C7 44 24 48 04000000  - mov [esp+48],00000004
+zlib1.dll+E03F - EB 08                 - jmp zlib1.dll+E049
+zlib1.dll+E041 - C7 44 24 48 00000000  - mov [esp+48],00000000
+zlib1.dll+E049 - 89 74 24 08           - mov [esp+08],esi
+zlib1.dll+E04D - 89 7C 24 10           - mov [esp+10],edi
+zlib1.dll+E051 - 89 5C 24 2C           - mov [esp+2C],ebx
+zlib1.dll+E055 - 89 54 24 28           - mov [esp+28],edx
+zlib1.dll+E059 - 8B 6C 24 04           - mov ebp,[esp+04]
+zlib1.dll+E05D - 8B 24 24              - mov esp,[esp]
+zlib1.dll+E060 - 8B 45 F0              - mov eax,[ebp-10]
+zlib1.dll+E063 - 83 F8 01              - cmp eax,01
+zlib1.dll+E066 - 0F86 88000000         - jbe zlib1.dll+E0F4
+zlib1.dll+E06C - 83 F8 02              - cmp eax,02
+zlib1.dll+E06F - 0F84 8C000000         - je zlib1.dll+E101
+zlib1.dll+E075 - 8B 4D 08              - mov ecx,[ebp+08]
+zlib1.dll+E078 - 83 F8 03              - cmp eax,03
+zlib1.dll+E07B - BA BCA5E962           - mov edx,zlib1.dll+1A5BC
+zlib1.dll+E080 - B8 D2A5E962           - mov eax,zlib1.dll+1A5D2
+zlib1.dll+E085 - 0F45 D0               - cmovne edx,eax
+zlib1.dll+E088 - 89 51 18              - mov [ecx+18],edx
+zlib1.dll+E08B - 8B 5D A0              - mov ebx,[ebp-60]
+zlib1.dll+E08E - C7 03 1D000000        - mov [ebx],0000001D
+zlib1.dll+E094 - 8B 75 D4              - mov esi,[ebp-2C]
+zlib1.dll+E097 - 8B 5D 08              - mov ebx,[ebp+08]
+zlib1.dll+E09A - 8B 7D 08              - mov edi,[ebp+08]
+zlib1.dll+E09D - 89 F2                 - mov edx,esi
+zlib1.dll+E09F - C1 EA 03              - shr edx,03
+zlib1.dll+E0A2 - 89 D0                 - mov eax,edx
+zlib1.dll+E0A4 - C1 E2 03              - shl edx,03
+zlib1.dll+E0A7 - F7 D8                 - neg eax
+zlib1.dll+E0A9 - 29 D6                 - sub esi,edx
+zlib1.dll+E0AB - BA 01000000           - mov edx,00000001
+zlib1.dll+E0B0 - 89 F1                 - mov ecx,esi
+zlib1.dll+E0B2 - D3 E2                 - shl edx,cl
+zlib1.dll+E0B4 - 8B 4D B4              - mov ecx,[ebp-4C]
+zlib1.dll+E0B7 - 03 45 B0              - add eax,[ebp-50]
+zlib1.dll+E0BA - 83 EA 01              - sub edx,01
+zlib1.dll+E0BD - 23 55 D0              - and edx,[ebp-30]
+zlib1.dll+E0C0 - 83 C1 05              - add ecx,05
+zlib1.dll+E0C3 - 89 03                 - mov [ebx],eax
+zlib1.dll+E0C5 - 29 C1                 - sub ecx,eax
+zlib1.dll+E0C7 - 8B 45 08              - mov eax,[ebp+08]
+zlib1.dll+E0CA - 8B 5D B8              - mov ebx,[ebp-48]
+zlib1.dll+E0CD - 89 48 04              - mov [eax+04],ecx
+zlib1.dll+E0D0 - 8B 45 C0              - mov eax,[ebp-40]
+zlib1.dll+E0D3 - 89 5F 0C              - mov [edi+0C],ebx
+zlib1.dll+E0D6 - 8B 4D 08              - mov ecx,[ebp+08]
+zlib1.dll+E0D9 - 05 01010000           - add eax,00000101
+zlib1.dll+E0DE - 29 D8                 - sub eax,ebx
+zlib1.dll+E0E0 - 8B 5D A0              - mov ebx,[ebp-60]
+zlib1.dll+E0E3 - 89 41 10              - mov [ecx+10],eax
+zlib1.dll+E0E6 - 89 53 38              - mov [ebx+38],edx
+zlib1.dll+E0E9 - 89 73 3C              - mov [ebx+3C],esi
+zlib1.dll+E0EC - 83 C4 54              - add esp,54
+zlib1.dll+E0EF - 5B                    - pop ebx
+zlib1.dll+E0F0 - 5E                    - pop esi
+zlib1.dll+E0F1 - 5F                    - pop edi
+zlib1.dll+E0F2 - 5D                    - pop ebp
+zlib1.dll+E0F3 - C3                    - ret 
+zlib1.dll+E0F4 - 75 9E                 - jne zlib1.dll+E094
+zlib1.dll+E0F6 - 8B 7D A0              - mov edi,[ebp-60]
+zlib1.dll+E0F9 - C7 07 0B000000        - mov [edi],0000000B
+zlib1.dll+E0FF - EB 93                 - jmp zlib1.dll+E094

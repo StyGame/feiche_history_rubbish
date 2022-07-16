@@ -1,0 +1,114 @@
+大厅
+04832EF2 - EB 3D                 - jmp 04832F31
+Top-Kart.dll+1CD13B6 - C3                    - ret 
+GameRpcs.dll+A359E - EB 18                 - jmp GameRpcs.dll+A35B8
+GameRpcs.dll+A4605 - 90                    - nop 
+GameRpcs.dll+3A690 - C3                    - ret 
+GameRpcs.dll+523A64 - C3                    - ret 
+GameRpcs.dll+1B420 - 90                    - nop 
+GameRpcs.dll+1B43B - 90                    - nop 
+Top-Kart.dll+5DA0 - C3                    - ret 
+Top-Kart.dll+E744 - E9 B71844F5           - jmp 005E0000
+Top-Kart.dll+3C476 - E9 853B44F5           - jmp 00610000
+
+
+
+GameRpcs.dll+1B55C Nop
+GameRpcs.dll+A4605 nop 
+GameRpcs.dll+3A690 ret
+GameRpcs.dll+523A64 ret
+GameRpcs.dll+1B420 nop
+GameRpcs.dll+1B43B nop
+GameRpcs.dll+202B94 ret
+GameRpcs.dll+1B219 - E9 DB010000           - jmp GameRpcs.dll+1B3F9
+GameRpcs.dll+A359E - EB 18                 - jmp GameRpcs.dll+A35B8
+Top-Kart.dll+5DA0 - C3                    - ret 
+
+引擎加速
+Top-Kart.dll+3C476 - E9 853B44F5           - jmp 00610000
+03040000 - D8 0D 00040403        - fmul dword ptr [03040400] { [1.22] }
+03040006 - D9 9D FCFFFFFF        - fstp dword ptr [ebp-00000004]
+0304000C - E9 0FCB1408           - jmp Top-Kart.dll+1CB20
+03040400 - F6 28                 - imul byte ptr [eax]
+移动速度
+Top-Kart.dll+3EA57 - 8B 15 00000E03        - mov edx,[030E0000] { [00000023] }
+
+
+
+
+功能1CB1B 
+Top-Kart.dll+1CB18 - D9 45 FC              - fld dword ptr [ebp-04]
+Top-Kart.dll+1CB1B - E9 E0349AF5           - jmp 00B10000
+Top-Kart.dll+1CB20 - 90                    - nop 
+Top-Kart.dll+1CB21 - D9 45 FC              - fld dword ptr [ebp-04]
+转00b写
+00B10000 - D8 0D 0004B100        - fmul dword ptr [00B10400] { [3F9C28F6] }
+00B10006 - D9 9D FCFFFFFF        - fstp dword ptr [ebp-00000004]
+
+00B1000C - E9 0FCB650A           - jmp Top-Kart.dll+1CB20
+
+Top-Kart.dll+3EA57 功能
+Top-Kart.dll+3EA51 - D9 AD 2EFFFFFF        - fldcw [ebp-000000D2]
+Top-Kart.dll+3EA57 - 8B 15 0000B000        - mov edx,[00B00000] { [00000023] }
+Top-Kart.dll+3EA5D - 89 55 9C              - mov [ebp-64],edx
+
+
+功能
+Top-Kart.dll+E744 
+Top-Kart.dll+E744 - E9 B7189EF8           - jmp 03B40000
+Top-Kart.dll+E749 - 90                    - nop 
+
+03B40000 - 89 05 0000B503        - mov [03B50000],eax { [0030EE98] }
+03B40006 - 89 0D 0400B503        - mov [03B50004],ecx { [0030EE2C] }
+03B4000C - 89 15 0800B503        - mov [03B50008],edx { [0030EE98] }
+03B40012 - 89 1D 0C00B503        - mov [03B5000C],ebx { [00000000] }
+03B40018 - 89 25 1000B503        - mov [03B50010],esp { [0030EE18] }
+03B4001E - 89 2D 1400B503        - mov [03B50014],ebp { [0030EE1C] }
+03B40024 - 89 35 1800B503        - mov [03B50018],esi { [0030EED0] }
+03B4002A - 89 3D 1C00B503        - mov [03B5001C],edi { [0030F01C] }
+03B40030 - 60                    - pushad 
+03B40031 - 68 623E4300           - push GameApp.exe+33E62 { [0] }
+03B40036 - 68 F459DC0B           - push Top-Kart.dll+C759F4 { [E58BFC45] }
+03B4003B - 68 06C30000           - push 0000C306 { 49926 }
+03B40040 - A1 0000F706           - mov eax,[06F70000] { [0049066A] }
+03B40045 - 50                    - push eax
+03B40046 - E8 B3718973           - call USER32.dll+271FE
+03B4004B - 61                    - popad 
+03B4004C - 00 00                 - add [eax],al
+03B4004E - 00 00                 - add [eax],al
+03B40050 - 00 00                 - add [eax],al
+03B40052 - E9 F3E66107           - jmp Top-Kart.dll+E74A
+
+功能
+Top-Kart.dll+3C476 - E9 853B5BFC           - jmp 07740000
+Top-Kart.dll+3C47B - 90                    - nop 
+07740000 - 89 05 00007507        - mov [07750000],eax { [00000000] }
+07740006 - 89 0D 04007507        - mov [07750004],ecx { [00000000] }
+0774000C - 89 15 08007507        - mov [07750008],edx { [00000000] }
+07740012 - 89 1D 0C007507        - mov [0775000C],ebx { [00000000] }
+07740018 - 89 25 10007507        - mov [07750010],esp { [00000000] }
+0774001E - 89 2D 14007507        - mov [07750014],ebp { [00000000] }
+07740024 - 89 35 18007507        - mov [07750018],esi { [00000000] }
+0774002A - 89 3D 1C007507        - mov [0775001C],edi { [00000000] }
+07740030 - 60                    - pushad 
+07740031 - 68 553F4300           - push GameApp.exe+33F55 { [0] }
+07740036 - 68 F459DC0B           - push Top-Kart.dll+C759F4 { [E58BFC45] }
+0774003B - 68 06C30000           - push 0000C306 { 49926 }
+07740040 - A1 0000AE00           - mov eax,[00AE0000] { [0049066A] }
+07740045 - 50                    - push eax
+07740046 - E8 B371C96F           - call USER32.dll+271FE
+0774004B - 61                    - popad 
+0774004C - 00 00                 - add [eax],al
+0774004E - 00 00                 - add [eax],al
+07740050 - 00 00                 - add [eax],al
+07740052 - E9 25C4A403           - jmp Top-Kart.dll+3C47C
+
+
+
+
+
+
+ 
+
+GameRpcs.dll+A359E
+Top-Kart.dll+A359E

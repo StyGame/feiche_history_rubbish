@@ -1,0 +1,13 @@
+300
+Top-Kart.dll+1BA83 - 68 83BACC0A           - push 0ACCBA83 { 181189251 }
+Top-Kart.dll+15BD0EA - 68 EAD0260C           - push Network.dll+3DD0EA { (204) }
+GameRpcs.dll+2BD489 - C3                    - ret
+
+Top-Kart.dll+A09A0 - D9 5D F4              - fstp dword ptr [ebp-0C]
+
+500
+Top-Kart.dll+1BA83 - 68 83BACC0A           - push Network.dll+51BA83 { (85) }
+Top-Kart.dll+15BD0EA - 68 EAD0260C           - push Top-Kart.dll+61D0EA { (139) }
+GameRpcs.dll+2BD489 - C3                    - ret 
+
+Top-Kart.dll+1CB1B - D8 4D FC              - fmul dword ptr [ebp-04]

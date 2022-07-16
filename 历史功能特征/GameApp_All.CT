@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="18">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"飘逸加速3657188824 3656664536"</Description>
+      <LastState Value="3657188824" Activated="0" RealAddress="08AFFBC3"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Top-Kart.dll"+1d0fbc3</Address>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>51</Key>
+          </Keys>
+          <Value>3657188824</Value>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>52</Key>
+          </Keys>
+          <Value>3656664536</Value>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"道具免疫3641198041 3642246617"</Description>
+      <LastState Value="3641198041" Activated="0" RealAddress="07D524B0"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Top-Kart.dll"+f624b0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>37</ID>
+      <Description>"喷延长2348047833 2345950681"</Description>
+      <LastState Value="2348047833" Activated="0" RealAddress="08B8945F"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Top-Kart.dll+1D9945F </Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>40</ID>
+      <Description>"290引擎1300975870 1300976126"</Description>
+      <LastState Value="1300975870" Activated="0" RealAddress="08AF3AA4"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Top-Kart.dll"+1D03AA4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>44</ID>
+      <Description>"微加速3639625177 3639887321 "</Description>
+      <LastState Value="3639625177" Activated="0" RealAddress="08AFFBAF"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Top-Kart.dll"+1d0fbaf</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>45</ID>
+      <Description>"飞天3654835673 3654573529"</Description>
+      <LastState Value="3654835673" Activated="0" RealAddress="08B15291"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Top-Kart.dll"+1d25291</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>46</ID>
+      <Description>"微加速 危险3639625177 3639887321"</Description>
+      <LastState Value="3639625177" Activated="0" RealAddress="08AFFBAF"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Top-Kart.dll+1D0FBAF </Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"穿墙地址辅助搜索"</Description>
+      <LastState Value="8B 44 24 48 8B 4C 24 40 D9 00 D8 21 D9 5C 24 10 D9 40 04 D8 61 04 D9 5C 24 14 D9 40 08 D8 61 08 D9 5C 24 18 D9 44 24 10 D9 C0" Activated="0" RealAddress="07DEE8E8"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>42</ByteLength>
+      <Address>Top-Kart.luaopen_API+A59558 </Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"左右加速4276915672改4277177816"</Description>
+      <LastState Value="4277177816" Activated="0" RealAddress="08ADC2B7"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Top-Kart.dll"+1CEC2B7</Address>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>32</Key>
+          </Keys>
+          <Value>4276915672</Value>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>39</Key>
+          </Keys>
+          <Value>4277177816</Value>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"穿墙405036249 2417510105"</Description>
+      <LastState Value="405036249" Activated="0" RealAddress="07DEE82D"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Top-Kart.luaopen_API+A5949D </Address>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>49</Key>
+          </Keys>
+          <Value>405036249 </Value>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>50</Key>
+          </Keys>
+          <Value>2417510105</Value>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"No description"</Description>
+      <LastState Value="405036249" Activated="0" RealAddress="07DEB41D"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Top-Kart.luaopen_API+A5608D </Address>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>49</Key>
+          </Keys>
+          <Value>405036249 </Value>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>50</Key>
+          </Keys>
+          <Value>2417510105</Value>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"No description"</Description>
+      <LastState Value="405036249" Activated="0" RealAddress="07DEE908"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Top-Kart.luaopen_API+A59578 </Address>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>50</Key>
+          </Keys>
+          <Value>2417510105</Value>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>49</Key>
+          </Keys>
+          <Value>405036249 </Value>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"No description"</Description>
+      <LastState Value="405036249" Activated="0" RealAddress="07DECD79"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Top-Kart.luaopen_API+A579E9 </Address>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>49</Key>
+          </Keys>
+          <Value>405036249 </Value>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>50</Key>
+          </Keys>
+          <Value>2417510105</Value>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"小飘瞬移605870372改605870388"</Description>
+      <LastState Value="605870372" Activated="0" RealAddress="077AB1E4"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Top-Kart.luaopen_API+415E54 </Address>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>51</Key>
+          </Keys>
+          <Value>605870372</Value>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>52</Key>
+          </Keys>
+          <Value>605870388</Value>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"飘逸加速2 3643294169 3643556313"</Description>
+      <LastState Value="3643556313" Activated="0" RealAddress="08ACE3B3"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Top-Kart.dll"+1cde3b3</Address>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>56</Key>
+          </Keys>
+          <Value>3643294169 </Value>
+          <ID>0</ID>
+        </Hotkey>
+        <Hotkey>
+          <Action>Set Value</Action>
+          <Keys>
+            <Key>57</Key>
+          </Keys>
+          <Value>3643556313</Value>
+          <ID>1</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

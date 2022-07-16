@@ -1,0 +1,23 @@
+Top-Kart.luaopen_API+451303 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+451305 - 75 38                 - jne Top-Kart.luaopen_API+45133F
+Top-Kart.luaopen_API+451307 - 8B 45 8C              - mov eax,[ebp-74]
+Top-Kart.luaopen_API+45130A - 83 C0 28              - add eax,28 { 40 }
+Top-Kart.luaopen_API+45130D - 50                    - push eax
+Top-Kart.luaopen_API+45130E - 8B 4D 8C              - mov ecx,[ebp-74]
+Top-Kart.luaopen_API+451311 - 51                    - push ecx
+Top-Kart.luaopen_API+451312 - D9 41 24              - fld dword ptr [ecx+24] ////fld dword ptr [ecx+27]
+Top-Kart.luaopen_API+451315 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+451318 - 8D 55 C0              - lea edx,[ebp-40]
+Top-Kart.luaopen_API+45131B - 52                    - push edx
+Top-Kart.luaopen_API+45131C - E8 0F5A5DFF           - call Top-Kart.IDisplay::operator=+E900
+Top-Kart.luaopen_API+451321 - 83 C4 0C              - add esp,0C { 12 }
+Top-Kart.luaopen_API+451324 - 8B 4D 8C              - mov ecx,[ebp-74]
+Top-Kart.luaopen_API+451327 - 83 C1 40              - add ecx,40 { 64 }
+Top-Kart.luaopen_API+45132A - 8B 10                 - mov edx,[eax]
+Top-Kart.luaopen_API+45132C - 89 11                 - mov [ecx],edx
+Top-Kart.luaopen_API+45132E - 8B 50 04              - mov edx,[eax+04]
+Top-Kart.luaopen_API+451331 - 89 51 04              - mov [ecx+04],edx
+Top-Kart.luaopen_API+451334 - 8B 40 08              - mov eax,[eax+08]
+Top-Kart.luaopen_API+451337 - 89 41 08              - mov [ecx+08],eax
+
+8B 45 8C 83 C0 28 50 8B 4D 8C 51 D9 41 24 D9 1C 24 8D 55 C0 52

@@ -1,0 +1,99 @@
+πÿºÏ≤‚
+Top-Kart.dll+219A68B - 79 8B                 - jns Top-Kart.dll+219A618
+Top-Kart.dll+219A68D - 7C 24                 - jnge Top-Kart.dll+219A6B3
+Top-Kart.dll+219A68F - 14 E9                 - adc al,-17
+Top-Kart.dll+219A691 - 5D                    - pop ebp
+Top-Kart.dll+219A692 - 88 CB                 - mov bl,cl
+Top-Kart.dll+219A694 - FF 76 5A              - push [esi+5A]
+Top-Kart.dll+219A697 - 5A                    - pop edx
+Top-Kart.dll+219A698 - E9 98C5FFFF           - jmp Top-Kart.dll+2196C35
+Top-Kart.dll+219A69D - E1 8D                 - loopz Top-Kart.dll+219A62C
+Top-Kart.dll+219A69F - 64 24 04              - and al,04
+Top-Kart.dll+219A6A2 - 8D 80 9264A7A6        - lea eax,[eax-59589B6E]
+Top-Kart.dll+219A6A8 - 50                    - push eax
+Top-Kart.dll+219A6A9 - 58                    - pop eax
+Top-Kart.dll+219A6AA - 85 C0                 - test eax,eax
+Top-Kart.dll+219A6AC - 0F84 D3A2CBFF         - je Top-Kart.dll+1E54985
+Top-Kart.dll+219A6B2 - E9 FAC0FFFF           - jmp Top-Kart.dll+21967B1
+Top-Kart.dll+219A6B7 - E2 8B                 - loop Top-Kart.dll+219A644
+Top-Kart.dll+219A6B9 - 45                    - inc ebp
+Top-Kart.dll+219A6BA - 08 0F                 - or [edi],cl
+Top-Kart.dll+219A6BC - B6 48                 - mov dh,48
+Top-Kart.dll+219A6BE - 0C F7                 - or al,-09
+Top-Kart.dll+219A6C0 - D9 1B                 - fstp dword ptr [ebx]
+Top-Kart.dll+219A6C2 - C9                    - leave 
+Top-Kart.dll+219A6C3 - C7 C0 52889851        - mov eax,51988852
+Top-Kart.dll+219A6C9 - 8D 80 01C5E089        - lea eax,[eax-WININET.InternetGetConnectedStateExW+FE]
+Top-Kart.dll+219A6CF - 50                    - push eax
+Top-Kart.dll+219A6D0 - 81 04 24  AEB28624    - add [esp],2486B2AE
+Top-Kart.dll+219A6D7 - 03 0C 24              - add ecx,[esp]
+Top-Kart.dll+219A6DA - 8D A4 24 04000000     - lea esp,[esp+00000004]
+Top-Kart.dll+219A6E1 - 88 4D D9              - mov [ebp-27],cl
+Top-Kart.dll+219A6E4 - C7 45 D4 00000000     - mov [ebp-2C],00000000
+Top-Kart.dll+219A6EB - 8B 55 08              - mov edx,[ebp+08]
+Top-Kart.dll+219A6EE - 8B 42 04              - mov eax,[edx+04]
+Top-Kart.dll+219A6F1 - 89 45 B8              - mov [ebp-48],eax
+Top-Kart.dll+219A6F4 - 8B 4D 08              - mov ecx,[ebp+08]
+Top-Kart.dll+219A6F7 - E8 93210000           - call Top-Kart.dll+219C88F
+Top-Kart.dll+219A6FC - 72 5A                 - jb Top-Kart.dll+219A758
+Top-Kart.dll+219A6FE - E8 DF6BFFFF           - call Top-Kart.dll+21912E2
+Top-Kart.dll+219A703 - E9 09F9FFFF           - jmp Top-Kart.dll+219A011
+Top-Kart.dll+219A708 - 78 9D                 - js Top-Kart.dll+219A6A7
+Top-Kart.dll+219A70A - 8B 50 18              - mov edx,[eax+18]
+Top-Kart.dll+219A70D - 56                    - push esi
+Top-Kart.dll+219A70E - 59                    - pop ecx
+Top-Kart.dll+219A70F - FF D2                 - call edx
+Top-Kart.dll+219A711 - 52                    - push edx
+Top-Kart.dll+219A712 - 8B D6                 - mov edx,esi
+Top-Kart.dll+219A714 - C7 C1 8864A834        - mov ecx,34A86488 : [PhysXCore.dll+2944F3]
+Top-Kart.dll+219A71A - 8B CA                 - mov ecx,edx
+Top-Kart.dll+219A71C - 5A                    - pop edx
+Top-Kart.dll+219A71D - 90                    - nop          ///¥ÀCALL NOP
+Top-Kart.dll+219A71E - 90                    - nop 
+Top-Kart.dll+219A71F - 90                    - nop 
+Top-Kart.dll+219A720 - 90                    - nop 
+Top-Kart.dll+219A721 - 90                    - nop 
+Top-Kart.dll+219A722 - 8B 86 AC000000        - mov eax,[esi+000000AC]
+Top-Kart.dll+219A728 - 8A D0                 - mov dl,al
+Top-Kart.dll+219A72A - 89 44 24 0C           - mov [esp+0C],eax
+Top-Kart.dll+219A72E - E8 98C5FFFF           - call Top-Kart.dll+2196CCB
+Top-Kart.dll+219A733 - 79 8D                 - jns Top-Kart.dll+219A6C2
+Top-Kart.dll+219A735 - A4                    - movsb 
+Top-Kart.dll+219A736 - 24 08                 - and al,08
+Top-Kart.dll+219A738 - 00 00                 - add [eax],al
+
+ø®≈≈√˚
+Top-Kart.luaopen_API+38D392 - 8B 4D E4              - mov ecx,[ebp-1C]
+Top-Kart.luaopen_API+38D395 - 0FB6 51 7C            - movzx edx,byte ptr [ecx+7C]
+Top-Kart.luaopen_API+38D399 - 52                    - push edx
+Top-Kart.luaopen_API+38D39A - 8B 8D A0FEFFFF        - mov ecx,[ebp-00000160]
+Top-Kart.luaopen_API+38D3A0 - E8 EB7288FF           - call Top-Kart.DllUnregisterServer+BBDA0
+Top-Kart.luaopen_API+38D3A5 - 8B 45 E4              - mov eax,[ebp-1C]
+Top-Kart.luaopen_API+38D3A8 - 8B 88 80000000        - mov ecx,[eax+00000080]
+Top-Kart.luaopen_API+38D3AE - 51                    - push ecx
+Top-Kart.luaopen_API+38D3AF - 8B 8D A0FEFFFF        - mov ecx,[ebp-00000160]
+Top-Kart.luaopen_API+38D3B5 - E8 167388FF           - call Top-Kart.DllUnregisterServer+BBDE0
+Top-Kart.luaopen_API+38D3BA - 8B 55 E4              - mov edx,[ebp-1C]
+Top-Kart.luaopen_API+38D3BD - 0FB6 82 84000000      - movzx eax,byte ptr [edx+00000084]
+Top-Kart.luaopen_API+38D3C4 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+38D3C6 - 0F95 C1               - setne cl
+Top-Kart.luaopen_API+38D3C9 - 51                    - push ecx
+Top-Kart.luaopen_API+38D3CA - 8B 55 E4              - mov edx,[ebp-1C]
+Top-Kart.luaopen_API+38D3CD - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.luaopen_API+38D3D0 - 50                    - push eax
+Top-Kart.luaopen_API+38D3D1 - 8B 8D A0FEFFFF        - mov ecx,[ebp-00000160]
+Top-Kart.luaopen_API+38D3D7 - E8 347388FF           - call Top-Kart.DllUnregisterServer+BBE20
+Top-Kart.luaopen_API+38D3DC - 8B 4D E4              - mov ecx,[ebp-1C]
+Top-Kart.luaopen_API+38D3DF - D9 59 44              - fild dword ptr [ecx+44]            //fstp dword ptr [ecx+44]
+Top-Kart.luaopen_API+38D3E2 - DC 35 90415B0A        - fdiv qword ptr [Top-Kart.std::_Init_locks::operator=+17B526]
+Top-Kart.luaopen_API+38D3E8 - 8B 95 A0FEFFFF        - mov edx,[ebp-00000160]
+Top-Kart.luaopen_API+38D3EE - D9 9A 380D0000        - fstp dword ptr [edx+00000D38]
+Top-Kart.luaopen_API+38D3F4 - 8B 4D F4              - mov ecx,[ebp-0C]
+Top-Kart.luaopen_API+38D3F7 - 64 89 0D 00000000     - mov fs:[00000000],ecx
+Top-Kart.luaopen_API+38D3FE - 59                    - pop ecx
+Top-Kart.luaopen_API+38D3FF - 5E                    - pop esi
+Top-Kart.luaopen_API+38D400 - 8B E5                 - mov esp,ebp
+Top-Kart.luaopen_API+38D402 - 5D                    - pop ebp
+Top-Kart.luaopen_API+38D403 - C2 0800               - ret 0008
+
+

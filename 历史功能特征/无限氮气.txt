@@ -1,0 +1,81 @@
+Top-Kart.DllUnregisterServer+C7220 - 55                    - push ebp
+Top-Kart.DllUnregisterServer+C7221 - 8B EC                 - mov ebp,esp
+Top-Kart.DllUnregisterServer+C7223 - 83 EC 20              - sub esp,20
+Top-Kart.DllUnregisterServer+C7226 - 56                    - push esi
+Top-Kart.DllUnregisterServer+C7227 - 89 4D E4              - mov [ebp-1C],ecx
+Top-Kart.DllUnregisterServer+C722A - 6A 00                 - push 00
+Top-Kart.DllUnregisterServer+C722C - 8D 45 F4              - lea eax,[ebp-0C]
+Top-Kart.DllUnregisterServer+C722F - 50                    - push eax
+Top-Kart.DllUnregisterServer+C7230 - 8D 4D 0C              - lea ecx,[ebp+0C]
+Top-Kart.DllUnregisterServer+C7233 - E8 080A0000           - call Top-Kart.DllUnregisterServer+C7C40
+Top-Kart.DllUnregisterServer+C7238 - 8B C8                 - mov ecx,eax
+Top-Kart.DllUnregisterServer+C723A - E8 718EFBFF           - call Top-Kart.DllUnregisterServer+800B0
+Top-Kart.DllUnregisterServer+C723F - 89 45 FC              - mov [ebp-04],eax
+Top-Kart.DllUnregisterServer+C7242 - 8B 4D E4              - mov ecx,[ebp-1C]
+Top-Kart.DllUnregisterServer+C7245 - 8B 55 FC              - mov edx,[ebp-04]
+Top-Kart.DllUnregisterServer+C7248 - 3B 51 04              - cmp edx,[ecx+04]
+Top-Kart.DllUnregisterServer+C724B - 0F84 93000000         - je Top-Kart.DllUnregisterServer+C72E4 //jne 085DB664
+Top-Kart.DllUnregisterServer+C7251 - 8B 45 FC              - mov eax,[ebp-04]
+Top-Kart.DllUnregisterServer+C7254 - 50                    - push eax
+Top-Kart.DllUnregisterServer+C7255 - E8 4686FBFF           - call Top-Kart.DllUnregisterServer+7F8A0
+Top-Kart.DllUnregisterServer+C725A - 83 C4 04              - add esp,04
+Top-Kart.DllUnregisterServer+C725D - 8B F0                 - mov esi,eax
+Top-Kart.DllUnregisterServer+C725F - 8B 4D FC              - mov ecx,[ebp-04]
+Top-Kart.DllUnregisterServer+C7262 - 51                    - push ecx
+Top-Kart.DllUnregisterServer+C7263 - E8 4886FBFF           - call Top-Kart.DllUnregisterServer+7F8B0
+Top-Kart.DllUnregisterServer+C7268 - 83 C4 04              - add esp,04
+Top-Kart.DllUnregisterServer+C726B - 8B 10                 - mov edx,[eax]
+Top-Kart.DllUnregisterServer+C726D - 52                    - push edx
+Top-Kart.DllUnregisterServer+C726E - E8 2D86FBFF           - call Top-Kart.DllUnregisterServer+7F8A0
+Top-Kart.DllUnregisterServer+C7273 - 83 C4 04              - add esp,04
+Top-Kart.DllUnregisterServer+C7276 - 8B 0E                 - mov ecx,[esi]
+Top-Kart.DllUnregisterServer+C7278 - 89 08                 - mov [eax],ecx
+Top-Kart.DllUnregisterServer+C727A - 8B 55 FC              - mov edx,[ebp-04]
+Top-Kart.DllUnregisterServer+C727D - 52                    - push edx
+Top-Kart.DllUnregisterServer+C727E - E8 2D86FBFF           - call Top-Kart.DllUnregisterServer+7F8B0
+Top-Kart.DllUnregisterServer+C7283 - 83 C4 04              - add esp,04
+Top-Kart.DllUnregisterServer+C7286 - 8B F0                 - mov esi,eax
+Top-Kart.DllUnregisterServer+C7288 - 8B 45 FC              - mov eax,[ebp-04]
+Top-Kart.DllUnregisterServer+C728B - 50                    - push eax
+Top-Kart.DllUnregisterServer+C728C - E8 0F86FBFF           - call Top-Kart.DllUnregisterServer+7F8A0
+Top-Kart.DllUnregisterServer+C7291 - 83 C4 04              - add esp,04
+Top-Kart.DllUnregisterServer+C7294 - 8B 08                 - mov ecx,[eax]
+Top-Kart.DllUnregisterServer+C7296 - 51                    - push ecx
+Top-Kart.DllUnregisterServer+C7297 - E8 1486FBFF           - call Top-Kart.DllUnregisterServer+7F8B0
+Top-Kart.DllUnregisterServer+C729C - 83 C4 04              - add esp,04
+Top-Kart.DllUnregisterServer+C729F - 8B 16                 - mov edx,[esi]
+Top-Kart.DllUnregisterServer+C72A1 - 89 10                 - mov [eax],edx
+Top-Kart.DllUnregisterServer+C72A3 - 8B 45 FC              - mov eax,[ebp-04]
+Top-Kart.DllUnregisterServer+C72A6 - 50                    - push eax
+Top-Kart.DllUnregisterServer+C72A7 - 8B 4D E4              - mov ecx,[ebp-1C]
+Top-Kart.DllUnregisterServer+C72AA - E8 0187FBFF           - call Top-Kart.DllUnregisterServer+7F9B0
+Top-Kart.DllUnregisterServer+C72AF - 83 EC 08              - sub esp,08
+Top-Kart.DllUnregisterServer+C72B2 - 8B CC                 - mov ecx,esp
+Top-Kart.DllUnregisterServer+C72B4 - 89 65 F0              - mov [ebp-10],esp
+Top-Kart.DllUnregisterServer+C72B7 - 6A 01                 - push 01
+Top-Kart.DllUnregisterServer+C72B9 - E8 D204ECFF           - call Top-Kart.dll+7BB10
+Top-Kart.DllUnregisterServer+C72BE - 89 45 E0              - mov [ebp-20],eax
+Top-Kart.DllUnregisterServer+C72C1 - 8B 4D FC              - mov ecx,[ebp-04]
+Top-Kart.DllUnregisterServer+C72C4 - 51                    - push ecx
+Top-Kart.DllUnregisterServer+C72C5 - 8B 4D E4              - mov ecx,[ebp-1C]
+Top-Kart.DllUnregisterServer+C72C8 - E8 B386FBFF           - call Top-Kart.DllUnregisterServer+7F980
+Top-Kart.DllUnregisterServer+C72CD - 8D 55 E8              - lea edx,[ebp-18]
+Top-Kart.DllUnregisterServer+C72D0 - 52                    - push edx
+Top-Kart.DllUnregisterServer+C72D1 - 8B 4D E4              - mov ecx,[ebp-1C]
+Top-Kart.DllUnregisterServer+C72D4 - 83 C1 08              - add ecx,08
+Top-Kart.DllUnregisterServer+C72D7 - E8 C43CEFFF           - call Top-Kart.dll+AF320
+Top-Kart.DllUnregisterServer+C72DC - 8D 4D E8              - lea ecx,[ebp-18]
+Top-Kart.DllUnregisterServer+C72DF - E8 5CB4E7FF           - call Top-Kart.dll+36AC0
+Top-Kart.DllUnregisterServer+C72E4 - 8B 45 08              - mov eax,[ebp+08]
+Top-Kart.DllUnregisterServer+C72E7 - 8B 4D 0C              - mov ecx,[ebp+0C]
+Top-Kart.DllUnregisterServer+C72EA - 89 08                 - mov [eax],ecx
+Top-Kart.DllUnregisterServer+C72EC - 8B 55 10              - mov edx,[ebp+10]
+Top-Kart.DllUnregisterServer+C72EF - 89 50 04              - mov [eax+04],edx
+Top-Kart.DllUnregisterServer+C72F2 - 8B 45 08              - mov eax,[ebp+08]
+Top-Kart.DllUnregisterServer+C72F5 - 5E                    - pop esi
+Top-Kart.DllUnregisterServer+C72F6 - 8B E5                 - mov esp,ebp
+Top-Kart.DllUnregisterServer+C72F8 - 5D                    - pop ebp
+Top-Kart.DllUnregisterServer+C72F9 - C2 0C00               - ret 000C
+
+89 45 FC 8B 4D E4 8B 55 FC 3B 51 04
+

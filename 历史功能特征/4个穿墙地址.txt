@@ -1,0 +1,589 @@
+1.
+Top-Kart.luaopen_API+A59470 - 83 EC 2C              - sub esp,2C
+Top-Kart.luaopen_API+A59473 - 8B 4C 24 34           - mov ecx,[esp+34]
+Top-Kart.luaopen_API+A59477 - 56                    - push esi
+Top-Kart.luaopen_API+A59478 - 57                    - push edi
+Top-Kart.luaopen_API+A59479 - 8B 7C 24 44           - mov edi,[esp+44]
+Top-Kart.luaopen_API+A5947D - D9 47 04              - fld dword ptr [edi+04]
+Top-Kart.luaopen_API+A59480 - 8D 57 04              - lea edx,[edi+04]
+Top-Kart.luaopen_API+A59483 - D8 61 04              - fsub dword ptr [ecx+04]
+Top-Kart.luaopen_API+A59486 - 8D 71 04              - lea esi,[ecx+04]
+Top-Kart.luaopen_API+A59489 - D9 5C 24 10           - fstp dword ptr [esp+10]
+Top-Kart.luaopen_API+A5948D - D9 42 04              - fld dword ptr [edx+04]
+Top-Kart.luaopen_API+A59490 - D8 66 04              - fsub dword ptr [esi+04]
+Top-Kart.luaopen_API+A59493 - D9 5C 24 14           - fstp dword ptr [esp+14]
+Top-Kart.luaopen_API+A59497 - D9 42 08              - fld dword ptr [edx+08]
+Top-Kart.luaopen_API+A5949A - D8 66 08              - fsub dword ptr [esi+08]
+Top-Kart.luaopen_API+A5949D - D9 5C 24 18           - fstp dword ptr [esp+18]   // fld dword ptr [esi+18]  nop
+Top-Kart.luaopen_API+A594A1 - D9 41 14              - fld dword ptr [ecx+14]
+Top-Kart.luaopen_API+A594A4 - D9 44 24 14           - fld dword ptr [esp+14]
+Top-Kart.luaopen_API+A594A8 - D9C0                  - fld st(0)
+Top-Kart.luaopen_API+A594AA - DECA                  - fmulp st(2),st(0)
+Top-Kart.luaopen_API+A594AC - D9 41 10              - fld dword ptr [ecx+10]
+Top-Kart.luaopen_API+A594AF - D9 44 24 10           - fld dword ptr [esp+10]
+Top-Kart.luaopen_API+A594B3 - D9C0                  - fld st(0)
+Top-Kart.luaopen_API+A594B5 - DECA                  - fmulp st(2),st(0)
+Top-Kart.luaopen_API+A594B7 - D9CB                  - fxch st(3)
+Top-Kart.luaopen_API+A594B9 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A594BB - D9 41 18              - fld dword ptr [ecx+18]
+Top-Kart.luaopen_API+A594BE - D9 44 24 18           - fld dword ptr [esp+18]
+Top-Kart.luaopen_API+A594C2 - D9C0                  - fld st(0)
+Top-Kart.luaopen_API+A594C4 - DECA                  - fmulp st(2),st(0)
+Top-Kart.luaopen_API+A594C6 - D9CA                  - fxch st(2)
+Top-Kart.luaopen_API+A594C8 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A594CA - D9 5C 24 3C           - fstp dword ptr [esp+3C]
+Top-Kart.luaopen_API+A594CE - D9 44 24 3C           - fld dword ptr [esp+3C]
+Top-Kart.luaopen_API+A594D2 - D9E1                  - fabs 
+Top-Kart.luaopen_API+A594D4 - D9 5C 24 3C           - fstp dword ptr [esp+3C]
+Top-Kart.luaopen_API+A594D8 - D9 44 24 3C           - fld dword ptr [esp+3C]
+Top-Kart.luaopen_API+A594DC - D9 41 34              - fld dword ptr [ecx+34]
+Top-Kart.luaopen_API+A594DF - DED9                  - fcompp 
+Top-Kart.luaopen_API+A594E1 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A594E3 - F6 C4 01              - test ah,01
+Top-Kart.luaopen_API+A594E6 - 75 6A                 - jne Top-Kart.luaopen_API+A59552
+Top-Kart.luaopen_API+A594E8 - D9 41 20              - fld dword ptr [ecx+20]
+Top-Kart.luaopen_API+A594EB - D8CA                  - fmul st(0),st(2)
+Top-Kart.luaopen_API+A594ED - D9 41 1C              - fld dword ptr [ecx+1C]
+Top-Kart.luaopen_API+A594F0 - D8CC                  - fmul st(0),st(4)
+Top-Kart.luaopen_API+A594F2 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A594F4 - D9 41 24              - fld dword ptr [ecx+24]
+Top-Kart.luaopen_API+A594F7 - D8CA                  - fmul st(0),st(2)
+Top-Kart.luaopen_API+A594F9 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A594FB - D9 5C 24 3C           - fstp dword ptr [esp+3C]
+Top-Kart.luaopen_API+A594FF - D9 44 24 3C           - fld dword ptr [esp+3C]
+Top-Kart.luaopen_API+A59503 - D9E1                  - fabs 
+Top-Kart.luaopen_API+A59505 - D9 5C 24 3C           - fstp dword ptr [esp+3C]
+Top-Kart.luaopen_API+A59509 - D9 44 24 3C           - fld dword ptr [esp+3C]
+Top-Kart.luaopen_API+A5950D - D9 41 38              - fld dword ptr [ecx+38]
+Top-Kart.luaopen_API+A59510 - DED9                  - fcompp 
+Top-Kart.luaopen_API+A59512 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A59514 - F6 C4 01              - test ah,01
+Top-Kart.luaopen_API+A59517 - 75 39                 - jne Top-Kart.luaopen_API+A59552
+Top-Kart.luaopen_API+A59519 - D9 41 2C              - fld dword ptr [ecx+2C]
+Top-Kart.luaopen_API+A5951C - DECA                  - fmulp st(2),st(0)
+Top-Kart.luaopen_API+A5951E - D9 41 28              - fld dword ptr [ecx+28]
+Top-Kart.luaopen_API+A59521 - DECB                  - fmulp st(3),st(0)
+Top-Kart.luaopen_API+A59523 - D9C9                  - fxch st(1)
+Top-Kart.luaopen_API+A59525 - DEC2                  - faddp st(2),st(0)
+Top-Kart.luaopen_API+A59527 - D8 49 30              - fmul dword ptr [ecx+30]
+Top-Kart.luaopen_API+A5952A - DEC1                  - faddp 
+Top-Kart.luaopen_API+A5952C - D9 5C 24 3C           - fstp dword ptr [esp+3C]
+Top-Kart.luaopen_API+A59530 - D9 44 24 3C           - fld dword ptr [esp+3C]
+Top-Kart.luaopen_API+A59534 - D9E1                  - fabs 
+Top-Kart.luaopen_API+A59536 - D9 5C 24 3C           - fstp dword ptr [esp+3C]
+Top-Kart.luaopen_API+A5953A - D9 44 24 3C           - fld dword ptr [esp+3C]
+Top-Kart.luaopen_API+A5953E - D9 41 3C              - fld dword ptr [ecx+3C]
+Top-Kart.luaopen_API+A59541 - DED9                  - fcompp 
+Top-Kart.luaopen_API+A59543 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A59545 - F6 C4 01              - test ah,01
+Top-Kart.luaopen_API+A59548 - 75 0E                 - jne Top-Kart.luaopen_API+A59558
+Top-Kart.luaopen_API+A5954A - 5F                    - pop edi
+Top-Kart.luaopen_API+A5954B - B0 01                 - mov al,01
+Top-Kart.luaopen_API+A5954D - 5E                    - pop esi
+Top-Kart.luaopen_API+A5954E - 83 C4 2C              - add esp,2C
+Top-Kart.luaopen_API+A59551 - C3                    - ret 
+Top-Kart.luaopen_API+A59552 - DDD9                  - fstp st(1)
+Top-Kart.luaopen_API+A59554 - DDD9                  - fstp st(1)
+Top-Kart.luaopen_API+A59556 - DDD8                  - fstp st(0)
+Top-Kart.luaopen_API+A59558 - 8B 44 24 48           - mov eax,[esp+48]
+Top-Kart.luaopen_API+A5955C - 8B 4C 24 40           - mov ecx,[esp+40]
+Top-Kart.luaopen_API+A59560 - D9 00                 - fld dword ptr [eax]
+Top-Kart.luaopen_API+A59562 - D8 21                 - fsub dword ptr [ecx]
+Top-Kart.luaopen_API+A59564 - D9 5C 24 10           - fstp dword ptr [esp+10]
+Top-Kart.luaopen_API+A59568 - D9 40 04              - fld dword ptr [eax+04]
+Top-Kart.luaopen_API+A5956B - D8 61 04              - fsub dword ptr [ecx+04]
+Top-Kart.luaopen_API+A5956E - D9 5C 24 14           - fstp dword ptr [esp+14]
+Top-Kart.luaopen_API+A59572 - D9 40 08              - fld dword ptr [eax+08]
+Top-Kart.luaopen_API+A59575 - D8 61 08              - fsub dword ptr [ecx+08]
+Top-Kart.luaopen_API+A59578 - D9 5C 24 18           - fstp dword ptr [esp+18]
+Top-Kart.luaopen_API+A5957C - D9 44 24 10           - fld dword ptr [esp+10]
+Top-Kart.luaopen_API+A59580 - D9C0                  - fld st(0)
+Top-Kart.luaopen_API+A59582 - D9 05 8C2BF809        - fld dword ptr [Top-Kart.dll+1B62B8C]
+Top-Kart.luaopen_API+A59588 - DAE9                  - fucompp 
+Top-Kart.luaopen_API+A5958A - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A5958C - D9 44 24 18           - fld dword ptr [esp+18]
+Top-Kart.luaopen_API+A59590 - F6 C4 44              - test ah,44
+Top-Kart.luaopen_API+A59593 - D9 44 24 14           - fld dword ptr [esp+14]
+Top-Kart.luaopen_API+A59597 - 7A 22                 - jp Top-Kart.luaopen_API+A595BB
+Top-Kart.luaopen_API+A59599 - D9C0                  - fld st(0)
+Top-Kart.luaopen_API+A5959B - D9 05 902BF809        - fld dword ptr [Top-Kart.dll+1B62B90]
+Top-Kart.luaopen_API+A595A1 - DAE9                  - fucompp 
+Top-Kart.luaopen_API+A595A3 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A595A5 - F6 C4 44              - test ah,44
+Top-Kart.luaopen_API+A595A8 - 7A 11                 - jp Top-Kart.luaopen_API+A595BB
+Top-Kart.luaopen_API+A595AA - D9C1                  - fld st(1)
+Top-Kart.luaopen_API+A595AC - D9 05 942BF809        - fld dword ptr [Top-Kart.dll+1B62B94]
+Top-Kart.luaopen_API+A595B2 - DAE9                  - fucompp 
+Top-Kart.luaopen_API+A595B4 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A595B6 - F6 C4 44              - test ah,44
+Top-Kart.luaopen_API+A595B9 - 7B 6A                 - jnp Top-Kart.luaopen_API+A59625
+Top-Kart.luaopen_API+A595BB - D9 44 24 38           - fld dword ptr [esp+38]
+Top-Kart.luaopen_API+A595BF - 8B 02                 - mov eax,[edx]
+Top-Kart.luaopen_API+A595C1 - 8B 4A 04              - mov ecx,[edx+04]
+Top-Kart.luaopen_API+A595C4 - D9C0                  - fld st(0)
+Top-Kart.luaopen_API+A595C6 - 8B 52 08              - mov edx,[edx+08]
+Top-Kart.luaopen_API+A595C9 - DECC                  - fmulp st(4),st(0)
+Top-Kart.luaopen_API+A595CB - D9CB                  - fxch st(3)
+Top-Kart.luaopen_API+A595CD - 89 44 24 1C           - mov [esp+1C],eax
+Top-Kart.luaopen_API+A595D1 - 89 4C 24 20           - mov [esp+20],ecx
+Top-Kart.luaopen_API+A595D5 - D9 5C 24 10           - fstp dword ptr [esp+10]
+Top-Kart.luaopen_API+A595D9 - 8B 44 24 10           - mov eax,[esp+10]
+Top-Kart.luaopen_API+A595DD - 89 44 24 28           - mov [esp+28],eax
+Top-Kart.luaopen_API+A595E1 - D8CA                  - fmul st(0),st(2)
+Top-Kart.luaopen_API+A595E3 - 89 54 24 24           - mov [esp+24],edx
+Top-Kart.luaopen_API+A595E7 - 8D 44 24 3C           - lea eax,[esp+3C]
+Top-Kart.luaopen_API+A595EB - 50                    - push eax
+Top-Kart.luaopen_API+A595EC - D9 5C 24 18           - fstp dword ptr [esp+18]
+Top-Kart.luaopen_API+A595F0 - 8B 4C 24 18           - mov ecx,[esp+18]
+Top-Kart.luaopen_API+A595F4 - 89 4C 24 30           - mov [esp+30],ecx
+Top-Kart.luaopen_API+A595F8 - DEC9                  - fmulp st(1),st(0)
+Top-Kart.luaopen_API+A595FA - 8D 4C 24 48           - lea ecx,[esp+48]
+Top-Kart.luaopen_API+A595FE - 51                    - push ecx
+Top-Kart.luaopen_API+A595FF - 8D 44 24 14           - lea eax,[esp+14]
+Top-Kart.luaopen_API+A59603 - D9 5C 24 20           - fstp dword ptr [esp+20]
+Top-Kart.luaopen_API+A59607 - 8B 54 24 20           - mov edx,[esp+20]
+Top-Kart.luaopen_API+A5960B - 89 54 24 38           - mov [esp+38],edx
+Top-Kart.luaopen_API+A5960F - 8D 54 24 10           - lea edx,[esp+10]
+Top-Kart.luaopen_API+A59613 - 52                    - push edx
+Top-Kart.luaopen_API+A59614 - 50                    - push eax
+Top-Kart.luaopen_API+A59615 - 8D 4C 24 2C           - lea ecx,[esp+2C]
+Top-Kart.luaopen_API+A59619 - 56                    - push esi
+Top-Kart.luaopen_API+A5961A - 51                    - push ecx
+Top-Kart.luaopen_API+A5961B - E8 50B80000           - call Top-Kart.luaopen_API+A64E70
+Top-Kart.luaopen_API+A59620 - 83 C4 18              - add esp,18
+Top-Kart.luaopen_API+A59623 - EB 1F                 - jmp Top-Kart.luaopen_API+A59644
+Top-Kart.luaopen_API+A59625 - 8D 44 24 3C           - lea eax,[esp+3C]
+Top-Kart.luaopen_API+A59629 - DDDA                  - fstp st(2)
+Top-Kart.luaopen_API+A5962B - 50                    - push eax
+Top-Kart.luaopen_API+A5962C - DDD8                  - fstp st(0)
+Top-Kart.luaopen_API+A5962E - 8D 4C 24 48           - lea ecx,[esp+48]
+Top-Kart.luaopen_API+A59632 - DDD8                  - fstp st(0)
+Top-Kart.luaopen_API+A59634 - 51                    - push ecx
+Top-Kart.luaopen_API+A59635 - 8D 44 24 10           - lea eax,[esp+10]
+Top-Kart.luaopen_API+A59639 - 50                    - push eax
+Top-Kart.luaopen_API+A5963A - 56                    - push esi
+Top-Kart.luaopen_API+A5963B - 52                    - push edx
+Top-Kart.luaopen_API+A5963C - E8 1FAA0000           - call Top-Kart.luaopen_API+A64060
+Top-Kart.luaopen_API+A59641 - 83 C4 14              - add esp,14
+Top-Kart.luaopen_API+A59644 - D9 5C 24 3C           - fstp dword ptr [esp+3C]
+Top-Kart.luaopen_API+A59648 - D9 47 10              - fld dword ptr [edi+10]
+Top-Kart.luaopen_API+A5964B - D9 44 24 3C           - fld dword ptr [esp+3C]
+Top-Kart.luaopen_API+A5964F - D9C1                  - fld st(1)
+Top-Kart.luaopen_API+A59651 - DECA                  - fmulp st(2),st(0)
+Top-Kart.luaopen_API+A59653 - DED9                  - fcompp 
+Top-Kart.luaopen_API+A59655 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A59657 - F6 C4 41              - test ah,41
+Top-Kart.luaopen_API+A5965A - 7A 0B                 - jp Top-Kart.luaopen_API+A59667
+Top-Kart.luaopen_API+A5965C - 5F                    - pop edi
+Top-Kart.luaopen_API+A5965D - B8 01000000           - mov eax,00000001
+Top-Kart.luaopen_API+A59662 - 5E                    - pop esi
+Top-Kart.luaopen_API+A59663 - 83 C4 2C              - add esp,2C
+Top-Kart.luaopen_API+A59666 - C3                    - ret 
+Top-Kart.luaopen_API+A59667 - 5F                    - pop edi
+Top-Kart.luaopen_API+A59668 - 33 C0                 - xor eax,eax
+Top-Kart.luaopen_API+A5966A - 5E                    - pop esi
+Top-Kart.luaopen_API+A5966B - 83 C4 2C              - add esp,2C
+Top-Kart.luaopen_API+A5966E - C3                    - ret 
+
+83 EC 2C              - sub esp,2C
+8B 4C 24 34           - mov ecx,[esp+34]
+56                    - push esi
+57                    - push edi
+8B 7C 24 44           - mov edi,[esp+44]
+D9 47 04              - fld dword ptr [edi+04]
+8D 57 04              - lea edx,[edi+04]
+D8 61 04              - fsub dword ptr [ecx+04]
+8D 71 04              - lea esi,[ecx+04]
+D9 5C 24 10           - fstp dword ptr [esp+10]
+D9 42 04              - fld dword ptr [edx+04]
+D8 66 04              - fsub dword ptr [esi+04]
+D9 5C 24 14           - fstp dword ptr [esp+14]
+D9 42 08              - fld dword ptr [edx+08]
+D8 66 08              - fsub dword ptr [esi+08]
+D9 5C 24 18           - fstp dword ptr [esp+18]
+D9 41 14              - fld dword ptr [ecx+14]
+D9 44 24 14           - fld dword ptr [esp+14]
+D9C0                  - fld st(0)
+DECA                  - fmulp st(2),st(0)
+D9 41 10              - fld dword ptr [ecx+10]
+D9 44 24 10           - fld dword ptr [esp+10]
+D9C0                  - fld st(0)
+DECA                  - fmulp st(2),st(0)
+D9CB                  - fxch st(3)
+DEC1                  - faddp 
+D9 41 18              - fld dword ptr [ecx+18]
+D9 44 24 18           - fld dword ptr [esp+18]
+D9C0                  - fld st(0)
+DECA                  - fmulp st(2),st(0)
+D9CA                  - fxch st(2)
+DEC1                  - faddp 
+D9 5C 24 3C           - fstp dword ptr [esp+3C]
+D9 44 24 3C           - fld dword ptr [esp+3C]
+D9E1                  - fabs 
+D9 5C 24 3C           - fstp dword ptr [esp+3C]
+D9 44 24 3C           - fld dword ptr [esp+3C]
+D9 41 34              - fld dword ptr [ecx+34]
+DED9                  - fcompp 
+DFE0                  - fnstsw ax
+F6 C4 01              - test ah,01
+75 6A                 - jne Top-Kart.luaopen_API+A59552
+D9 41 20              - fld dword ptr [ecx+20]
+D8CA                  - fmul st(0),st(2)
+D9 41 1C              - fld dword ptr [ecx+1C]
+D8CC                  - fmul st(0),st(4)
+DEC1                  - faddp 
+D9 41 24              - fld dword ptr [ecx+24]
+D8CA                  - fmul st(0),st(2)
+DEC1                  - faddp 
+D9 5C 24 3C           - fstp dword ptr [esp+3C]
+D9 44 24 3C           - fld dword ptr [esp+3C]
+D9E1                  - fabs 
+D9 5C 24 3C           - fstp dword ptr [esp+3C]
+D9 44 24 3C           - fld dword ptr [esp+3C]
+D9 41 38              - fld dword ptr [ecx+38]
+DED9                  - fcompp 
+DFE0                  - fnstsw ax
+F6 C4 01              - test ah,01
+75 39                 - jne Top-Kart.luaopen_API+A59552
+D9 41 2C              - fld dword ptr [ecx+2C]
+DECA                  - fmulp st(2),st(0)
+D9 41 28              - fld dword ptr [ecx+28]
+DECB                  - fmulp st(3),st(0)
+D9C9                  - fxch st(1)
+DEC2                  - faddp st(2),st(0)
+D8 49 30              - fmul dword ptr [ecx+30]
+DEC1                  - faddp 
+D9 5C 24 3C           - fstp dword ptr [esp+3C]
+D9 44 24 3C           - fld dword ptr [esp+3C]
+D9E1                  - fabs 
+D9 5C 24 3C           - fstp dword ptr [esp+3C]
+D9 44 24 3C           - fld dword ptr [esp+3C]
+D9 41 3C              - fld dword ptr [ecx+3C]
+DED9                  - fcompp 
+DFE0                  - fnstsw ax
+F6 C4 01              - test ah,01
+75 0E                 - jne Top-Kart.luaopen_API+A59558
+5F                    - pop edi
+B0 01                 - mov al,01
+5E                    - pop esi
+83 C4 2C              - add esp,2C
+C3                    - ret 
+DDD9                  - fstp st(1)
+DDD9                  - fstp st(1)
+DDD8                  - fstp st(0)
+8B 44 24 48           - mov eax,[esp+48]
+8B 4C 24 40           - mov ecx,[esp+40]
+D9 00                 - fld dword ptr [eax]
+D8 21                 - fsub dword ptr [ecx]
+D9 5C 24 10           - fstp dword ptr [esp+10]
+D9 40 04              - fld dword ptr [eax+04]
+D8 61 04              - fsub dword ptr [ecx+04]
+D9 5C 24 14           - fstp dword ptr [esp+14]
+D9 40 08              - fld dword ptr [eax+08]
+D8 61 08              - fsub dword ptr [ecx+08]
+D9 5C 24 18           - fstp dword ptr [esp+18]
+D9 44 24 10           - fld dword ptr [esp+10]
+D9C0                  - fld st(0)
+D9 05 8C2BF809        - fld dword ptr [Top-Kart.dll+1B62B8C]
+DAE9                  - fucompp 
+DFE0                  - fnstsw ax
+D9 44 24 18           - fld dword ptr [esp+18]
+F6 C4 44              - test ah,44
+D9 44 24 14           - fld dword ptr [esp+14]
+7A 22                 - jp Top-Kart.luaopen_API+A595BB
+D9C0                  - fld st(0)
+D9 05 902BF809        - fld dword ptr [Top-Kart.dll+1B62B90]
+DAE9                  - fucompp 
+DFE0                  - fnstsw ax
+F6 C4 44              - test ah,44
+7A 11                 - jp Top-Kart.luaopen_API+A595BB
+D9C1                  - fld st(1)
+D9 05 942BF809        - fld dword ptr [Top-Kart.dll+1B62B94]
+DAE9                  - fucompp 
+DFE0                  - fnstsw ax
+F6 C4 44              - test ah,44
+7B 6A                 - jnp Top-Kart.luaopen_API+A59625
+D9 44 24 38           - fld dword ptr [esp+38]
+8B 02                 - mov eax,[edx]
+8B 4A 04              - mov ecx,[edx+04]
+D9C0                  - fld st(0)
+8B 52 08              - mov edx,[edx+08]
+DECC                  - fmulp st(4),st(0)
+D9CB                  - fxch st(3)
+89 44 24 1C           - mov [esp+1C],eax
+89 4C 24 20           - mov [esp+20],ecx
+D9 5C 24 10           - fstp dword ptr [esp+10]
+8B 44 24 10           - mov eax,[esp+10]
+89 44 24 28           - mov [esp+28],eax
+D8CA                  - fmul st(0),st(2)
+89 54 24 24           - mov [esp+24],edx
+8D 44 24 3C           - lea eax,[esp+3C]
+50                    - push eax
+D9 5C 24 18           - fstp dword ptr [esp+18]
+8B 4C 24 18           - mov ecx,[esp+18]
+89 4C 24 30           - mov [esp+30],ecx
+DEC9                  - fmulp st(1),st(0)
+8D 4C 24 48           - lea ecx,[esp+48]
+51                    - push ecx
+8D 44 24 14           - lea eax,[esp+14]
+D9 5C 24 20           - fstp dword ptr [esp+20]
+8B 54 24 20           - mov edx,[esp+20]
+89 54 24 38           - mov [esp+38],edx
+8D 54 24 10           - lea edx,[esp+10]
+52                    - push edx
+50                    - push eax
+8D 4C 24 2C           - lea ecx,[esp+2C]
+56                    - push esi
+51                    - push ecx
+E8 50B80000           - call Top-Kart.luaopen_API+A64E70
+83 C4 18              - add esp,18
+EB 1F                 - jmp Top-Kart.luaopen_API+A59644
+8D 44 24 3C           - lea eax,[esp+3C]
+DDDA                  - fstp st(2)
+50                    - push eax
+DDD8                  - fstp st(0)
+8D 4C 24 48           - lea ecx,[esp+48]
+DDD8                  - fstp st(0)
+51                    - push ecx
+8D 44 24 10           - lea eax,[esp+10]
+50                    - push eax
+56                    - push esi
+52                    - push edx
+E8 1FAA0000           - call Top-Kart.luaopen_API+A64060
+83 C4 14              - add esp,14
+D9 5C 24 3C           - fstp dword ptr [esp+3C]
+D9 47 10              - fld dword ptr [edi+10]
+D9 44 24 3C           - fld dword ptr [esp+3C]
+D9C1                  - fld st(1)
+DECA                  - fmulp st(2),st(0)
+DED9                  - fcompp 
+DFE0                  - fnstsw ax
+F6 C4 41              - test ah,41
+7A 0B                 - jp Top-Kart.luaopen_API+A59667
+5F                    - pop edi
+B8 01000000           - mov eax,00000001
+5E                    - pop esi
+83 C4 2C              - add esp,2C
+C3                    - ret 
+5F                    - pop edi
+33 C0                 - xor eax,eax
+5E                    - pop esi
+83 C4 2C              - add esp,2C
+C3                    - ret 
+
+D9 5C 24 18 D9 41 14 D9 44 24 14 D9 C0 DE CA D9 41 10 D9 44
+
+2.
+Top-Kart.luaopen_API+A55FF2 - 8B 44 24 30           - mov eax,[esp+30]
+Top-Kart.luaopen_API+A55FF6 - D9 44 24 5C           - fld dword ptr [esp+5C]
+Top-Kart.luaopen_API+A55FFA - D8 4A F8              - fmul dword ptr [edx-08]
+Top-Kart.luaopen_API+A55FFD - D9 44 24 60           - fld dword ptr [esp+60]
+Top-Kart.luaopen_API+A56001 - D8 4A FC              - fmul dword ptr [edx-04]
+Top-Kart.luaopen_API+A56004 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A56006 - D9 02                 - fld dword ptr [edx]
+Top-Kart.luaopen_API+A56008 - 8B 54 24 14           - mov edx,[esp+14]
+Top-Kart.luaopen_API+A5600C - D8 4C 24 64           - fmul dword ptr [esp+64]
+Top-Kart.luaopen_API+A56010 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A56012 - D9 5C 24 4C           - fstp dword ptr [esp+4C]
+Top-Kart.luaopen_API+A56016 - D9 44 24 4C           - fld dword ptr [esp+4C]
+Top-Kart.luaopen_API+A5601A - D9 14 10              - fst dword ptr [eax+edx]
+Top-Kart.luaopen_API+A5601D - 8B 54 24 2C           - mov edx,[esp+2C]
+Top-Kart.luaopen_API+A56021 - D9 44 24 20           - fld dword ptr [esp+20]
+Top-Kart.luaopen_API+A56025 - 8B 44 24 48           - mov eax,[esp+48]
+Top-Kart.luaopen_API+A56029 - D8 4A F8              - fmul dword ptr [edx-08]
+Top-Kart.luaopen_API+A5602C - D9C3                  - fld st(3)
+Top-Kart.luaopen_API+A5602E - D8 4A FC              - fmul dword ptr [edx-04]
+Top-Kart.luaopen_API+A56031 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A56033 - D9 02                 - fld dword ptr [edx]
+Top-Kart.luaopen_API+A56035 - D8 4C 24 28           - fmul dword ptr [esp+28]
+Top-Kart.luaopen_API+A56039 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A5603B - D9 5C 24 4C           - fstp dword ptr [esp+4C]
+Top-Kart.luaopen_API+A5603F - D9 44 24 4C           - fld dword ptr [esp+4C]
+Top-Kart.luaopen_API+A56043 - D9 50 FC              - fst dword ptr [eax-04]
+Top-Kart.luaopen_API+A56046 - D9 44 24 50           - fld dword ptr [esp+50]
+Top-Kart.luaopen_API+A5604A - D8 4A F8              - fmul dword ptr [edx-08]
+Top-Kart.luaopen_API+A5604D - D9 44 24 54           - fld dword ptr [esp+54]
+Top-Kart.luaopen_API+A56051 - D8 4A FC              - fmul dword ptr [edx-04]
+Top-Kart.luaopen_API+A56054 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A56056 - D9 02                 - fld dword ptr [edx]
+Top-Kart.luaopen_API+A56058 - D8 4C 24 58           - fmul dword ptr [esp+58]
+Top-Kart.luaopen_API+A5605C - DEC1                  - faddp 
+Top-Kart.luaopen_API+A5605E - D9 5C 24 4C           - fstp dword ptr [esp+4C]
+Top-Kart.luaopen_API+A56062 - D9 44 24 4C           - fld dword ptr [esp+4C]
+Top-Kart.luaopen_API+A56066 - D9 10                 - fst dword ptr [eax]
+Top-Kart.luaopen_API+A56068 - 8B 44 24 14           - mov eax,[esp+14]
+Top-Kart.luaopen_API+A5606C - D9 84 24 80000000     - fld dword ptr [esp+00000080]
+Top-Kart.luaopen_API+A56073 - D8 4A F8              - fmul dword ptr [edx-08]
+Top-Kart.luaopen_API+A56076 - D9 84 24 84000000     - fld dword ptr [esp+00000084]
+Top-Kart.luaopen_API+A5607D - D8 4A FC              - fmul dword ptr [edx-04]
+Top-Kart.luaopen_API+A56080 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A56082 - D9 02                 - fld dword ptr [edx]
+Top-Kart.luaopen_API+A56084 - D8 8C 24 88000000     - fmul dword ptr [esp+00000088]
+Top-Kart.luaopen_API+A5608B - DEC1                  - faddp 
+Top-Kart.luaopen_API+A5608D - D9 5C 24 18           - fstp dword ptr [esp+18]  //fld dword ptr [esi+18] nop
+Top-Kart.luaopen_API+A56091 - D9 00                 - fld dword ptr [eax]
+Top-Kart.luaopen_API+A56093 - D8DB                  - fcomp st(0),st(3)
+Top-Kart.luaopen_API+A56095 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A56097 - F6 C4 05              - test ah,05
+
+8B 44 24 30           - mov eax,[esp+30]
+D9 44 24 5C           - fld dword ptr [esp+5C]
+D8 4A F8              - fmul dword ptr [edx-08]
+D9 44 24 60           - fld dword ptr [esp+60]
+D8 4A FC              - fmul dword ptr [edx-04]
+DEC1                  - faddp 
+D9 02                 - fld dword ptr [edx]
+8B 54 24 14           - mov edx,[esp+14]
+D8 4C 24 64           - fmul dword ptr [esp+64]
+DEC1                  - faddp 
+D9 5C 24 4C           - fstp dword ptr [esp+4C]
+D9 44 24 4C           - fld dword ptr [esp+4C]
+D9 14 10              - fst dword ptr [eax+edx]
+8B 54 24 2C           - mov edx,[esp+2C]
+D9 44 24 20           - fld dword ptr [esp+20]
+8B 44 24 48           - mov eax,[esp+48]
+D8 4A F8              - fmul dword ptr [edx-08]
+D9C3                  - fld st(3)
+D8 4A FC              - fmul dword ptr [edx-04]
+DEC1                  - faddp 
+D9 02                 - fld dword ptr [edx]
+D8 4C 24 28           - fmul dword ptr [esp+28]
+DEC1                  - faddp 
+D9 5C 24 4C           - fstp dword ptr [esp+4C]
+D9 44 24 4C           - fld dword ptr [esp+4C]
+D9 50 FC              - fst dword ptr [eax-04]
+D9 44 24 50           - fld dword ptr [esp+50]
+D8 4A F8              - fmul dword ptr [edx-08]
+D9 44 24 54           - fld dword ptr [esp+54]
+D8 4A FC              - fmul dword ptr [edx-04]
+DEC1                  - faddp 
+D9 02                 - fld dword ptr [edx]
+D8 4C 24 58           - fmul dword ptr [esp+58]
+DEC1                  - faddp 
+D9 5C 24 4C           - fstp dword ptr [esp+4C]
+D9 44 24 4C           - fld dword ptr [esp+4C]
+D9 10                 - fst dword ptr [eax]
+8B 44 24 14           - mov eax,[esp+14]
+D9 84 24 80000000     - fld dword ptr [esp+00000080]
+D8 4A F8              - fmul dword ptr [edx-08]
+D9 84 24 84000000     - fld dword ptr [esp+00000084]
+D8 4A FC              - fmul dword ptr [edx-04]
+DEC1                  - faddp 
+D9 02                 - fld dword ptr [edx]
+D8 8C 24 88000000     - fmul dword ptr [esp+00000088]
+DEC1                  - faddp 
+D9 46 18              - fld dword ptr [esi+18]
+90                    - nop 
+D9 00                 - fld dword ptr [eax]
+D8DB                  - fcomp st(0),st(3)
+DFE0                  - fnstsw ax
+F6 C4 05              - test ah,05
+
+D9 5C 24 18 D9 00 D8 DB DF E0 F6 C4 05
+
+3.
+Top-Kart.luaopen_API+A5954A - 5F                    - pop edi
+Top-Kart.luaopen_API+A5954B - B0 01                 - mov al,01
+Top-Kart.luaopen_API+A5954D - 5E                    - pop esi
+Top-Kart.luaopen_API+A5954E - 83 C4 2C              - add esp,2C
+Top-Kart.luaopen_API+A59551 - C3                    - ret 
+Top-Kart.luaopen_API+A59552 - DDD9                  - fstp st(1)
+Top-Kart.luaopen_API+A59554 - DDD9                  - fstp st(1)
+Top-Kart.luaopen_API+A59556 - DDD8                  - fstp st(0)
+Top-Kart.luaopen_API+A59558 - 8B 44 24 48           - mov eax,[esp+48]
+Top-Kart.luaopen_API+A5955C - 8B 4C 24 40           - mov ecx,[esp+40]
+Top-Kart.luaopen_API+A59560 - D9 00                 - fld dword ptr [eax]
+Top-Kart.luaopen_API+A59562 - D8 21                 - fsub dword ptr [ecx]
+Top-Kart.luaopen_API+A59564 - D9 5C 24 10           - fstp dword ptr [esp+10]
+Top-Kart.luaopen_API+A59568 - D9 40 04              - fld dword ptr [eax+04]
+Top-Kart.luaopen_API+A5956B - D8 61 04              - fsub dword ptr [ecx+04]
+Top-Kart.luaopen_API+A5956E - D9 5C 24 14           - fstp dword ptr [esp+14]
+Top-Kart.luaopen_API+A59572 - D9 40 08              - fld dword ptr [eax+08]
+Top-Kart.luaopen_API+A59575 - D8 61 08              - fsub dword ptr [ecx+08]
+Top-Kart.luaopen_API+A59578 - D9 5C 24 18           - fstp dword ptr [esp+18]  //fld dword ptr [esi+18]   nop
+Top-Kart.luaopen_API+A5957C - D9 44 24 10           - fld dword ptr [esp+10]
+Top-Kart.luaopen_API+A59580 - D9C0                  - fld st(0)
+
+5F                    - pop edi
+B0 01                 - mov al,01
+5E                    - pop esi
+83 C4 2C              - add esp,2C
+C3                    - ret 
+DDD9                  - fstp st(1)
+DDD9                  - fstp st(1)
+DDD8                  - fstp st(0)
+8B 44 24 48           - mov eax,[esp+48]
+8B 4C 24 40           - mov ecx,[esp+40]
+D9 00                 - fld dword ptr [eax]
+D8 21                 - fsub dword ptr [ecx]
+D9 5C 24 10           - fstp dword ptr [esp+10]
+D9 40 04              - fld dword ptr [eax+04]
+D8 61 04              - fsub dword ptr [ecx+04]
+D9 5C 24 14           - fstp dword ptr [esp+14]
+D9 40 08              - fld dword ptr [eax+08]
+D8 61 08              - fsub dword ptr [ecx+08]
+D9 5C 24 18           - fstp dword ptr [esp+18]
+D9 44 24 10           - fld dword ptr [esp+10]
+D9C0                  - fld st(0)
+
+
+D9 5C 24 18 D9 44 24 10 D9 C0    
+//相同段4个   辅助搜索前位置特征
+8B 44 24 48 8B 4C 24 40 D9 00 D8 21 D9 5C 24 10 D9 40 04 D8 61 04 D9 5C 24 14 D9 40 08 D8 61 08 D9 5C 24 18 D9 44 24 10 D9 C0
+
+
+
+4.
+Top-Kart.luaopen_API+A579AE - B9 0C000000           - mov ecx,0000000C
+Top-Kart.luaopen_API+A579B3 - D9 1E                 - fstp dword ptr [esi]
+Top-Kart.luaopen_API+A579B5 - 83 CF FF              - or edi,-01
+Top-Kart.luaopen_API+A579B8 - 8D 69 F5              - lea ebp,[ecx-0B]
+Top-Kart.luaopen_API+A579BB - 89 7C 24 14           - mov [esp+14],edi
+Top-Kart.luaopen_API+A579BF - D9EE                  - fldz 
+Top-Kart.luaopen_API+A579C1 - D9 44 24 48           - fld dword ptr [esp+48]
+Top-Kart.luaopen_API+A579C5 - D9CB                  - fxch st(3)
+Top-Kart.luaopen_API+A579C7 - D9CA                  - fxch st(2)
+Top-Kart.luaopen_API+A579C9 - DEE4                  - fsubrp st(4),st(0)
+Top-Kart.luaopen_API+A579CB - D9CB                  - fxch st(3)
+Top-Kart.luaopen_API+A579CD - D9 5C 24 4C           - fstp dword ptr [esp+4C]
+Top-Kart.luaopen_API+A579D1 - DEE1                  - fsubrp st(1),st(0)
+Top-Kart.luaopen_API+A579D3 - D9 5C 24 2C           - fstp dword ptr [esp+2C]
+Top-Kart.luaopen_API+A579D7 - D9 84 24 B8000000     - fld dword ptr [esp+000000B8]
+Top-Kart.luaopen_API+A579DE - D8 4A 04              - fmul dword ptr [edx+04]
+Top-Kart.luaopen_API+A579E1 - D9 02                 - fld dword ptr [edx]
+Top-Kart.luaopen_API+A579E3 - D8 4C 24 30           - fmul dword ptr [esp+30]
+Top-Kart.luaopen_API+A579E7 - DEC1                  - faddp 
+Top-Kart.luaopen_API+A579E9 - D9 5C 24 18           - fstp dword ptr [esp+18]  //fld dword ptr [esi+18]   nop
+Top-Kart.luaopen_API+A579ED - D9 44 24 4C           - fld dword ptr [esp+4C]
+Top-Kart.luaopen_API+A579F1 - D9 44 24 18           - fld dword ptr [esp+18]
+Top-Kart.luaopen_API+A579F5 - D8D1                  - fcom st(0),st(1)
+Top-Kart.luaopen_API+A579F7 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+A579F9 - F6 C4 05              - test ah,05
+
+B9 0C000000           - mov ecx,0000000C
+D9 1E                 - fstp dword ptr [esi]
+83 CF FF              - or edi,-01
+8D 69 F5              - lea ebp,[ecx-0B]
+89 7C 24 14           - mov [esp+14],edi
+D9EE                  - fldz 
+D9 44 24 48           - fld dword ptr [esp+48]
+D9CB                  - fxch st(3)
+D9CA                  - fxch st(2)
+DEE4                  - fsubrp st(4),st(0)
+D9CB                  - fxch st(3)
+D9 5C 24 4C           - fstp dword ptr [esp+4C]
+DEE1                  - fsubrp st(1),st(0)
+D9 5C 24 2C           - fstp dword ptr [esp+2C]
+D9 84 24 B8000000     - fld dword ptr [esp+000000B8]
+D8 4A 04              - fmul dword ptr [edx+04]
+D9 02                 - fld dword ptr [edx]
+D8 4C 24 30           - fmul dword ptr [esp+30]
+DEC1                  - faddp 
+D9 5C 24 18           - fstp dword ptr [esp+18]
+D9 44 24 4C           - fld dword ptr [esp+4C]
+D9 44 24 18           - fld dword ptr [esp+18]
+D8D1                  - fcom st(0),st(1)
+DFE0                  - fnstsw ax
+F6 C4 05              - test ah,05
+
+D9 5C 24 18 D9 44 24 4C D9 44 24 18 D8 D1 DF E0 F6 C4 05

@@ -1,0 +1,9 @@
+GameRpcs.dll+5ED30 - C3                    - ret 
+GameRpcs.dll+6C540 - C3                    - ret 
+GameRpcs.dll+94C33 - 90                    - nop 
+GameRpcs.dll+94C86 - 90                    - nop 
+GameRpcs.dll+94C8F - 90                    - nop 
+GameRpcs.dll+94CE6 - 90                    - nop 
+GameRpcs.dll+A3430 - C3                    - ret 
+
+

@@ -1,0 +1,52 @@
+Top-Kart.dll+1D22A31 - FE                    - db -02
+Top-Kart.dll+1D22A32 - 50                    - push eax   //push ecx
+Top-Kart.dll+1D22A33 - 8B 4D C8              - mov ecx,[ebp-38]
+Top-Kart.dll+1D22A36 - 81 C1 080F0000        - add ecx,00000F08
+Top-Kart.dll+1D22A3C - E8 306FFFFF           - call Top-Kart.dll+1D19971
+Top-Kart.dll+1D22A41 - 51                    - push ecx
+Top-Kart.dll+1D22A42 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.dll+1D22A45 - 8D 55 D8              - lea edx,[ebp-28]
+Top-Kart.dll+1D22A48 - 52                    - push edx
+Top-Kart.dll+1D22A49 - 8B 4D C8              - mov ecx,[ebp-38]
+Top-Kart.dll+1D22A4C - 9C                    - pushfd 
+Top-Kart.dll+1D22A4D - E8 01000000           - call Top-Kart.dll+1D22A53
+Top-Kart.dll+1D22A52 - 75 81                 - jne Top-Kart.dll+1D229D5
+Top-Kart.dll+1D22A54 - 04 24                 - add al,24
+Top-Kart.dll+1D22A56 - 18 45 00              - sbb [ebp+00],al
+Top-Kart.dll+1D22A59 - 00 C3                 - add bl,al
+Top-Kart.dll+1D22A5B - E8 8D642404           - call 0E1B8EED  [wow64._Wow64EmulateAtlThunk+196FC]
+Top-Kart.dll+1D22A60 - E8 7B992EFE           - call Top-Kart.dll+C3E0
+Top-Kart.dll+1D22A65 - 51                    - push ecx
+Top-Kart.dll+1D22A66 - 50                    - push eax
+Top-Kart.dll+1D22A67 - 8B 04 24              - mov eax,[esp]
+Top-Kart.dll+1D22A6A - 89 84 24 04000000     - mov [esp+00000004],eax
+Top-Kart.dll+1D22A71 - 58                    - pop eax
+Top-Kart.dll+1D22A72 - 59                    - pop ecx
+
+FE                    - db -02
+51                    - push eax
+8B 4D C8              - mov ecx,[ebp-38]
+81 C1 080F0000        - add ecx,00000F08
+E8 306FFFFF           - call Top-Kart.dll+1D19971
+51                    - push ecx
+D9 1C 24              - fstp dword ptr [esp]
+8D 55 D8              - lea edx,[ebp-28]
+52                    - push edx
+8B 4D C8              - mov ecx,[ebp-38]
+9C                    - pushfd 
+E8 01000000           - call Top-Kart.dll+1D22A53
+75 81                 - jne Top-Kart.dll+1D229D5
+04 24                 - add al,24
+18 45 00              - sbb [ebp+00],al
+00 C3                 - add bl,al
+E8 8D642404           - call 0E1B8EED : [wow64._Wow64EmulateAtlThunk+196FC]
+E8 7B992EFE           - call Top-Kart.dll+C3E0
+51                    - push ecx
+50                    - push eax
+8B 04 24              - mov eax,[esp]
+89 84 24 04000000     - mov [esp+00000004],eax
+58                    - pop eax
+59                    - pop ecx
+
+
+50 8B 4D C8 81 C1 080F0000 E8

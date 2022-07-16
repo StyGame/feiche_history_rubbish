@@ -1,0 +1,4 @@
+Top-Kart.dll+206331B - E8 40F477FE           - call Top-Kart.dll+7E2760 地心引力
+
+
+Top-Kart.dll+813FD0 - 55                    - push ebp 自动集气

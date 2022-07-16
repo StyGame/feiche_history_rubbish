@@ -1,0 +1,40 @@
+Top-Kart.luaopen_API+415D2C - 28 50 8B              - sub [eax-75],dl
+Top-Kart.luaopen_API+415D2F - 4D                    - dec ebp
+Top-Kart.luaopen_API+415D30 - 8C 51 D9              - mov [ecx-27],ss
+Top-Kart.luaopen_API+415D33 - 41                    - inc ecx
+Top-Kart.luaopen_API+415D34 - 24 D9                 - and al,-27
+Top-Kart.luaopen_API+415D36 - 1C 24                 - sbb al,24
+Top-Kart.luaopen_API+415D38 - 8D 55 C0              - lea edx,[ebp-40]
+Top-Kart.luaopen_API+415D3B - 52                    - push edx
+Top-Kart.luaopen_API+415D3C - E8 5FBE64FF           - call Top-Kart.dll+6DE0
+Top-Kart.luaopen_API+415D41 - 83 C4 0C              - add esp,0C
+Top-Kart.luaopen_API+415D44 - 8B 4D 8C              - mov ecx,[ebp-74]
+Top-Kart.luaopen_API+415D47 - 83 C1 40              - add ecx,40
+Top-Kart.luaopen_API+415D4A - 8B 10                 - mov edx,[eax]
+Top-Kart.luaopen_API+415D4C - 89 11                 - mov [ecx],edx
+Top-Kart.luaopen_API+415D4E - 8B 50 04              - mov edx,[eax+04]
+Top-Kart.luaopen_API+415D51 - 89 51 04              - mov [ecx+04],edx
+Top-Kart.luaopen_API+415D54 - 8B 40 08              - mov eax,[eax+08]
+Top-Kart.luaopen_API+415D57 - 89 41 08              - mov [ecx+08],eax
+
+
+sub [eax-75],dl
+dec ebp
+mov [ecx-27],ss
+inc ecx
+and al,-27    //xor al,-27
+1C 24                 - sbb al,24
+8D 55 C0              - lea edx,[ebp-40]
+52                    - push edx
+E8 5FBE64FF           - call Top-Kart.dll+6DE0
+83 C4 0C              - add esp,0C
+8B 4D 8C              - mov ecx,[ebp-74]
+83 C1 40              - add ecx,40
+8B 10                 - mov edx,[eax]
+89 11                 - mov [ecx],edx
+8B 50 04              - mov edx,[eax+04]
+89 51 04              - mov [ecx+04],edx
+8B 40 08              - mov eax,[eax+08]
+89 41 08              - mov [ecx+08],eax
+
+9字节内存数组  41 24 D9 1C 24 8D 55 C0 52

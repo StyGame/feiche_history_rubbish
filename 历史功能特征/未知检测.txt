@@ -1,0 +1,103 @@
+Network.dll+2B9D50 - 55                    - push ebp
+Network.dll+2B9D51 - 8B EC                 - mov ebp,esp
+Network.dll+2B9D53 - 83 EC 1C              - sub esp,1C { 28 }
+Network.dll+2B9D56 - 56                    - push esi
+Network.dll+2B9D57 - 89 4D E4              - mov [ebp-1C],ecx
+Network.dll+2B9D5A - C7 45 EC 00000000     - mov [ebp-14],00000000 { 0 }
+Network.dll+2B9D61 - C7 45 FC 00000000     - mov [ebp-04],00000000 { 0 }
+Network.dll+2B9D68 - C7 45 F4 00000000     - mov [ebp-0C],00000000 { 0 }
+Network.dll+2B9D6F - 66 C7 45 F8 0000      - mov word ptr [ebp-08],0000 { 0 }
+Network.dll+2B9D75 - 8B 45 0C              - mov eax,[ebp+0C]
+Network.dll+2B9D78 - 66 8B 08              - mov cx,[eax]
+Network.dll+2B9D7B - 66 89 4D E8           - mov [ebp-18],cx
+Network.dll+2B9D7F - 66 C7 45 F0 0000      - mov word ptr [ebp-10],0000 { 0 }
+Network.dll+2B9D85 - 83 7D 08 00           - cmp dword ptr [ebp+08],00 { 0 }
+Network.dll+2B9D89 - 75 08                 - jne Network.dll+2B9D93
+Network.dll+2B9D8B - 83 C8 FF              - or eax,-01 { 255 }
+Network.dll+2B9D8E - E9 F8000000           - jmp Network.dll+2B9E8B
+Network.dll+2B9D93 - 8B 55 0C              - mov edx,[ebp+0C]
+Network.dll+2B9D96 - 0FBF 32               - movsx esi,word ptr [edx]
+Network.dll+2B9D99 - 8B 4D E4              - mov ecx,[ebp-1C]
+Network.dll+2B9D9C - E8 3FFFFFFF           - call Network.dll+2B9CE0
+Network.dll+2B9DA1 - 3B F0                 - cmp esi,eax
+Network.dll+2B9DA3 - 7D 08                 - jnl Network.dll+2B9DAD
+Network.dll+2B9DA5 - 83 C8 FF              - or eax,-01 { 255 }
+Network.dll+2B9DA8 - E9 DE000000           - jmp Network.dll+2B9E8B
+Network.dll+2B9DAD - 8B 45 08              - mov eax,[ebp+08]
+Network.dll+2B9DB0 - 89 45 FC              - mov [ebp-04],eax
+Network.dll+2B9DB3 - 8B 4D 0C              - mov ecx,[ebp+0C]
+Network.dll+2B9DB6 - 66 C7 01 0200         - mov word ptr [ecx],0002 { 2 }
+Network.dll+2B9DBB - 8B 55 0C              - mov edx,[ebp+0C]
+Network.dll+2B9DBE - 0FBF 02               - movsx eax,word ptr [edx]
+Network.dll+2B9DC1 - 03 45 FC              - add eax,[ebp-04]
+Network.dll+2B9DC4 - 89 45 FC              - mov [ebp-04],eax
+Network.dll+2B9DC7 - 8B 4D E4              - mov ecx,[ebp-1C]
+Network.dll+2B9DCA - 8B 11                 - mov edx,[ecx]
+Network.dll+2B9DCC - 52                    - push edx
+Network.dll+2B9DCD - 8D 45 FC              - lea eax,[ebp-04]
+Network.dll+2B9DD0 - 50                    - push eax
+Network.dll+2B9DD1 - E8 8A27E1FF           - call Network.dll+CC560  ---------------------------------------------
+Network.dll+2B9DD6 - 83 C4 08              - add esp,08 { 8 }
+Network.dll+2B9DD9 - 66 89 45 F8           - mov [ebp-08],ax
+Network.dll+2B9DDD - 0FBF 4D F8            - movsx ecx,word ptr [ebp-08]
+Network.dll+2B9DE1 - 8B 55 0C              - mov edx,[ebp+0C]
+Network.dll+2B9DE4 - 0FBF 02               - movsx eax,word ptr [edx]
+Network.dll+2B9DE7 - 03 C1                 - add eax,ecx
+Network.dll+2B9DE9 - 8B 4D 0C              - mov ecx,[ebp+0C]
+Network.dll+2B9DEC - 66 89 01              - mov [ecx],ax
+Network.dll+2B9DEF - 8B 55 E4              - mov edx,[ebp-1C]
+Network.dll+2B9DF2 - 0FBF 42 04            - movsx eax,word ptr [edx+04]
+Network.dll+2B9DF6 - 3D 007D0000           - cmp eax,00007D00 { 32000 }
+Network.dll+2B9DFB - 7E 09                 - jle Network.dll+2B9E06
+Network.dll+2B9DFD - 8B 4D E4              - mov ecx,[ebp-1C]
+Network.dll+2B9E00 - 66 C7 41 04 007D      - mov word ptr [ecx+04],7D00 { 32000 }
+Network.dll+2B9E06 - 8B 55 E4              - mov edx,[ebp-1C]
+Network.dll+2B9E09 - 66 8B 42 04           - mov ax,[edx+04]
+Network.dll+2B9E0D - 50                    - push eax
+Network.dll+2B9E0E - 8D 4D FC              - lea ecx,[ebp-04]
+Network.dll+2B9E11 - 51                    - push ecx
+Network.dll+2B9E12 - E8 E925E1FF           - call Network.dll+CC400
+Network.dll+2B9E17 - 83 C4 08              - add esp,08 { 8 }
+Network.dll+2B9E1A - 66 89 45 F8           - mov [ebp-08],ax
+Network.dll+2B9E1E - 0FBF 55 F8            - movsx edx,word ptr [ebp-08]
+Network.dll+2B9E22 - 8B 45 0C              - mov eax,[ebp+0C]
+Network.dll+2B9E25 - 0FBF 08               - movsx ecx,word ptr [eax]
+Network.dll+2B9E28 - 03 CA                 - add ecx,edx
+Network.dll+2B9E2A - 8B 55 0C              - mov edx,[ebp+0C]
+Network.dll+2B9E2D - 66 89 0A              - mov [edx],cx
+Network.dll+2B9E30 - 8B 45 E4              - mov eax,[ebp-1C]
+Network.dll+2B9E33 - 0FBF 48 04            - movsx ecx,word ptr [eax+04]
+Network.dll+2B9E37 - 85 C9                 - test ecx,ecx
+Network.dll+2B9E39 - 7E 31                 - jle Network.dll+2B9E6C
+Network.dll+2B9E3B - 8B 55 E4              - mov edx,[ebp-1C]
+Network.dll+2B9E3E - 66 8B 42 04           - mov ax,[edx+04]
+Network.dll+2B9E42 - 50                    - push eax
+Network.dll+2B9E43 - 8B 4D E4              - mov ecx,[ebp-1C]
+Network.dll+2B9E46 - 83 C1 06              - add ecx,06 { 6 }
+Network.dll+2B9E49 - 51                    - push ecx
+Network.dll+2B9E4A - 8D 55 FC              - lea edx,[ebp-04]
+Network.dll+2B9E4D - 52                    - push edx
+Network.dll+2B9E4E - E8 3D29E1FF           - call Network.dll+CC790
+Network.dll+2B9E53 - 83 C4 0C              - add esp,0C { 12 }
+Network.dll+2B9E56 - 66 89 45 F8           - mov [ebp-08],ax
+Network.dll+2B9E5A - 0FBF 45 F8            - movsx eax,word ptr [ebp-08]
+Network.dll+2B9E5E - 8B 4D 0C              - mov ecx,[ebp+0C]
+Network.dll+2B9E61 - 0FBF 11               - movsx edx,word ptr [ecx]
+Network.dll+2B9E64 - 03 D0                 - add edx,eax
+Network.dll+2B9E66 - 8B 45 0C              - mov eax,[ebp+0C]
+Network.dll+2B9E69 - 66 89 10              - mov [eax],dx
+Network.dll+2B9E6C - 8B 4D 08              - mov ecx,[ebp+08]
+Network.dll+2B9E6F - 89 4D FC              - mov [ebp-04],ecx
+Network.dll+2B9E72 - 8B 55 0C              - mov edx,[ebp+0C]
+Network.dll+2B9E75 - 66 8B 02              - mov ax,[edx]
+Network.dll+2B9E78 - 50                    - push eax
+Network.dll+2B9E79 - 8D 4D FC              - lea ecx,[ebp-04]
+Network.dll+2B9E7C - 51                    - push ecx
+Network.dll+2B9E7D - E8 7E25E1FF           - call Network.dll+CC400
+Network.dll+2B9E82 - 83 C4 08              - add esp,08 { 8 }
+Network.dll+2B9E85 - 66 89 45 F8           - mov [ebp-08],ax
+Network.dll+2B9E89 - 33 C0                 - xor eax,eax
+Network.dll+2B9E8B - 5E                    - pop esi
+Network.dll+2B9E8C - 8B E5                 - mov esp,ebp
+Network.dll+2B9E8E - 5D                    - pop ebp
+Network.dll+2B9E8F - C2 0800               - ret 0008 { 8 }

@@ -1,0 +1,32 @@
+17000000 - 60                    - pushad 
+17000001 - 68 31750000           - push 00007531
+17000006 - 6A 0B                 - push 0B
+17000008 - 68 E359C5A9           - push A9C559E3
+1700000D - B8 40C0350B           - mov eax,Top-Kart.dll+3DC040 
+17000012 - FF D0                 - call eax
+17000014 - 83 C4 0C              - add esp,0C
+17000017 - 61                    - popad 
+17000018 - C3                    - ret 
+17000019 - 35 00000000           - xor eax,00000000
+1700001E - 00 00                 - add [eax],al
+
+
+Top-Kart.dll+3DC040 - 55                    - push ebp
+Top-Kart.dll+3DC041 - 8B EC                 - mov ebp,esp
+Top-Kart.dll+3DC043 - 6A FF                 - push -01
+Top-Kart.dll+3DC045 - 68 CCD7E40C           - push Top-Kart.dll+1ECD7CC
+Top-Kart.dll+3DC04A - 64 A1 00000000        - mov eax,fs:[00000000]
+Top-Kart.dll+3DC050 - 50                    - push eax
+Top-Kart.dll+3DC051 - 83 EC 1C              - sub esp,1C
+Top-Kart.dll+3DC054 - A1 E03F490D           - mov eax,[Top-Kart.dll+2513FE0]
+Top-Kart.dll+3DC059 - 33 C5                 - xor eax,ebp
+Top-Kart.dll+3DC05B - 50                    - push eax
+Top-Kart.dll+3DC05C - 8D 45 F4              - lea eax,[ebp-0C]
+Top-Kart.dll+3DC05F - 64 A3 00000000        - mov fs:[00000000],eax
+Top-Kart.dll+3DC065 - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.dll+3DC068 - E8 033BD800           - call Top-Kart.dll+115FB70
+Top-Kart.dll+3DC06D - C7 45 FC 00000000     - mov [ebp-04],00000000
+Top-Kart.dll+3DC074 - 8B 45 08              - mov eax,[ebp+08]
+Top-Kart.dll+3DC077 - 89 45 E0              - mov [ebp-20],eax
+Top-Kart.dll+3DC07A - 66 8B 4D 0C           - mov cx,[ebp+0C]
+Top-Kart.dll+3DC07E - 66 89 4D E8           - mov [ebp-18],cx

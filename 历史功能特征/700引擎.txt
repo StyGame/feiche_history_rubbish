@@ -1,0 +1,207 @@
+Top-Kart.dll+1BD27 - 55                    - push ebp
+Top-Kart.dll+1BD28 - 9C                    - pushfd 
+Top-Kart.dll+1BD29 - 33 C9                 - xor ecx,ecx
+Top-Kart.dll+1BD2B - 03 8C 24 04000000     - add ecx,[esp+00000004]
+Top-Kart.dll+1BD32 - C7 C5 00024954        - mov ebp,54490200
+Top-Kart.dll+1BD38 - 8D AD 91586B82        - lea ebp,[ebp-7D94A76F]
+Top-Kart.dll+1BD3E - 03 CD                 - add ecx,ebp
+Top-Kart.dll+1BD40 - 9C                    - pushfd 
+Top-Kart.dll+1BD41 - E8 01000000           - call Top-Kart.dll+1BD47
+Top-Kart.dll+1BD46 - 7B 81                 - jnp Top-Kart.dll+1BCC9
+Top-Kart.dll+1BD48 - 04 24                 - add al,24
+Top-Kart.dll+1BD4A - BF CC4302C3           - mov edi,C30243CC
+Top-Kart.dll+1BD4F - 7C E9                 - jnge Top-Kart.dll+1BD3A
+Top-Kart.dll+1BD51 - C8 8E44 02            - enter 448E,02
+Top-Kart.dll+1BD55 - E8 EB9F4E02           - call Top-Kart.dll+2505D45
+Top-Kart.dll+1BD5A - 89 45 F0              - mov [ebp-10],eax
+Top-Kart.dll+1BD5D - 8B 4D F0              - mov ecx,[ebp-10]
+Top-Kart.dll+1BD60 - 8B 11                 - mov edx,[ecx]
+Top-Kart.dll+1BD62 - 8B 4D F0              - mov ecx,[ebp-10]
+Top-Kart.dll+1BD65 - 8B 42 38              - mov eax,[edx+38]
+Top-Kart.dll+1BD68 - FF D0                 - call eax
+Top-Kart.dll+1BD6A - 89 45 EC              - mov [ebp-14],eax
+Top-Kart.dll+1BD6D - 8B 4D EC              - mov ecx,[ebp-14]
+Top-Kart.dll+1BD70 - 8B 11                 - mov edx,[ecx]
+Top-Kart.dll+1BD72 - 8B 4D EC              - mov ecx,[ebp-14]
+Top-Kart.dll+1BD75 - 8B 82 EC000000        - mov eax,[edx+000000EC]
+Top-Kart.dll+1BD7B - FF D0                 - call eax
+Top-Kart.dll+1BD7D - 8B C8                 - mov ecx,eax
+Top-Kart.dll+1BD7F - E8 DCE80500           - call Top-Kart.dll+7A660
+Top-Kart.dll+1BD84 - 89 45 FC              - mov [ebp-04],eax
+Top-Kart.dll+1BD87 - 33 C9                 - xor ecx,ecx
+Top-Kart.dll+1BD89 - 0F85 95BC4302         - jne Top-Kart.dll+2457A24
+Top-Kart.dll+1BD8F - E9 F6BF4102           - jmp Top-Kart.dll+2437D8A
+Top-Kart.dll+1BD94 - 77 8D                 - ja Top-Kart.dll+1BD23
+Top-Kart.dll+1BD96 - 64 24 04              - and al,04
+Top-Kart.dll+1BD99 - 57                    - push edi
+Top-Kart.dll+1BD9A - E9 8E5C4402           - jmp Top-Kart.dll+2461A2D
+Top-Kart.dll+1BD9F - 70 E9                 - jo Top-Kart.dll+1BD8A
+Top-Kart.dll+1BDA1 - 92                    - xchg eax,edx
+Top-Kart.dll+1BDA2 - 0A 45 02              - or al,[ebp+02]
+Top-Kart.dll+1BDA5 - 8D 64 24 04           - lea esp,[esp+04]
+Top-Kart.dll+1BDA9 - 8B 8D 70FFFFFF        - mov ecx,[ebp-00000090]
+Top-Kart.dll+1BDAF - D9 81 88100000        - fld dword ptr [ecx+00001088]
+Top-Kart.dll+1BDB5 - D9 5D A4              - fstp dword ptr [ebp-5C]
+Top-Kart.dll+1BDB8 - D9 45 A4              - fld dword ptr [ebp-5C]
+Top-Kart.dll+1BDBB - D8 4D A0              - fmul dword ptr [ebp-60]
+Top-Kart.dll+1BDBE - 8B 95 70FFFFFF        - mov edx,[ebp-00000090]
+Top-Kart.dll+1BDC4 - D8 82 FC0E0000        - fadd dword ptr [edx+00000EFC]
+Top-Kart.dll+1BDCA - 8B 85 70FFFFFF        - mov eax,[ebp-00000090]
+Top-Kart.dll+1BDD0 - 50                    - push eax
+Top-Kart.dll+1BDD1 - E8 01000000           - call Top-Kart.dll+1BDD7
+Top-Kart.dll+1BDD6 - 72 58                 - jb Top-Kart.dll+1BE30
+Top-Kart.dll+1BDD8 - 8D 80 15F34402        - lea eax,[eax+0244F315]
+Top-Kart.dll+1BDDE - FF E0                 - jmp eax
+Top-Kart.dll+1BDE0 - EB 55                 - jmp Top-Kart.dll+1BE37
+Top-Kart.dll+1BDE2 - 57                    - push edi
+Top-Kart.dll+1BDE3 - E9 D6AD4202           - jmp Top-Kart.dll+2446BBE
+Top-Kart.dll+1BDE8 - 77 5A                 - ja Top-Kart.dll+1BE44
+Top-Kart.dll+1BDEA - E9 E1CC4002           - jmp Top-Kart.dll+2428AD0
+Top-Kart.dll+1BDEF - 7C 55                 - jnge Top-Kart.dll+1BE46
+Top-Kart.dll+1BDF1 - 8B EC                 - mov ebp,esp
+Top-Kart.dll+1BDF3 - 83 EC 40              - sub esp,40
+Top-Kart.dll+1BDF6 - 89 4D C4              - mov [ebp-3C],ecx
+Top-Kart.dll+1BDF9 - 8B 4D 08              - mov ecx,[ebp+08]
+Top-Kart.dll+1BDFC - E8 5F030000           - call Top-Kart.dll+1C160
+Top-Kart.dll+1BE01 - 89 45 E8              - mov [ebp-18],eax
+Top-Kart.dll+1BE04 - 83 7D E8 02           - cmp dword ptr [ebp-18],02
+Top-Kart.dll+1BE08 - 73 33                 - jae Top-Kart.dll+1BE3D
+Top-Kart.dll+1BE0A - E8 E1AE0A00           - call Top-Kart.dll+C6CF0
+Top-Kart.dll+1BE0F - 85 C0                 - test eax,eax
+Top-Kart.dll+1BE11 - 74 2A                 - je Top-Kart.dll+1BE3D
+Top-Kart.dll+1BE13 - E8 D8AE0A00           - call Top-Kart.dll+C6CF0
+Top-Kart.dll+1BE18 - 89 45 C0              - mov [ebp-40],eax
+Top-Kart.dll+1BE1B - 68 30D4890C           - push Top-Kart.dll+184D430
+Top-Kart.dll+1BE20 - 68 3E010000           - push 0000013E
+Top-Kart.dll+1BE25 - 68 68D2890C           - push Top-Kart.dll+184D268
+Top-Kart.dll+1BE2A - 6A 02                 - push 02
+Top-Kart.dll+1BE2C - 8B 45 C0              - mov eax,[ebp-40]
+Top-Kart.dll+1BE2F - 50                    - push eax
+Top-Kart.dll+1BE30 - 8B 4D C0              - mov ecx,[ebp-40]
+Top-Kart.dll+1BE33 - 8B 11                 - mov edx,[ecx]
+Top-Kart.dll+1BE35 - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.dll+1BE38 - FF D0                 - call eax
+Top-Kart.dll+1BE3A - 83 C4 14              - add esp,14
+Top-Kart.dll+1BE3D - 83 7D E8 00           - cmp dword ptr [ebp-18],00
+Top-Kart.dll+1BE41 - 75 07                 - jne Top-Kart.dll+1BE4A
+Top-Kart.dll+1BE43 - D9EE                  - fldz 
+Top-Kart.dll+1BE45 - E9 68010000           - jmp Top-Kart.dll+1BFB2
+Top-Kart.dll+1BE4A - 8D 4D D0              - lea ecx,[ebp-30]
+Top-Kart.dll+1BE4D - 51                    - push ecx
+Top-Kart.dll+1BE4E - 8B 4D 08              - mov ecx,[ebp+08]
+Top-Kart.dll+1BE51 - E8 DA020000           - call Top-Kart.dll+1C130
+Top-Kart.dll+1BE56 - 8D 55 E0              - lea edx,[ebp-20]
+Top-Kart.dll+1BE59 - 52                    - push edx
+Top-Kart.dll+1BE5A - 8B 4D 08              - mov ecx,[ebp+08]
+Top-Kart.dll+1BE5D - E8 9E020000           - call Top-Kart.dll+1C100
+Top-Kart.dll+1BE62 - D9EE                  - fldz 
+Top-Kart.dll+1BE64 - D9 5D D8              - fstp dword ptr [ebp-28]
+Top-Kart.dll+1BE67 - D9EE                  - fldz 
+Top-Kart.dll+1BE69 - D9 5D F4              - fstp dword ptr [ebp-0C]
+Top-Kart.dll+1BE6C - D9EE                  - fldz 
+Top-Kart.dll+1BE6E - D9 5D DC              - fstp dword ptr [ebp-24]
+Top-Kart.dll+1BE71 - D9EE                  - fldz 
+Top-Kart.dll+1BE73 - D9 5D F0              - fstp dword ptr [ebp-10]
+Top-Kart.dll+1BE76 - D9 45 10              - fld dword ptr [ebp+10]
+Top-Kart.dll+1BE79 - D9 5D F8              - fstp dword ptr [ebp-08]
+Top-Kart.dll+1BE7C - D9EE                  - fldz 
+Top-Kart.dll+1BE7E - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.dll+1BE81 - D9E8                  - fld1 
+Top-Kart.dll+1BE83 - D9 5D EC              - fstp dword ptr [ebp-14]
+Top-Kart.dll+1BE86 - 8B 45 C4              - mov eax,[ebp-3C]
+Top-Kart.dll+1BE89 - 83 B8 94000000 00     - cmp dword ptr [eax+00000094],00
+Top-Kart.dll+1BE90 - 75 1D                 - jne Top-Kart.dll+1BEAF
+Top-Kart.dll+1BE92 - 8B 4D C4              - mov ecx,[ebp-3C]
+Top-Kart.dll+1BE95 - 83 C1 38              - add ecx,38
+Top-Kart.dll+1BE98 - E8 0B934402           - call Top-Kart.dll+24651A8
+Top-Kart.dll+1BE9D - 6B C0 0C              - imul eax,eax,0C
+Top-Kart.dll+1BEA0 - 8B 4D C4              - mov ecx,[ebp-3C]
+Top-Kart.dll+1BEA3 - 8D 4C 01 40           - lea ecx,[ecx+eax+40]
+Top-Kart.dll+1BEA7 - E8 74E5FEFF           - call Top-Kart.dll+A420
+Top-Kart.dll+1BEAC - D9 5D EC              - fstp dword ptr [ebp-14]
+Top-Kart.dll+1BEAF - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.dll+1BEB2 - E8 29030000           - call Top-Kart.dll+1C1E0
+Top-Kart.dll+1BEB7 - D9 45 10              - fld dword ptr [ebp+10]
+Top-Kart.dll+1BEBA - D9 00                 - fld dword ptr [eax]
+Top-Kart.dll+1BEBC - DED9                  - fcompp 
+Top-Kart.dll+1BEBE - DFE0                  - fnstsw ax
+Top-Kart.dll+1BEC0 - F6 C4 01              - test ah,01
+Top-Kart.dll+1BEC3 - 75 13                 - jne Top-Kart.dll+1BED8
+Top-Kart.dll+1BEC5 - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.dll+1BEC8 - E8 13030000           - call Top-Kart.dll+1C1E0
+Top-Kart.dll+1BECD - D9 40 04              - fld dword ptr [eax+04]
+Top-Kart.dll+1BED0 - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.dll+1BED3 - E9 CE000000           - jmp Top-Kart.dll+1BFA6
+Top-Kart.dll+1BED8 - 8D 55 C8              - lea edx,[ebp-38]
+Top-Kart.dll+1BEDB - 52                    - push edx
+Top-Kart.dll+1BEDC - 8B 4D 08              - mov ecx,[ebp+08]
+Top-Kart.dll+1BEDF - E8 1C020000           - call Top-Kart.dll+1C100
+Top-Kart.dll+1BEE4 - EB 08                 - jmp Top-Kart.dll+1BEEE
+Top-Kart.dll+1BEE6 - 8D 4D C8              - lea ecx,[ebp-38]
+Top-Kart.dll+1BEE9 - E8 12030000           - call Top-Kart.dll+1C200
+Top-Kart.dll+1BEEE - 8D 45 D0              - lea eax,[ebp-30]
+Top-Kart.dll+1BEF1 - 50                    - push eax
+Top-Kart.dll+1BEF2 - 8D 4D C8              - lea ecx,[ebp-38]
+Top-Kart.dll+1BEF5 - E8 26030000           - call Top-Kart.dll+1C220
+Top-Kart.dll+1BEFA - 0FB6 C8               - movzx ecx,al
+Top-Kart.dll+1BEFD - 85 C9                 - test ecx,ecx
+Top-Kart.dll+1BEFF - 0F84 A1000000         - je Top-Kart.dll+1BFA6
+Top-Kart.dll+1BF05 - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.dll+1BF08 - E8 F3020000           - call Top-Kart.dll+1C200
+Top-Kart.dll+1BF0D - 8D 55 D0              - lea edx,[ebp-30]
+Top-Kart.dll+1BF10 - 52                    - push edx
+Top-Kart.dll+1BF11 - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.dll+1BF14 - E8 07030000           - call Top-Kart.dll+1C220
+Top-Kart.dll+1BF19 - 0FB6 C0               - movzx eax,al
+Top-Kart.dll+1BF1C - 85 C0                 - test eax,eax
+Top-Kart.dll+1BF1E - 74 73                 - je Top-Kart.dll+1BF93
+Top-Kart.dll+1BF20 - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.dll+1BF23 - E8 B8020000           - call Top-Kart.dll+1C1E0
+Top-Kart.dll+1BF28 - D9 00                 - fld dword ptr [eax]
+Top-Kart.dll+1BF2A - D9 45 10              - fld dword ptr [ebp+10]
+Top-Kart.dll+1BF2D - DED9                  - fcompp 
+Top-Kart.dll+1BF2F - DFE0                  - fnstsw ax
+Top-Kart.dll+1BF31 - F6 C4 41              - test ah,41
+Top-Kart.dll+1BF34 - 7A 56                 - jp Top-Kart.dll+1BF8C
+Top-Kart.dll+1BF36 - 8D 4D C8              - lea ecx,[ebp-38]
+Top-Kart.dll+1BF39 - E8 A2020000           - call Top-Kart.dll+1C1E0
+Top-Kart.dll+1BF3E - D9 00                 - fld dword ptr [eax]
+Top-Kart.dll+1BF40 - D9 5D D8              - fstp dword ptr [ebp-28]
+Top-Kart.dll+1BF43 - 8D 4D C8              - lea ecx,[ebp-38]
+Top-Kart.dll+1BF46 - E8 95020000           - call Top-Kart.dll+1C1E0
+Top-Kart.dll+1BF4B - D9 40 04              - fld dword ptr [eax+04]
+Top-Kart.dll+1BF4E - D9 5D F4              - fstp dword ptr [ebp-0C]
+Top-Kart.dll+1BF51 - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.dll+1BF54 - E8 87020000           - call Top-Kart.dll+1C1E0
+Top-Kart.dll+1BF59 - D9 00                 - fld dword ptr [eax]
+Top-Kart.dll+1BF5B - D9 5D DC              - fstp dword ptr [ebp-24]
+Top-Kart.dll+1BF5E - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.dll+1BF61 - E8 7A020000           - call Top-Kart.dll+1C1E0
+Top-Kart.dll+1BF66 - D9 40 04              - fld dword ptr [eax+04]
+Top-Kart.dll+1BF69 - D9 5D F0              - fstp dword ptr [ebp-10]
+Top-Kart.dll+1BF6C - D9 45 F8              - fld dword ptr [ebp-08]
+Top-Kart.dll+1BF6F - D8 65 D8              - fsub dword ptr [ebp-28]
+Top-Kart.dll+1BF72 - D9 45 F0              - fld dword ptr [ebp-10]
+Top-Kart.dll+1BF75 - D8 65 F4              - fsub dword ptr [ebp-0C]
+Top-Kart.dll+1BF78 - DEC9                  - fmulp st(1),st(0)
+Top-Kart.dll+1BF7A - D9 45 DC              - fld dword ptr [ebp-24]
+Top-Kart.dll+1BF7D - D8 65 D8              - fsub dword ptr [ebp-28]
+Top-Kart.dll+1BF80 - DEF9                  - fdivp st(1),st(0)
+Top-Kart.dll+1BF82 - D8 45 F4              - fadd dword ptr [ebp-0C]
+Top-Kart.dll+1BF85 - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.dll+1BF88 - EB 1C                 - jmp Top-Kart.dll+1BFA6
+Top-Kart.dll+1BF8A - EB 05                 - jmp Top-Kart.dll+1BF91
+Top-Kart.dll+1BF8C - E9 55FFFFFF           - jmp Top-Kart.dll+1BEE6
+Top-Kart.dll+1BF91 - EB 0E                 - jmp Top-Kart.dll+1BFA1
+Top-Kart.dll+1BF93 - 8D 4D C8              - lea ecx,[ebp-38]
+Top-Kart.dll+1BF96 - E8 45020000           - call Top-Kart.dll+1C1E0
+Top-Kart.dll+1BF9B - D9 40 04              - fld dword ptr [eax+04]
+Top-Kart.dll+1BF9E - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.dll+1BFA1 - E9 40FFFFFF           - jmp Top-Kart.dll+1BEE6
+Top-Kart.dll+1BFA6 - D9 45 FC              - fld dword ptr [ebp-04]
+Top-Kart.dll+1BFA9 - D8 4D EC              - fmul dword ptr [ebp-14]    ////////fmul dword ptr [ebp-04]
+Top-Kart.dll+1BFAC - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.dll+1BFAF - D9 45 FC              - fld dword ptr [ebp-04]
+Top-Kart.dll+1BFB2 - 8B E5                 - mov esp,ebp
+Top-Kart.dll+1BFB4 - 5D                    - pop ebp
+Top-Kart.dll+1BFB5 - C2 0C00               - ret 000C

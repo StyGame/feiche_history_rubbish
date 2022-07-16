@@ -1,0 +1,153 @@
+.tvm0:127A6368                                     ; ---------------------------------------------------------------------------
+.tvm0:127A6368 8D 8D E4 82 FF FF                                   lea     ecx, [ebp-7D1Ch]
+.tvm0:127A636E E8 0D ED 92 FE                                      call    near ptr unk_110D5080
+.tvm0:127A6373 C7 45 FC 00 00 00 00                                mov     dword ptr [ebp-4], 0
+.tvm0:127A637A 8B 55 F0                                            mov     edx, [ebp-10h]
+.tvm0:127A637D 8B 02                                               mov     eax, [edx]-----------------------------------------------------------写四个0
+.tvm0:127A637F
+.tvm0:127A637F                                     loc_127A637F:                           ; CODE XREF: .tvm0:127A63B3j
+.tvm0:127A637F 89 85 E4 82 FF FF                                   mov     [ebp-7D1Ch], eax
+.tvm0:127A6385 66 8B 4D 0C                                         mov     cx, [ebp+0Ch]
+.tvm0:127A6389 66 89 8D E8 82 FF FF                                mov     [ebp-7D18h], cx
+.tvm0:127A6390 8B 55 0C                                            mov     edx, [ebp+0Ch]
+.tvm0:127A6393 52                                                  push    edx
+.tvm0:127A6394 8B 45 08                                            mov     eax, [ebp+8]
+.tvm0:127A6397 50                                                  push    eax
+.tvm0:127A6398 68 00 7D 00 00                                      push    7D00h
+.tvm0:127A639D 8D 8D EA 82 FF FF                                   lea     ecx, [ebp-7D16h]
+.tvm0:127A63A3 51                                                  push    ecx
+.tvm0:127A63A4 E9 A5 5C 88 FD                                      jmp     loc_1002C04E
+.tvm0:127A63A4                                     ; -----------------------------------------
+
+
+.tvm0:126FCB52 8D 8D E4 82 FF FF                                   lea     ecx, [ebp-7D1Ch]
+.tvm0:126FCB58 E8 D3 92 9A FE                                      call    sub_110A5E30
+.tvm0:126FCB5D C7 45 FC 00 00 00 00                                mov     dword ptr [ebp-4], 0
+.tvm0:126FCB64 8B 55 F0                                            mov     edx, [ebp-10h]
+.tvm0:126FCB67 8B 02                                               mov     eax, [edx]
+.tvm0:126FCB69 89 85 E4 82 FF FF                                   mov     [ebp-7D1Ch], eax
+.tvm0:126FCB6F 66 8B 4D 0C                                         mov     cx, [ebp+0Ch]
+.tvm0:126FCB73 66 89 8D E8 82 FF FF                                mov     [ebp-7D18h], cx
+.tvm0:126FCB7A 8B 55 0C                                            mov     edx, [ebp+0Ch]
+.tvm0:126FCB7D 52                                                  push    edx
+.tvm0:126FCB7E 8B 45 08                                            mov     eax, [ebp+8] -------------------------------------------------------------------nop
+.tvm0:126FCB81 50                                                  push    eax
+.tvm0:126FCB82 68 00 7D 00 00                                      push    7D00h
+.tvm0:126FCB87 8D 8D EA 82 FF FF                                   lea     ecx, [ebp-7D16h]
+.tvm0:126FCB8D 51                                                  push    ecx
+.tvm0:126FCB8E E9 A7 8B FF FF                                      jmp     loc_126F573A
+
+
+参考
+.text:1010E520                                     ; ---------------------------------------------------------------------------
+.text:1010E520 55                                                  push    ebp
+.text:1010E521 8B EC                                               mov     ebp, esp
+.text:1010E523 6A FF                                               push    0FFFFFFFFh
+.text:1010E525 68 2E 83 D0 11                                      push    offset sub_11D0832E
+.text:1010E52A 64 A1 00 00 00 00                                   mov     eax, large fs:0
+.text:1010E530 50                                                  push    eax
+.text:1010E531 B8 1C 7D 00 00                                      mov     eax, 7D1Ch
+.text:1010E536 E8 C5 E3 B7 01                                      call    __alloca_probe
+.text:1010E53B A1 28 90 2E 12                                      mov     eax, ___security_cookie
+.text:1010E540 33 C5                                               xor     eax, ebp
+.text:1010E542 89 45 EC                                            mov     [ebp-14h], eax
+.text:1010E545 50                                                  push    eax
+.text:1010E546 8D 45 F4                                            lea     eax, [ebp-0Ch]
+.text:1010E549 64 A3 00 00 00 00                                   mov     large fs:0, eax
+.text:1010E54F 89 8D DC 82 FF FF                                   mov     [ebp-7D24h], ecx
+.text:1010E555 8B 85 DC 82 FF FF                                   mov     eax, [ebp-7D24h]
+.text:1010E55B 83 78 0C 00                                         cmp     dword ptr [eax+0Ch], 0
+.text:1010E55F 75 07                                               jnz     short loc_1010E568
+.text:1010E561 33 C0                                               xor     eax, eax
+.text:1010E563 E9 08 01 00 00                                      jmp     loc_1010E670
+.text:1010E568                                     ; ---------------------------------------------------------------------------
+.text:1010E568
+.text:1010E568                                     loc_1010E568:                           ; CODE XREF: .text:1010E55Fj
+.text:1010E568 8B 8D DC 82 FF FF                                   mov     ecx, [ebp-7D24h]
+.text:1010E56E 8B 51 0C                                            mov     edx, [ecx+0Ch]
+.text:1010E571 8B 85 DC 82 FF FF                                   mov     eax, [ebp-7D24h]
+.text:1010E577 8B 48 0C                                            mov     ecx, [eax+0Ch]
+.text:1010E57A 8B 12                                               mov     edx, [edx]
+.text:1010E57C 8B 82 98 00 00 00                                   mov     eax, [edx+98h]
+.text:1010E582 FF D0                                               call    eax
+.text:1010E584 89 45 F0                                            mov     [ebp-10h], eax
+.text:1010E587 83 7D F0 00                                         cmp     dword ptr [ebp-10h], 0
+.text:1010E58B 75 07                                               jnz     short loc_1010E594
+.text:1010E58D 33 C0                                               xor     eax, eax
+.text:1010E58F E9 DC 00 00 00                                      jmp     loc_1010E670
+.text:1010E594                                     ; ---------------------------------------------------------------------------
+.text:1010E594
+.text:1010E594                                     loc_1010E594:                           ; CODE XREF: .text:1010E58Bj
+.text:1010E594 81 7D 0C 00 7D 00 00                                cmp     dword ptr [ebp+0Ch], 7D00h
+.text:1010E59B 76 3C                                               jbe     short loc_1010E5D9
+.text:1010E59D E8 1E 38 FF FF                                      call    sub_10101DC0
+.text:1010E5A2 85 C0                                               test    eax, eax
+.text:1010E5A4 74 33                                               jz      short loc_1010E5D9
+.text:1010E5A6 E8 15 38 FF FF                                      call    sub_10101DC0
+.text:1010E5AB 89 85 D8 82 FF FF                                   mov     [ebp-7D28h], eax
+.text:1010E5B1 68 C0 CE E7 11                                      push    offset asc_11E7CEC0 ; "Assertion failed!\n[dwSize <= MAX_ANTIB"...
+.text:1010E5B6 68 94 00 00 00                                      push    94h
+.text:1010E5BB 68 78 CE E7 11                                      push    offset aDQqspeed201_35 ; "D:\\qqspeed2013_Release_patch\\Logic\\T"...
+.text:1010E5C0 6A 02                                               push    2
+.text:1010E5C2 8B 8D D8 82 FF FF                                   mov     ecx, [ebp-7D28h]
+.text:1010E5C8 51                                                  push    ecx
+.text:1010E5C9 8B 95 D8 82 FF FF                                   mov     edx, [ebp-7D28h]
+.text:1010E5CF 8B 02                                               mov     eax, [edx]
+.text:1010E5D1 8B 48 08                                            mov     ecx, [eax+8]
+.text:1010E5D4 FF D1                                               call    ecx
+.text:1010E5D6 83 C4 14                                            add     esp, 14h
+.text:1010E5D9
+.text:1010E5D9                                     loc_1010E5D9:                           ; CODE XREF: .text:1010E59Bj
+.text:1010E5D9                                                                             ; .text:1010E5A4j
+.text:1010E5D9 8D 8D E4 82 FF FF                                   lea     ecx, [ebp-7D1Ch]
+.text:1010E5DF E8 0C 7C F9 00                                      call    sub_110A61F0
+.text:1010E5E4 C7 45 FC 00 00 00 00                                mov     dword ptr [ebp-4], 0
+.text:1010E5EB 8B 55 F0                                            mov     edx, [ebp-10h]
+.text:1010E5EE 8B 02                                               mov     eax, [edx]
+.text:1010E5F0 89 85 E4 82 FF FF                                   mov     [ebp-7D1Ch], eax
+.text:1010E5F6 66 8B 4D 0C                                         mov     cx, [ebp+0Ch]
+.text:1010E5FA 66 89 8D E8 82 FF FF                                mov     [ebp-7D18h], cx
+.text:1010E601 8B 55 0C                                            mov     edx, [ebp+0Ch]
+.text:1010E604 52                                                  push    edx
+.text:1010E605 8B 45 08                                            mov     eax, [ebp+8]
+.text:1010E608 50                                                  push    eax
+.text:1010E609 68 00 7D 00 00                                      push    7D00h
+.text:1010E60E 8D 8D EA 82 FF FF                                   lea     ecx, [ebp-7D16h]
+.text:1010E614 51                                                  push    ecx
+.text:1010E615 E8 56 94 EF FF                                      call    sub_10007A70
+.text:1010E61A 83 C4 10                                            add     esp, 10h
+.text:1010E61D 6A 00                                               push    0
+.text:1010E61F 6A 00                                               push    0
+.text:1010E621 6A 03                                               push    3
+.text:1010E623 6A 00                                               push    0
+.text:1010E625 6A 01                                               push    1
+.text:1010E627 6A 00                                               push    0
+.text:1010E629 8D 95 E4 82 FF FF                                   lea     edx, [ebp-7D1Ch]
+.text:1010E62F 52                                                  push    edx
+.text:1010E630 68 32 02 00 00                                      push    232h
+.text:1010E635 8B 85 DC 82 FF FF                                   mov     eax, [ebp-7D24h]
+.text:1010E63B 8B 48 0C                                            mov     ecx, [eax+0Ch]
+.text:1010E63E 8B 95 DC 82 FF FF                                   mov     edx, [ebp-7D24h]
+.text:1010E644 8B 42 0C                                            mov     eax, [edx+0Ch]
+.text:1010E647 8B 09                                               mov     ecx, [ecx]
+.text:1010E649 50                                                  push    eax
+.text:1010E64A 8B 51 28                                            mov     edx, [ecx+28h]
+.text:1010E64D FF D2                                               call    edx
+.text:1010E64F 8B 45 0C                                            mov     eax, [ebp+0Ch]
+.text:1010E652 89 85 E0 82 FF FF                                   mov     [ebp-7D20h], eax
+.text:1010E658 C7 45 FC FF FF FF FF                                mov     dword ptr [ebp-4], 0FFFFFFFFh
+.text:1010E65F 8D 8D E4 82 FF FF                                   lea     ecx, [ebp-7D1Ch]
+.text:1010E665 E8 C6 7B F9 00                                      call    sub_110A6230
+.text:1010E66A 8B 85 E0 82 FF FF                                   mov     eax, [ebp-7D20h]
+.text:1010E670
+.text:1010E670                                     loc_1010E670:                           ; CODE XREF: .text:1010E563j
+.text:1010E670                                                                             ; .text:1010E58Fj
+.text:1010E670 8B 4D F4                                            mov     ecx, [ebp-0Ch]
+.text:1010E673 64 89 0D 00 00 00 00                                mov     large fs:0, ecx
+.text:1010E67A 59                                                  pop     ecx
+.text:1010E67B 8B 4D EC                                            mov     ecx, [ebp-14h]
+.text:1010E67E 33 CD                                               xor     ecx, ebp
+.text:1010E680 E8 25 DE B7 01                                      call    sub_11C8C4AA
+.text:1010E685 8B E5                                               mov     esp, ebp
+.text:1010E687 5D                                                  pop     ebp
+.text:1010E688 C2 08 00                                            retn    8

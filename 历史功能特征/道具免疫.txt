@@ -1,0 +1,691 @@
+Top-Kart.luaopen_API+979EDA - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+979EDC - 74 13                 - je Top-Kart.luaopen_API+979EF1
+Top-Kart.luaopen_API+979EDE - 51                    - push ecx
+Top-Kart.luaopen_API+979EDF - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+979EE2 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+979EE5 - E8 46880FFF           - call Top-Kart.dll+BD70
+Top-Kart.luaopen_API+979EEA - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+979EEC - E8 4FC8BFFF           - call Top-Kart.luaopen_API+576740
+Top-Kart.luaopen_API+979EF1 - E8 9A440FFF           - call Top-Kart.dll+79D0
+Top-Kart.luaopen_API+979EF6 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+979EF8 - 74 13                 - je Top-Kart.luaopen_API+979F0D
+Top-Kart.luaopen_API+979EFA - 51                    - push ecx
+Top-Kart.luaopen_API+979EFB - D9 45 08              - fld dword ptr [ebp+08] //fld dword ptr [ebp+18]
+Top-Kart.luaopen_API+979EFE - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+979F01 - E8 8A440FFF           - call Top-Kart.dll+79D0
+Top-Kart.luaopen_API+979F06 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+979F08 - E8 230926FF           - call Top-Kart.DllUnregisterServer+82990
+Top-Kart.luaopen_API+979F0D - C7 45 FC FFFFFFFF     - mov [ebp-04],FFFFFFFF
+Top-Kart.luaopen_API+979F14 - 8D 8D 0CFFFFFF        - lea ecx,[ebp-000000F4]
+Top-Kart.luaopen_API+979F1A - E8 513785FF           - call Top-Kart.luaopen_API+1CD670
+Top-Kart.luaopen_API+979F1F - 51                    - push ecx
+Top-Kart.luaopen_API+979F20 - D9 45 EC              - fld dword ptr [ebp-14]
+Top-Kart.luaopen_API+979F23 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+979F26 - 51                    - push ecx
+Top-Kart.luaopen_API+979F27 - D9 45 08              - fld dword ptr [ebp+08]  
+Top-Kart.luaopen_API+979F2A - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+979F2D - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+
+
+85 C0                 - test eax,eax
+74 13                 - je Top-Kart.luaopen_API+979EF1
+51                    - push ecx
+D9 45 08              - fld dword ptr [ebp+08]
+D9 1C 24              - fstp dword ptr [esp]
+E8 46880FFF           - call Top-Kart.dll+BD70
+8B C8                 - mov ecx,eax
+E8 4FC8BFFF           - call Top-Kart.luaopen_API+576740
+E8 9A440FFF           - call Top-Kart.dll+79D0
+85 C0                 - test eax,eax
+74 13                 - je Top-Kart.luaopen_API+979F0D
+51                    - push ecx
+D9 45 18              - fld dword ptr [ebp+18]
+D9 1C 24              - fstp dword ptr [esp]
+E8 8A440FFF           - call Top-Kart.dll+79D0
+8B C8                 - mov ecx,eax
+E8 230926FF           - call Top-Kart.DllUnregisterServer+82990
+C7 45 FC FFFFFFFF     - mov [ebp-04],FFFFFFFF
+8D 8D 0CFFFFFF        - lea ecx,[ebp-000000F4]
+E8 513785FF           - call Top-Kart.luaopen_API+1CD670
+51                    - push ecx
+D9 45 EC              - fld dword ptr [ebp-14]
+D9 1C 24              - fstp dword ptr [esp]
+51                    - push ecx
+D9 45 08              - fld dword ptr [ebp+08]
+D9 1C 24              - fstp dword ptr [esp]
+8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+
+
+
+
+Õû¸öº¯Êý 
+Top-Kart.luaopen_API+9BCD07 - 55                    - push ebp
+Top-Kart.luaopen_API+9BCD08 - 15 A0FFC745           - adc eax,45C7FFA0
+Top-Kart.luaopen_API+9BCD0D - FC                    - cld 
+Top-Kart.luaopen_API+9BCD0E - FF                    - db -01
+Top-Kart.luaopen_API+9BCD0F - FF                    - db -01
+Top-Kart.luaopen_API+9BCD10 - FF                    - db -01
+Top-Kart.luaopen_API+9BCD11 - FF 8D 8D5CFFFF        - dec [ebp-0000A373]
+Top-Kart.luaopen_API+9BCD17 - FF E8                 - jmp far eax
+Top-Kart.luaopen_API+9BCD19 - E3 19                 - jecxz Top-Kart.luaopen_API+9BCD34
+Top-Kart.luaopen_API+9BCD1B - 81 FF E8EE6F81        - cmp edi,816FEEE8
+Top-Kart.luaopen_API+9BCD21 - FF 89 85F4FDFF        - dec [ecx-00020B7B] : [00000000]
+Top-Kart.luaopen_API+9BCD27 - FF 68 18              - jmp far [eax+18]
+Top-Kart.luaopen_API+9BCD2A - 59                    - pop ecx
+Top-Kart.luaopen_API+9BCD2B - BC 098B8DF4           - mov esp,F48D8B09
+Top-Kart.luaopen_API+9BCD30 - FD                    - std 
+Top-Kart.luaopen_API+9BCD31 - FF                    - db -01
+Top-Kart.luaopen_API+9BCD32 - FF 8B 118B8DF4        - dec [ebx-0B7274EF] : [0000000B]
+Top-Kart.luaopen_API+9BCD38 - FD                    - std 
+Top-Kart.luaopen_API+9BCD39 - FF                    - db -01
+Top-Kart.luaopen_API+9BCD3A - FF 8B 4208FFD0        - dec [ebx-2F00F7BE] : [Top-Kart.dll+1DE005D]
+Top-Kart.luaopen_API+9BCD40 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCD46 - 83 B9 E8260000 00     - cmp dword ptr [ecx+000026E8],00
+Top-Kart.luaopen_API+9BCD4D - 74 4C                 - je Top-Kart.luaopen_API+9BCD9B
+Top-Kart.luaopen_API+9BCD4F - 6A 12                 - push 12
+Top-Kart.luaopen_API+9BCD51 - 8D 8D 2CFFFFFF        - lea ecx,[ebp-000000D4]
+Top-Kart.luaopen_API+9BCD57 - E8 941981FF           - call Top-Kart.luaopen_API+1CE6F0
+Top-Kart.luaopen_API+9BCD5C - C7 45 FC 04000000     - mov [ebp-04],00000004
+Top-Kart.luaopen_API+9BCD63 - 51                    - push ecx
+Top-Kart.luaopen_API+9BCD64 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BCD67 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BCD6A - 8B 95 64FEFFFF        - mov edx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCD70 - 8B 82 E8260000        - mov eax,[edx+000026E8]
+Top-Kart.luaopen_API+9BCD76 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCD7C - 8B 89 E8260000        - mov ecx,[ecx+000026E8]
+Top-Kart.luaopen_API+9BCD82 - 8B 10                 - mov edx,[eax]
+Top-Kart.luaopen_API+9BCD84 - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BCD87 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BCD89 - C7 45 FC FFFFFFFF     - mov [ebp-04],FFFFFFFF
+Top-Kart.luaopen_API+9BCD90 - 8D 8D 2CFFFFFF        - lea ecx,[ebp-000000D4]
+Top-Kart.luaopen_API+9BCD96 - E8 651981FF           - call Top-Kart.luaopen_API+1CE700
+Top-Kart.luaopen_API+9BCD9B - E8 706F81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BCDA0 - 89 85 F0FDFFFF        - mov [ebp-00000210],eax
+Top-Kart.luaopen_API+9BCDA6 - 8B 8D F0FDFFFF        - mov ecx,[ebp-00000210]
+Top-Kart.luaopen_API+9BCDAC - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BCDAE - 8B 8D F0FDFFFF        - mov ecx,[ebp-00000210]
+Top-Kart.luaopen_API+9BCDB4 - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BCDB7 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BCDB9 - E8 526F81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BCDBE - 89 85 ECFDFFFF        - mov [ebp-00000214],eax
+Top-Kart.luaopen_API+9BCDC4 - 68 0459BC09           - push Top-Kart.dll+15E5904
+Top-Kart.luaopen_API+9BCDC9 - 8B 8D ECFDFFFF        - mov ecx,[ebp-00000214]
+Top-Kart.luaopen_API+9BCDCF - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BCDD1 - 8B 8D ECFDFFFF        - mov ecx,[ebp-00000214]
+Top-Kart.luaopen_API+9BCDD7 - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.luaopen_API+9BCDDA - FF D0                 - call eax
+Top-Kart.luaopen_API+9BCDDC - 83 7D E0 11           - cmp dword ptr [ebp-20],11
+Top-Kart.luaopen_API+9BCDE0 - 0F85 D0000000         - jne Top-Kart.luaopen_API+9BCEB6
+Top-Kart.luaopen_API+9BCDE6 - E8 95C3ED00           - call Top-Kart.dll+1E3E510
+Top-Kart.luaopen_API+9BCDEB - 89 85 E8FDFFFF        - mov [ebp-00000218],eax
+Top-Kart.luaopen_API+9BCDF1 - 8B 8D E8FDFFFF        - mov ecx,[ebp-00000218]
+Top-Kart.luaopen_API+9BCDF7 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BCDF9 - 8B 8D E8FDFFFF        - mov ecx,[ebp-00000218]
+Top-Kart.luaopen_API+9BCDFF - 8B 42 30              - mov eax,[edx+30]
+Top-Kart.luaopen_API+9BCE02 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BCE04 - 89 85 E4FDFFFF        - mov [ebp-0000021C],eax
+Top-Kart.luaopen_API+9BCE0A - 8B 8D E4FDFFFF        - mov ecx,[ebp-0000021C]
+Top-Kart.luaopen_API+9BCE10 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BCE12 - 8B 8D E4FDFFFF        - mov ecx,[ebp-0000021C]
+Top-Kart.luaopen_API+9BCE18 - 8B 82 8C000000        - mov eax,[edx+0000008C]
+Top-Kart.luaopen_API+9BCE1E - FF D0                 - call eax
+Top-Kart.luaopen_API+9BCE20 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BCE22 - 0F84 8E000000         - je Top-Kart.luaopen_API+9BCEB6
+Top-Kart.luaopen_API+9BCE28 - E8 53C3ED00           - call Top-Kart.dll+1E3E510
+Top-Kart.luaopen_API+9BCE2D - 89 85 E0FDFFFF        - mov [ebp-00000220],eax
+Top-Kart.luaopen_API+9BCE33 - 8B 8D E0FDFFFF        - mov ecx,[ebp-00000220]
+Top-Kart.luaopen_API+9BCE39 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BCE3B - 8B 8D E0FDFFFF        - mov ecx,[ebp-00000220]
+Top-Kart.luaopen_API+9BCE41 - 8B 42 30              - mov eax,[edx+30]
+Top-Kart.luaopen_API+9BCE44 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BCE46 - 89 85 DCFDFFFF        - mov [ebp-00000224],eax
+Top-Kart.luaopen_API+9BCE4C - 8B 8D DCFDFFFF        - mov ecx,[ebp-00000224]
+Top-Kart.luaopen_API+9BCE52 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BCE54 - 8B 8D DCFDFFFF        - mov ecx,[ebp-00000224]
+Top-Kart.luaopen_API+9BCE5A - 8B 82 8C000000        - mov eax,[edx+0000008C]
+Top-Kart.luaopen_API+9BCE60 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BCE62 - 89 85 D8FDFFFF        - mov [ebp-00000228],eax
+Top-Kart.luaopen_API+9BCE68 - 8B 8D D8FDFFFF        - mov ecx,[ebp-00000228]
+Top-Kart.luaopen_API+9BCE6E - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BCE70 - 8B 8D D8FDFFFF        - mov ecx,[ebp-00000228]
+Top-Kart.luaopen_API+9BCE76 - 8B 42 5C              - mov eax,[edx+5C]
+Top-Kart.luaopen_API+9BCE79 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BCE7B - 0FB6 C8               - movzx ecx,al
+Top-Kart.luaopen_API+9BCE7E - 85 C9                 - test ecx,ecx
+Top-Kart.luaopen_API+9BCE80 - 75 34                 - jne Top-Kart.luaopen_API+9BCEB6
+Top-Kart.luaopen_API+9BCE82 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCE88 - 81 C1 9C240000        - add ecx,0000249C
+Top-Kart.luaopen_API+9BCE8E - E8 FD560AFF           - call Top-Kart.dll+7920
+Top-Kart.luaopen_API+9BCE93 - D8 6D 08              - fsubr dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BCE96 - D9 9D 80FEFFFF        - fstp dword ptr [ebp-00000180]
+Top-Kart.luaopen_API+9BCE9C - 8D 95 80FEFFFF        - lea edx,[ebp-00000180]
+Top-Kart.luaopen_API+9BCEA2 - 52                    - push edx
+Top-Kart.luaopen_API+9BCEA3 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCEA9 - 81 C1 78240000        - add ecx,00002478
+Top-Kart.luaopen_API+9BCEAF - E8 FCB50BFF           - call Top-Kart.dll+1D840
+Top-Kart.luaopen_API+9BCEB4 - DDD8                  - fstp st(0)
+Top-Kart.luaopen_API+9BCEB6 - 8B 85 64FEFFFF        - mov eax,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCEBC - 0FB6 88 E2240000      - movzx ecx,byte ptr [eax+000024E2]
+Top-Kart.luaopen_API+9BCEC3 - 85 C9                 - test ecx,ecx
+Top-Kart.luaopen_API+9BCEC5 - 0F84 9D000000         - je Top-Kart.luaopen_API+9BCF68
+Top-Kart.luaopen_API+9BCECB - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCED1 - 81 C1 A8240000        - add ecx,000024A8
+Top-Kart.luaopen_API+9BCED7 - E8 B4560AFF           - call Top-Kart.dll+7920
+Top-Kart.luaopen_API+9BCEDC - D8 6D 08              - fsubr dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BCEDF - D9 9D 7CFEFFFF        - fstp dword ptr [ebp-00000184]
+Top-Kart.luaopen_API+9BCEE5 - 8D 95 7CFEFFFF        - lea edx,[ebp-00000184]
+Top-Kart.luaopen_API+9BCEEB - 52                    - push edx
+Top-Kart.luaopen_API+9BCEEC - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCEF2 - 81 C1 84240000        - add ecx,00002484
+Top-Kart.luaopen_API+9BCEF8 - E8 B3B50BFF           - call Top-Kart.dll+1D840
+Top-Kart.luaopen_API+9BCEFD - DDD8                  - fstp st(0)
+Top-Kart.luaopen_API+9BCEFF - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCF05 - 81 C1 B4240000        - add ecx,000024B4
+Top-Kart.luaopen_API+9BCF0B - E8 80560AFF           - call Top-Kart.dll+7920
+Top-Kart.luaopen_API+9BCF10 - DC 1D A86BAB09        - fcomp qword ptr [Top-Kart.std::_Init_locks::operator=+16C2E4]
+Top-Kart.luaopen_API+9BCF16 - DFE0                  - fnstsw ax
+Top-Kart.luaopen_API+9BCF18 - F6 C4 05              - test ah,05
+Top-Kart.luaopen_API+9BCF1B - 7A 17                 - jp Top-Kart.luaopen_API+9BCF34
+Top-Kart.luaopen_API+9BCF1D - 8D 45 08              - lea eax,[ebp+08]
+Top-Kart.luaopen_API+9BCF20 - 50                    - push eax
+Top-Kart.luaopen_API+9BCF21 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCF27 - 81 C1 B4240000        - add ecx,000024B4
+Top-Kart.luaopen_API+9BCF2D - E8 7EB50BFF           - call Top-Kart.dll+1D840
+Top-Kart.luaopen_API+9BCF32 - DDD8                  - fstp st(0)
+Top-Kart.luaopen_API+9BCF34 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCF3A - 81 C1 B4240000        - add ecx,000024B4
+Top-Kart.luaopen_API+9BCF40 - E8 4B560AFF           - call Top-Kart.dll+7920
+Top-Kart.luaopen_API+9BCF45 - D8 6D 08              - fsubr dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BCF48 - D9 9D 78FEFFFF        - fstp dword ptr [ebp-00000188]
+Top-Kart.luaopen_API+9BCF4E - 8D 8D 78FEFFFF        - lea ecx,[ebp-00000188]
+Top-Kart.luaopen_API+9BCF54 - 51                    - push ecx
+Top-Kart.luaopen_API+9BCF55 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BCF5B - 81 C1 90240000        - add ecx,00002490
+Top-Kart.luaopen_API+9BCF61 - E8 4AB50BFF           - call Top-Kart.dll+1D840
+Top-Kart.luaopen_API+9BCF66 - DDD8                  - fstp st(0)
+Top-Kart.luaopen_API+9BCF68 - E8 A36D81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BCF6D - 89 85 D4FDFFFF        - mov [ebp-0000022C],eax
+Top-Kart.luaopen_API+9BCF73 - 8B 95 D4FDFFFF        - mov edx,[ebp-0000022C]
+Top-Kart.luaopen_API+9BCF79 - 8B 02                 - mov eax,[edx]
+Top-Kart.luaopen_API+9BCF7B - 8B 8D D4FDFFFF        - mov ecx,[ebp-0000022C]
+Top-Kart.luaopen_API+9BCF81 - 8B 50 0C              - mov edx,[eax+0C]
+Top-Kart.luaopen_API+9BCF84 - FF D2                 - call edx
+Top-Kart.luaopen_API+9BCF86 - 6A 13                 - push 13
+Top-Kart.luaopen_API+9BCF88 - 8D 8D 0CFFFFFF        - lea ecx,[ebp-000000F4]
+Top-Kart.luaopen_API+9BCF8E - E8 5D1781FF           - call Top-Kart.luaopen_API+1CE6F0
+Top-Kart.luaopen_API+9BCF93 - C7 45 FC 05000000     - mov [ebp-04],00000005
+Top-Kart.luaopen_API+9BCF9A - E8 C19A11FF           - call Top-Kart.dll+7BDF0
+Top-Kart.luaopen_API+9BCF9F - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BCFA1 - 74 13                 - je Top-Kart.luaopen_API+9BCFB6
+Top-Kart.luaopen_API+9BCFA3 - 51                    - push ecx
+Top-Kart.luaopen_API+9BCFA4 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BCFA7 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BCFAA - E8 B19A11FF           - call Top-Kart.dll+7BDF0
+Top-Kart.luaopen_API+9BCFAF - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BCFB1 - E8 9349EB00           - call Top-Kart.dll+1E16CD9
+Top-Kart.luaopen_API+9BCFB6 - E8 254B4CFF           - call Top-Kart.DllUnregisterServer+331C50
+Top-Kart.luaopen_API+9BCFBB - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BCFBD - 74 13                 - je Top-Kart.luaopen_API+9BCFD2
+Top-Kart.luaopen_API+9BCFBF - 51                    - push ecx
+Top-Kart.luaopen_API+9BCFC0 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BCFC3 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BCFC6 - E8 154B4CFF           - call Top-Kart.DllUnregisterServer+331C50
+Top-Kart.luaopen_API+9BCFCB - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BCFCD - E8 6EC4B9FF           - call Top-Kart.luaopen_API+559440
+Top-Kart.luaopen_API+9BCFD2 - 83 3D 5896D709 00     - cmp dword ptr [Top-Kart.dll+1799658],00
+Top-Kart.luaopen_API+9BCFD9 - 74 44                 - je Top-Kart.luaopen_API+9BD01F
+Top-Kart.luaopen_API+9BCFDB - A1 5896D709           - mov eax,[Top-Kart.dll+1799658]
+Top-Kart.luaopen_API+9BCFE0 - 0FBF 88 C2270000      - movsx ecx,word ptr [eax+000027C2]
+Top-Kart.luaopen_API+9BCFE7 - 83 F9 17              - cmp ecx,17
+Top-Kart.luaopen_API+9BCFEA - 75 33                 - jne Top-Kart.luaopen_API+9BD01F
+Top-Kart.luaopen_API+9BCFEC - E8 4FA00AFF           - call Top-Kart.dll+C3D0
+Top-Kart.luaopen_API+9BCFF1 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BCFF3 - 74 2A                 - je Top-Kart.luaopen_API+9BD01F
+Top-Kart.luaopen_API+9BCFF5 - E8 46A00AFF           - call Top-Kart.dll+C3D0
+Top-Kart.luaopen_API+9BCFFA - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BCFFC - E8 5FA7BEFF           - call Top-Kart.luaopen_API+5A7760
+Top-Kart.luaopen_API+9BD001 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD003 - 74 1A                 - je Top-Kart.luaopen_API+9BD01F
+Top-Kart.luaopen_API+9BD005 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD006 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD009 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD00C - E8 2FA00AFF           - call Top-Kart.dll+C3D0
+Top-Kart.luaopen_API+9BD011 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD013 - E8 48A7BEFF           - call Top-Kart.luaopen_API+5A7760
+Top-Kart.luaopen_API+9BD018 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD01A - E8 31E0BEFF           - call Top-Kart.luaopen_API+5AB050
+Top-Kart.luaopen_API+9BD01F - E8 EC6C81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD024 - 89 85 D0FDFFFF        - mov [ebp-00000230],eax
+Top-Kart.luaopen_API+9BD02A - 68 F058BC09           - push Top-Kart.dll+15E58F0
+Top-Kart.luaopen_API+9BD02F - 8B 95 D0FDFFFF        - mov edx,[ebp-00000230]
+Top-Kart.luaopen_API+9BD035 - 8B 02                 - mov eax,[edx]
+Top-Kart.luaopen_API+9BD037 - 8B 8D D0FDFFFF        - mov ecx,[ebp-00000230]
+Top-Kart.luaopen_API+9BD03D - 8B 50 08              - mov edx,[eax+08]
+Top-Kart.luaopen_API+9BD040 - FF D2                 - call edx
+Top-Kart.luaopen_API+9BD042 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD045 - 8B 85 64FEFFFF        - mov eax,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD04B - D8 A0 74240000        - fsub dword ptr [eax+00002474]
+Top-Kart.luaopen_API+9BD051 - D9 9D CCFDFFFF        - fstp dword ptr [ebp-00000234]
+Top-Kart.luaopen_API+9BD057 - D9 85 CCFDFFFF        - fld dword ptr [ebp-00000234]
+Top-Kart.luaopen_API+9BD05D - 51                    - push ecx
+Top-Kart.luaopen_API+9BD05E - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD061 - E8 3A5461FF           - call Top-Kart.DllUnregisterServer+482610
+Top-Kart.luaopen_API+9BD066 - 83 C4 04              - add esp,04
+Top-Kart.luaopen_API+9BD069 - E8 A26C81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD06E - 89 85 C8FDFFFF        - mov [ebp-00000238],eax
+Top-Kart.luaopen_API+9BD074 - 8B 8D C8FDFFFF        - mov ecx,[ebp-00000238]
+Top-Kart.luaopen_API+9BD07A - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD07C - 8B 8D C8FDFFFF        - mov ecx,[ebp-00000238]
+Top-Kart.luaopen_API+9BD082 - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BD085 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD087 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD088 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD08B - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD08E - 8B 4D E4              - mov ecx,[ebp-1C]
+Top-Kart.luaopen_API+9BD091 - E8 6AF6A4FF           - call Top-Kart.luaopen_API+40C700
+Top-Kart.luaopen_API+9BD096 - E8 756C81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD09B - 89 85 C4FDFFFF        - mov [ebp-0000023C],eax
+Top-Kart.luaopen_API+9BD0A1 - 68 DC58BC09           - push Top-Kart.dll+15E58DC
+Top-Kart.luaopen_API+9BD0A6 - 8B 8D C4FDFFFF        - mov ecx,[ebp-0000023C]
+Top-Kart.luaopen_API+9BD0AC - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD0AE - 8B 8D C4FDFFFF        - mov ecx,[ebp-0000023C]
+Top-Kart.luaopen_API+9BD0B4 - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.luaopen_API+9BD0B7 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD0B9 - E8 029F0AFF           - call Top-Kart.dll+C350
+Top-Kart.luaopen_API+9BD0BE - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD0C0 - 74 13                 - je Top-Kart.luaopen_API+9BD0D5
+Top-Kart.luaopen_API+9BD0C2 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD0C3 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD0C6 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD0C9 - E8 F29E0AFF           - call Top-Kart.dll+C350
+Top-Kart.luaopen_API+9BD0CE - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD0D0 - E8 9B39BDFF           - call Top-Kart.luaopen_API+590A70
+Top-Kart.luaopen_API+9BD0D5 - E8 366C81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD0DA - 89 85 C0FDFFFF        - mov [ebp-00000240],eax
+Top-Kart.luaopen_API+9BD0E0 - 8B 8D C0FDFFFF        - mov ecx,[ebp-00000240]
+Top-Kart.luaopen_API+9BD0E6 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD0E8 - 8B 8D C0FDFFFF        - mov ecx,[ebp-00000240]
+Top-Kart.luaopen_API+9BD0EE - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BD0F1 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD0F3 - E8 186C81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD0F8 - 89 85 BCFDFFFF        - mov [ebp-00000244],eax
+Top-Kart.luaopen_API+9BD0FE - 68 C858BC09           - push Top-Kart.dll+15E58C8
+Top-Kart.luaopen_API+9BD103 - 8B 8D BCFDFFFF        - mov ecx,[ebp-00000244]
+Top-Kart.luaopen_API+9BD109 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD10B - 8B 8D BCFDFFFF        - mov ecx,[ebp-00000244]
+Top-Kart.luaopen_API+9BD111 - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.luaopen_API+9BD114 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD116 - E8 25550AFF           - call Top-Kart.dll+79D0
+Top-Kart.luaopen_API+9BD11B - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD11D - 74 13                 - je Top-Kart.luaopen_API+9BD132
+Top-Kart.luaopen_API+9BD11F - 51                    - push ecx
+Top-Kart.luaopen_API+9BD120 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD123 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD126 - E8 15550AFF           - call Top-Kart.dll+79D0
+Top-Kart.luaopen_API+9BD12B - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD12D - E8 4E6221FF           - call Top-Kart.DllUnregisterServer+834F0
+Top-Kart.luaopen_API+9BD132 - E8 D96B81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD137 - 89 85 B8FDFFFF        - mov [ebp-00000248],eax
+Top-Kart.luaopen_API+9BD13D - 8B 8D B8FDFFFF        - mov ecx,[ebp-00000248]
+Top-Kart.luaopen_API+9BD143 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD145 - 8B 8D B8FDFFFF        - mov ecx,[ebp-00000248]
+Top-Kart.luaopen_API+9BD14B - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BD14E - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD150 - C7 45 FC FFFFFFFF     - mov [ebp-04],FFFFFFFF
+Top-Kart.luaopen_API+9BD157 - 8D 8D 0CFFFFFF        - lea ecx,[ebp-000000F4]
+Top-Kart.luaopen_API+9BD15D - E8 9E1581FF           - call Top-Kart.luaopen_API+1CE700
+Top-Kart.luaopen_API+9BD162 - E8 A96B81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD167 - 89 85 B4FDFFFF        - mov [ebp-0000024C],eax
+Top-Kart.luaopen_API+9BD16D - 68 B858BC09           - push Top-Kart.dll+15E58B8
+Top-Kart.luaopen_API+9BD172 - 8B 8D B4FDFFFF        - mov ecx,[ebp-0000024C]
+Top-Kart.luaopen_API+9BD178 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD17A - 8B 8D B4FDFFFF        - mov ecx,[ebp-0000024C]
+Top-Kart.luaopen_API+9BD180 - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.luaopen_API+9BD183 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD185 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD186 - D9 45 EC              - fld dword ptr [ebp-14]
+Top-Kart.luaopen_API+9BD189 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD18C - 51                    - push ecx
+Top-Kart.luaopen_API+9BD18D - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD190 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD193 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD199 - E8 82E8FFFF           - call Top-Kart.luaopen_API+9BBA20
+Top-Kart.luaopen_API+9BD19E - 6A 16                 - push 16
+Top-Kart.luaopen_API+9BD1A0 - 8D 8D E4FEFFFF        - lea ecx,[ebp-0000011C]
+Top-Kart.luaopen_API+9BD1A6 - E8 451581FF           - call Top-Kart.luaopen_API+1CE6F0
+Top-Kart.luaopen_API+9BD1AB - C7 45 FC 06000000     - mov [ebp-04],00000006
+Top-Kart.luaopen_API+9BD1B2 - 6A 00                 - push 00
+Top-Kart.luaopen_API+9BD1B4 - E8 87B00AFF           - call Top-Kart.dll+D5D0
+Top-Kart.luaopen_API+9BD1B9 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD1BB - E8 40580CFF           - call Top-Kart.dll+27D90
+Top-Kart.luaopen_API+9BD1C0 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD1C2 - E8 89660100           - call Top-Kart.luaopen_API+9D3850
+Top-Kart.luaopen_API+9BD1C7 - E8 E4210CFF           - call Top-Kart.dll+24740
+Top-Kart.luaopen_API+9BD1CC - 89 85 08FFFFFF        - mov [ebp-000000F8],eax
+Top-Kart.luaopen_API+9BD1D2 - 83 BD 08FFFFFF 00     - cmp dword ptr [ebp-000000F8],00
+Top-Kart.luaopen_API+9BD1D9 - 74 12                 - je Top-Kart.luaopen_API+9BD1ED
+Top-Kart.luaopen_API+9BD1DB - 51                    - push ecx
+Top-Kart.luaopen_API+9BD1DC - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD1DF - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD1E2 - 8B 8D 08FFFFFF        - mov ecx,[ebp-000000F8]
+Top-Kart.luaopen_API+9BD1E8 - E8 032AFFFF           - call Top-Kart.luaopen_API+9AFBF0
+Top-Kart.luaopen_API+9BD1ED - E8 4E810DFF           - call Top-Kart.dll+3A6D0
+Top-Kart.luaopen_API+9BD1F2 - 89 85 E0FEFFFF        - mov [ebp-00000120],eax
+Top-Kart.luaopen_API+9BD1F8 - 83 BD E0FEFFFF 00     - cmp dword ptr [ebp-00000120],00
+Top-Kart.luaopen_API+9BD1FF - 74 12                 - je Top-Kart.luaopen_API+9BD213
+Top-Kart.luaopen_API+9BD201 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD202 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD205 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD208 - 8B 8D E0FEFFFF        - mov ecx,[ebp-00000120]
+Top-Kart.luaopen_API+9BD20E - E8 0DE4BCFF           - call Top-Kart.luaopen_API+58B620
+Top-Kart.luaopen_API+9BD213 - E8 E8B3B1FF           - call Top-Kart.luaopen_API+4D8600
+Top-Kart.luaopen_API+9BD218 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD21A - 74 13                 - je Top-Kart.luaopen_API+9BD22F
+Top-Kart.luaopen_API+9BD21C - 51                    - push ecx
+Top-Kart.luaopen_API+9BD21D - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD220 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD223 - E8 D8B3B1FF           - call Top-Kart.luaopen_API+4D8600
+Top-Kart.luaopen_API+9BD228 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD22A - E8 C185FEFF           - call Top-Kart.luaopen_API+9A57F0
+Top-Kart.luaopen_API+9BD22F - E8 7C9F0AFF           - call Top-Kart.dll+C540
+Top-Kart.luaopen_API+9BD234 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD236 - 74 1F                 - je Top-Kart.luaopen_API+9BD257
+Top-Kart.luaopen_API+9BD238 - E8 739F0AFF           - call Top-Kart.dll+C540
+Top-Kart.luaopen_API+9BD23D - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD23F - E8 8CCBA5FF           - call Top-Kart.luaopen_API+419DD0
+Top-Kart.luaopen_API+9BD244 - 0FB6 C8               - movzx ecx,al
+Top-Kart.luaopen_API+9BD247 - 85 C9                 - test ecx,ecx
+Top-Kart.luaopen_API+9BD249 - 74 0C                 - je Top-Kart.luaopen_API+9BD257
+Top-Kart.luaopen_API+9BD24B - E8 609F0AFF           - call Top-Kart.dll+C540
+Top-Kart.luaopen_API+9BD250 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD252 - E8 29D4A5FF           - call Top-Kart.luaopen_API+41A680
+Top-Kart.luaopen_API+9BD257 - E8 B41F14FF           - call Top-Kart.dll+A45A0
+Top-Kart.luaopen_API+9BD25C - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD25E - 74 0C                 - je Top-Kart.luaopen_API+9BD26C
+Top-Kart.luaopen_API+9BD260 - E8 AB1F14FF           - call Top-Kart.dll+A45A0
+Top-Kart.luaopen_API+9BD265 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD267 - E8 84800100           - call Top-Kart.luaopen_API+9D52F0
+Top-Kart.luaopen_API+9BD26C - 8B 95 64FEFFFF        - mov edx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD272 - 83 BA 44260000 00     - cmp dword ptr [edx+00002644],00
+Top-Kart.luaopen_API+9BD279 - 74 18                 - je Top-Kart.luaopen_API+9BD293
+Top-Kart.luaopen_API+9BD27B - 51                    - push ecx
+Top-Kart.luaopen_API+9BD27C - D9 45 18              - fld dword ptr [ebp+18]
+Top-Kart.luaopen_API+9BD27F - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD282 - 8B 85 64FEFFFF        - mov eax,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD288 - 8B 88 44260000        - mov ecx,[eax+00002644]
+Top-Kart.luaopen_API+9BD28E - E8 FD00B1FF           - call Top-Kart.luaopen_API+4CD390
+Top-Kart.luaopen_API+9BD293 - C7 45 FC FFFFFFFF     - mov [ebp-04],FFFFFFFF
+Top-Kart.luaopen_API+9BD29A - 8D 8D E4FEFFFF        - lea ecx,[ebp-0000011C]
+Top-Kart.luaopen_API+9BD2A0 - E8 5B1481FF           - call Top-Kart.luaopen_API+1CE700
+Top-Kart.luaopen_API+9BD2A5 - E8 666A81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD2AA - 89 85 B0FDFFFF        - mov [ebp-00000250],eax
+Top-Kart.luaopen_API+9BD2B0 - 8B 8D B0FDFFFF        - mov ecx,[ebp-00000250]
+Top-Kart.luaopen_API+9BD2B6 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD2B8 - 8B 8D B0FDFFFF        - mov ecx,[ebp-00000250]
+Top-Kart.luaopen_API+9BD2BE - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BD2C1 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD2C3 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD2C4 - D9 45 EC              - fld dword ptr [ebp-14]
+Top-Kart.luaopen_API+9BD2C7 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD2CA - 51                    - push ecx
+Top-Kart.luaopen_API+9BD2CB - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD2CE - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD2D1 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD2D7 - E8 44E8FFFF           - call Top-Kart.luaopen_API+9BBB20
+Top-Kart.luaopen_API+9BD2DC - E8 2F6A81FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD2E1 - 89 85 ACFDFFFF        - mov [ebp-00000254],eax
+Top-Kart.luaopen_API+9BD2E7 - 68 A458BC09           - push Top-Kart.dll+15E58A4
+Top-Kart.luaopen_API+9BD2EC - 8B 8D ACFDFFFF        - mov ecx,[ebp-00000254]
+Top-Kart.luaopen_API+9BD2F2 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD2F4 - 8B 8D ACFDFFFF        - mov ecx,[ebp-00000254]
+Top-Kart.luaopen_API+9BD2FA - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.luaopen_API+9BD2FD - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD2FF - E8 7CBEED00           - call Top-Kart.dll+1E3E510
+Top-Kart.luaopen_API+9BD304 - 89 85 A8FDFFFF        - mov [ebp-00000258],eax
+Top-Kart.luaopen_API+9BD30A - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD310 - D9 81 74240000        - fld dword ptr [ecx+00002474]
+Top-Kart.luaopen_API+9BD316 - D8 6D 08              - fsubr dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD319 - D9 9D A4FDFFFF        - fstp dword ptr [ebp-0000025C]
+Top-Kart.luaopen_API+9BD31F - D9 85 A4FDFFFF        - fld dword ptr [ebp-0000025C]
+Top-Kart.luaopen_API+9BD325 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD326 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD329 - 8B 95 A8FDFFFF        - mov edx,[ebp-00000258]
+Top-Kart.luaopen_API+9BD32F - 8B 02                 - mov eax,[edx]
+Top-Kart.luaopen_API+9BD331 - 8B 8D A8FDFFFF        - mov ecx,[ebp-00000258]
+Top-Kart.luaopen_API+9BD337 - 8B 90 2C010000        - mov edx,[eax+0000012C]
+Top-Kart.luaopen_API+9BD33D - FF D2                 - call edx
+Top-Kart.luaopen_API+9BD33F - E8 CC6981FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD344 - 89 85 A0FDFFFF        - mov [ebp-00000260],eax
+Top-Kart.luaopen_API+9BD34A - 8B 85 A0FDFFFF        - mov eax,[ebp-00000260]
+Top-Kart.luaopen_API+9BD350 - 8B 10                 - mov edx,[eax]
+Top-Kart.luaopen_API+9BD352 - 8B 8D A0FDFFFF        - mov ecx,[ebp-00000260]
+Top-Kart.luaopen_API+9BD358 - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BD35B - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD35D - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD363 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD366 - D9 99 74240000        - fstp dword ptr [ecx+00002474]
+Top-Kart.luaopen_API+9BD36C - E8 9F6981FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD371 - 89 85 9CFDFFFF        - mov [ebp-00000264],eax
+Top-Kart.luaopen_API+9BD377 - 68 9458BC09           - push Top-Kart.dll+15E5894
+Top-Kart.luaopen_API+9BD37C - 8B 95 9CFDFFFF        - mov edx,[ebp-00000264]
+Top-Kart.luaopen_API+9BD382 - 8B 02                 - mov eax,[edx]
+Top-Kart.luaopen_API+9BD384 - 8B 8D 9CFDFFFF        - mov ecx,[ebp-00000264]
+Top-Kart.luaopen_API+9BD38A - 8B 50 08              - mov edx,[eax+08]
+Top-Kart.luaopen_API+9BD38D - FF D2                 - call edx
+Top-Kart.luaopen_API+9BD38F - E8 ECBDED00           - call Top-Kart.dll+1E3E510
+Top-Kart.luaopen_API+9BD394 - 89 85 98FDFFFF        - mov [ebp-00000268],eax
+Top-Kart.luaopen_API+9BD39A - 8B 85 98FDFFFF        - mov eax,[ebp-00000268]
+Top-Kart.luaopen_API+9BD3A0 - 8B 10                 - mov edx,[eax]
+Top-Kart.luaopen_API+9BD3A2 - 8B 8D 98FDFFFF        - mov ecx,[ebp-00000268]
+Top-Kart.luaopen_API+9BD3A8 - 8B 42 18              - mov eax,[edx+18]
+Top-Kart.luaopen_API+9BD3AB - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD3AD - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD3AF - 0F84 D0010000         - je Top-Kart.luaopen_API+9BD585
+Top-Kart.luaopen_API+9BD3B5 - FF 15 6C81AA09        - call dword ptr [Top-Kart.std::_Init_locks::operator=+15D8A8]
+Top-Kart.luaopen_API+9BD3BB - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD3C1 - 2B 81 A8260000        - sub eax,[ecx+000026A8]
+Top-Kart.luaopen_API+9BD3C7 - 3D 10270000           - cmp eax,00002710
+Top-Kart.luaopen_API+9BD3CC - 0F86 B3010000         - jbe Top-Kart.luaopen_API+9BD585
+Top-Kart.luaopen_API+9BD3D2 - 8D 95 D8FEFFFF        - lea edx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD3D8 - 52                    - push edx
+Top-Kart.luaopen_API+9BD3D9 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD3DF - 81 C1 9C260000        - add ecx,0000269C
+Top-Kart.luaopen_API+9BD3E5 - E8 D6910000           - call Top-Kart.luaopen_API+9C65C0
+Top-Kart.luaopen_API+9BD3EA - 8D 85 70FEFFFF        - lea eax,[ebp-00000190]
+Top-Kart.luaopen_API+9BD3F0 - 50                    - push eax
+Top-Kart.luaopen_API+9BD3F1 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD3F7 - 81 C1 9C260000        - add ecx,0000269C
+Top-Kart.luaopen_API+9BD3FD - E8 EE910000           - call Top-Kart.luaopen_API+9C65F0
+Top-Kart.luaopen_API+9BD402 - 50                    - push eax
+Top-Kart.luaopen_API+9BD403 - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD409 - E8 F2AA0000           - call Top-Kart.luaopen_API+9C7F00
+Top-Kart.luaopen_API+9BD40E - 0FB6 C8               - movzx ecx,al
+Top-Kart.luaopen_API+9BD411 - 85 C9                 - test ecx,ecx
+Top-Kart.luaopen_API+9BD413 - 0F84 5A010000         - je Top-Kart.luaopen_API+9BD573
+Top-Kart.luaopen_API+9BD419 - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD41F - E8 7CAA0000           - call Top-Kart.luaopen_API+9C7EA0
+Top-Kart.luaopen_API+9BD424 - 83 78 04 00           - cmp dword ptr [eax+04],00
+Top-Kart.luaopen_API+9BD428 - 0F84 2C010000         - je Top-Kart.luaopen_API+9BD55A
+Top-Kart.luaopen_API+9BD42E - E8 4DBDED00           - call Top-Kart.dll+1E3E510
+Top-Kart.luaopen_API+9BD433 - 89 85 94FDFFFF        - mov [ebp-0000026C],eax
+Top-Kart.luaopen_API+9BD439 - 8B 95 94FDFFFF        - mov edx,[ebp-0000026C]
+Top-Kart.luaopen_API+9BD43F - 8B 02                 - mov eax,[edx]
+Top-Kart.luaopen_API+9BD441 - 8B 8D 94FDFFFF        - mov ecx,[ebp-0000026C]
+Top-Kart.luaopen_API+9BD447 - 8B 50 30              - mov edx,[eax+30]
+Top-Kart.luaopen_API+9BD44A - FF D2                 - call edx
+Top-Kart.luaopen_API+9BD44C - 89 85 90FDFFFF        - mov [ebp-00000270],eax
+Top-Kart.luaopen_API+9BD452 - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD458 - E8 43AA0000           - call Top-Kart.luaopen_API+9C7EA0
+Top-Kart.luaopen_API+9BD45D - 8B 00                 - mov eax,[eax]
+Top-Kart.luaopen_API+9BD45F - 50                    - push eax
+Top-Kart.luaopen_API+9BD460 - 8B 8D 90FDFFFF        - mov ecx,[ebp-00000270]
+Top-Kart.luaopen_API+9BD466 - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD468 - 8B 8D 90FDFFFF        - mov ecx,[ebp-00000270]
+Top-Kart.luaopen_API+9BD46E - 8B 82 90000000        - mov eax,[edx+00000090]
+Top-Kart.luaopen_API+9BD474 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD476 - 89 85 D4FEFFFF        - mov [ebp-0000012C],eax
+Top-Kart.luaopen_API+9BD47C - 83 BD D4FEFFFF 00     - cmp dword ptr [ebp-0000012C],00
+Top-Kart.luaopen_API+9BD483 - 0F84 D1000000         - je Top-Kart.luaopen_API+9BD55A
+Top-Kart.luaopen_API+9BD489 - 8B 8D D4FEFFFF        - mov ecx,[ebp-0000012C]
+Top-Kart.luaopen_API+9BD48F - E8 3C500AFF           - call Top-Kart.dll+7860
+Top-Kart.luaopen_API+9BD494 - 89 85 D0FEFFFF        - mov [ebp-00000130],eax
+Top-Kart.luaopen_API+9BD49A - 81 BD D0FEFFFF 10270000 - cmp [ebp-00000130],00002710
+Top-Kart.luaopen_API+9BD4A4 - 0F86 B0000000         - jbe Top-Kart.luaopen_API+9BD55A
+Top-Kart.luaopen_API+9BD4AA - C7 85 CCFEFFFF 00000000 - mov [ebp-00000134],00000000
+Top-Kart.luaopen_API+9BD4B4 - 8D 8D CCFEFFFF        - lea ecx,[ebp-00000134]
+Top-Kart.luaopen_API+9BD4BA - 51                    - push ecx
+Top-Kart.luaopen_API+9BD4BB - 8B 95 D0FEFFFF        - mov edx,[ebp-00000130]
+Top-Kart.luaopen_API+9BD4C1 - 52                    - push edx
+Top-Kart.luaopen_API+9BD4C2 - A1 6096D709           - mov eax,[Top-Kart.dll+1799660]
+Top-Kart.luaopen_API+9BD4C7 - 8B 08                 - mov ecx,[eax]
+Top-Kart.luaopen_API+9BD4C9 - 8B 15 6096D709        - mov edx,[Top-Kart.dll+1799660]
+Top-Kart.luaopen_API+9BD4CF - 52                    - push edx
+Top-Kart.luaopen_API+9BD4D0 - 8B 41 4C              - mov eax,[ecx+4C]
+Top-Kart.luaopen_API+9BD4D3 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD4D5 - 89 85 C8FEFFFF        - mov [ebp-00000138],eax
+Top-Kart.luaopen_API+9BD4DB - 83 BD C8FEFFFF 00     - cmp dword ptr [ebp-00000138],00
+Top-Kart.luaopen_API+9BD4E2 - 75 76                 - jne Top-Kart.luaopen_API+9BD55A
+Top-Kart.luaopen_API+9BD4E4 - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD4EA - E8 B1A90000           - call Top-Kart.luaopen_API+9C7EA0
+Top-Kart.luaopen_API+9BD4EF - 8B 48 04              - mov ecx,[eax+04]
+Top-Kart.luaopen_API+9BD4F2 - 8B 95 CCFEFFFF        - mov edx,[ebp-00000134]
+Top-Kart.luaopen_API+9BD4F8 - 89 11                 - mov [ecx],edx
+Top-Kart.luaopen_API+9BD4FA - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD500 - E8 9BA90000           - call Top-Kart.luaopen_API+9C7EA0
+Top-Kart.luaopen_API+9BD505 - 8B 40 04              - mov eax,[eax+04]
+Top-Kart.luaopen_API+9BD508 - 8B 8D CCFEFFFF        - mov ecx,[ebp-00000134]
+Top-Kart.luaopen_API+9BD50E - 3B 48 04              - cmp ecx,[eax+04]
+Top-Kart.luaopen_API+9BD511 - 7E 17                 - jle Top-Kart.luaopen_API+9BD52A
+Top-Kart.luaopen_API+9BD513 - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD519 - E8 82A90000           - call Top-Kart.luaopen_API+9C7EA0
+Top-Kart.luaopen_API+9BD51E - 8B 50 04              - mov edx,[eax+04]
+Top-Kart.luaopen_API+9BD521 - 8B 85 CCFEFFFF        - mov eax,[ebp-00000134]
+Top-Kart.luaopen_API+9BD527 - 89 42 04              - mov [edx+04],eax
+Top-Kart.luaopen_API+9BD52A - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD530 - E8 6BA90000           - call Top-Kart.luaopen_API+9C7EA0
+Top-Kart.luaopen_API+9BD535 - 8B 48 04              - mov ecx,[eax+04]
+Top-Kart.luaopen_API+9BD538 - 8B 95 CCFEFFFF        - mov edx,[ebp-00000134]
+Top-Kart.luaopen_API+9BD53E - 3B 51 08              - cmp edx,[ecx+08]
+Top-Kart.luaopen_API+9BD541 - 7D 17                 - jnl Top-Kart.luaopen_API+9BD55A
+Top-Kart.luaopen_API+9BD543 - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD549 - E8 52A90000           - call Top-Kart.luaopen_API+9C7EA0
+Top-Kart.luaopen_API+9BD54E - 8B 40 04              - mov eax,[eax+04]
+Top-Kart.luaopen_API+9BD551 - 8B 8D CCFEFFFF        - mov ecx,[ebp-00000134]
+Top-Kart.luaopen_API+9BD557 - 89 48 08              - mov [eax+08],ecx
+Top-Kart.luaopen_API+9BD55A - 6A 00                 - push 00
+Top-Kart.luaopen_API+9BD55C - 8D 95 68FEFFFF        - lea edx,[ebp-00000198]
+Top-Kart.luaopen_API+9BD562 - 52                    - push edx
+Top-Kart.luaopen_API+9BD563 - 8D 8D D8FEFFFF        - lea ecx,[ebp-00000128]
+Top-Kart.luaopen_API+9BD569 - E8 52A90000           - call Top-Kart.luaopen_API+9C7EC0
+Top-Kart.luaopen_API+9BD56E - E9 77FEFFFF           - jmp Top-Kart.luaopen_API+9BD3EA
+Top-Kart.luaopen_API+9BD573 - FF 15 6C81AA09        - call dword ptr [Top-Kart.std::_Init_locks::operator=+15D8A8]
+Top-Kart.luaopen_API+9BD579 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD57F - 89 81 A8260000        - mov [ecx+000026A8],eax
+Top-Kart.luaopen_API+9BD585 - E8 866781FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD58A - 89 85 8CFDFFFF        - mov [ebp-00000274],eax
+Top-Kart.luaopen_API+9BD590 - 8B 95 8CFDFFFF        - mov edx,[ebp-00000274]
+Top-Kart.luaopen_API+9BD596 - 8B 02                 - mov eax,[edx]
+Top-Kart.luaopen_API+9BD598 - 8B 8D 8CFDFFFF        - mov ecx,[ebp-00000274]
+Top-Kart.luaopen_API+9BD59E - 8B 50 0C              - mov edx,[eax+0C]
+Top-Kart.luaopen_API+9BD5A1 - FF D2                 - call edx
+Top-Kart.luaopen_API+9BD5A3 - 6A 11                 - push 11
+Top-Kart.luaopen_API+9BD5A5 - 8D 8D A4FEFFFF        - lea ecx,[ebp-0000015C]
+Top-Kart.luaopen_API+9BD5AB - E8 401181FF           - call Top-Kart.luaopen_API+1CE6F0
+Top-Kart.luaopen_API+9BD5B0 - C7 45 FC 07000000     - mov [ebp-04],00000007
+Top-Kart.luaopen_API+9BD5B7 - E8 546781FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD5BC - 89 85 88FDFFFF        - mov [ebp-00000278],eax
+Top-Kart.luaopen_API+9BD5C2 - 68 8058BC09           - push Top-Kart.dll+15E5880
+Top-Kart.luaopen_API+9BD5C7 - 8B 85 88FDFFFF        - mov eax,[ebp-00000278]
+Top-Kart.luaopen_API+9BD5CD - 8B 10                 - mov edx,[eax]
+Top-Kart.luaopen_API+9BD5CF - 8B 8D 88FDFFFF        - mov ecx,[ebp-00000278]
+Top-Kart.luaopen_API+9BD5D5 - 8B 42 08              - mov eax,[edx+08]
+Top-Kart.luaopen_API+9BD5D8 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD5DA - E8 A17915FF           - call Top-Kart.dll+BA310
+Top-Kart.luaopen_API+9BD5DF - 89 85 C4FEFFFF        - mov [ebp-0000013C],eax
+Top-Kart.luaopen_API+9BD5E5 - 83 BD C4FEFFFF 00     - cmp dword ptr [ebp-0000013C],00
+Top-Kart.luaopen_API+9BD5EC - 74 1D                 - je Top-Kart.luaopen_API+9BD60B
+Top-Kart.luaopen_API+9BD5EE - E8 AD2728FF           - call Top-Kart.DllUnregisterServer+EFF10
+Top-Kart.luaopen_API+9BD5F3 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD5F5 - 74 14                 - je Top-Kart.luaopen_API+9BD60B
+Top-Kart.luaopen_API+9BD5F7 - E8 F4589DFF           - call Top-Kart.luaopen_API+392EF0
+Top-Kart.luaopen_API+9BD5FC - 51                    - push ecx
+Top-Kart.luaopen_API+9BD5FD - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD600 - 8B 8D C4FEFFFF        - mov ecx,[ebp-0000013C]
+Top-Kart.luaopen_API+9BD606 - E8 25C0B7FF           - call Top-Kart.luaopen_API+539630
+Top-Kart.luaopen_API+9BD60B - E8 006781FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD610 - 89 85 84FDFFFF        - mov [ebp-0000027C],eax
+Top-Kart.luaopen_API+9BD616 - 8B 8D 84FDFFFF        - mov ecx,[ebp-0000027C]
+Top-Kart.luaopen_API+9BD61C - 8B 11                 - mov edx,[ecx]
+Top-Kart.luaopen_API+9BD61E - 8B 8D 84FDFFFF        - mov ecx,[ebp-0000027C]
+Top-Kart.luaopen_API+9BD624 - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BD627 - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD629 - 83 7D F0 00           - cmp dword ptr [ebp-10],00
+Top-Kart.luaopen_API+9BD62D - 74 47                 - je Top-Kart.luaopen_API+9BD676
+Top-Kart.luaopen_API+9BD62F - 8B 4D F0              - mov ecx,[ebp-10]
+Top-Kart.luaopen_API+9BD632 - E8 D94E0AFF           - call Top-Kart.dll+78A0
+Top-Kart.luaopen_API+9BD637 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD639 - 74 3B                 - je Top-Kart.luaopen_API+9BD676
+Top-Kart.luaopen_API+9BD63B - 8B 4D F0              - mov ecx,[ebp-10]
+Top-Kart.luaopen_API+9BD63E - E8 CD4E0AFF           - call Top-Kart.dll+78A0
+Top-Kart.luaopen_API+9BD643 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD645 - E8 364E0AFF           - call Top-Kart.dll+7810
+Top-Kart.luaopen_API+9BD64A - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD64C - 74 28                 - je Top-Kart.luaopen_API+9BD676
+Top-Kart.luaopen_API+9BD64E - 8B 4D F0              - mov ecx,[ebp-10]
+Top-Kart.luaopen_API+9BD651 - E8 BA4E0AFF           - call Top-Kart.dll+78A0
+Top-Kart.luaopen_API+9BD656 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD658 - E8 234E0AFF           - call Top-Kart.dll+7810
+Top-Kart.luaopen_API+9BD65D - 89 85 A0FEFFFF        - mov [ebp-00000160],eax
+Top-Kart.luaopen_API+9BD663 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD664 - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD667 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD66A - 8B 8D A0FEFFFF        - mov ecx,[ebp-00000160]
+Top-Kart.luaopen_API+9BD670 - 51                    - push ecx
+Top-Kart.luaopen_API+9BD671 - E8 56FEEF00           - call Top-Kart.dll+1E6285C
+Top-Kart.luaopen_API+9BD676 - E8 F55D16FF           - call Top-Kart.IDisplay::operator=+7660
+Top-Kart.luaopen_API+9BD67B - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD67D - 74 0C                 - je Top-Kart.luaopen_API+9BD68B
+Top-Kart.luaopen_API+9BD67F - E8 EC5D16FF           - call Top-Kart.IDisplay::operator=+7660
+Top-Kart.luaopen_API+9BD684 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD686 - E8 65DB36FF           - call Top-Kart.DllUnregisterServer+1DB360
+Top-Kart.luaopen_API+9BD68B - E8 E05D16FF           - call Top-Kart.IDisplay::operator=+7660
+Top-Kart.luaopen_API+9BD690 - 85 C0                 - test eax,eax
+Top-Kart.luaopen_API+9BD692 - 74 0C                 - je Top-Kart.luaopen_API+9BD6A0
+Top-Kart.luaopen_API+9BD694 - E8 D75D16FF           - call Top-Kart.IDisplay::operator=+7660
+Top-Kart.luaopen_API+9BD699 - 8B C8                 - mov ecx,eax
+Top-Kart.luaopen_API+9BD69B - E8 30FB36FF           - call Top-Kart.DllUnregisterServer+1DD340
+Top-Kart.luaopen_API+9BD6A0 - E8 6B6681FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD6A5 - 89 85 80FDFFFF        - mov [ebp-00000280],eax
+Top-Kart.luaopen_API+9BD6AB - 68 6C58BC09           - push Top-Kart.dll+15E586C
+Top-Kart.luaopen_API+9BD6B0 - 8B 95 80FDFFFF        - mov edx,[ebp-00000280]
+Top-Kart.luaopen_API+9BD6B6 - 8B 02                 - mov eax,[edx]
+Top-Kart.luaopen_API+9BD6B8 - 8B 8D 80FDFFFF        - mov ecx,[ebp-00000280]
+Top-Kart.luaopen_API+9BD6BE - 8B 50 08              - mov edx,[eax+08]
+Top-Kart.luaopen_API+9BD6C1 - FF D2                 - call edx
+Top-Kart.luaopen_API+9BD6C3 - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD6C9 - E8 62ECFFFF           - call Top-Kart.luaopen_API+9BC330
+Top-Kart.luaopen_API+9BD6CE - E8 3D6681FF           - call Top-Kart.luaopen_API+1D3D10
+Top-Kart.luaopen_API+9BD6D3 - 89 85 7CFDFFFF        - mov [ebp-00000284],eax
+Top-Kart.luaopen_API+9BD6D9 - 8B 85 7CFDFFFF        - mov eax,[ebp-00000284]
+Top-Kart.luaopen_API+9BD6DF - 8B 10                 - mov edx,[eax]
+Top-Kart.luaopen_API+9BD6E1 - 8B 8D 7CFDFFFF        - mov ecx,[ebp-00000284]
+Top-Kart.luaopen_API+9BD6E7 - 8B 42 0C              - mov eax,[edx+0C]
+Top-Kart.luaopen_API+9BD6EA - FF D0                 - call eax
+Top-Kart.luaopen_API+9BD6EC - C7 45 FC FFFFFFFF     - mov [ebp-04],FFFFFFFF
+Top-Kart.luaopen_API+9BD6F3 - 8D 8D A4FEFFFF        - lea ecx,[ebp-0000015C]
+Top-Kart.luaopen_API+9BD6F9 - E8 021081FF           - call Top-Kart.luaopen_API+1CE700
+Top-Kart.luaopen_API+9BD6FE - 8B 8D 64FEFFFF        - mov ecx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD704 - 83 B9 24270000 00     - cmp dword ptr [ecx+00002724],00
+Top-Kart.luaopen_API+9BD70B - 74 18                 - je Top-Kart.luaopen_API+9BD725
+Top-Kart.luaopen_API+9BD70D - 51                    - push ecx
+Top-Kart.luaopen_API+9BD70E - D9 45 08              - fld dword ptr [ebp+08]
+Top-Kart.luaopen_API+9BD711 - D9 1C 24              - fstp dword ptr [esp]
+Top-Kart.luaopen_API+9BD714 - 8B 95 64FEFFFF        - mov edx,[ebp-0000019C]
+Top-Kart.luaopen_API+9BD71A - 8B 8A 24270000        - mov ecx,[edx+00002724]
+Top-Kart.luaopen_API+9BD720 - E8 9B3BBCFF           - call Top-Kart.luaopen_API+5812C0
+Top-Kart.luaopen_API+9BD725 - 8B 4D F4              - mov ecx,[ebp-0C]
+Top-Kart.luaopen_API+9BD728 - 64 89 0D 00000000     - mov fs:[00000000],ecx
+Top-Kart.luaopen_API+9BD72F - 59                    - pop ecx
+Top-Kart.luaopen_API+9BD730 - 8B E5                 - mov esp,ebp
+Top-Kart.luaopen_API+9BD732 - 5D                    - pop ebp
+Top-Kart.luaopen_API+9BD733 - C2 0400               - ret 0004

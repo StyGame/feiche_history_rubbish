@@ -1,0 +1,7 @@
+zlib1.dll+1701 - 0C 01                 - or al,01   改 0A 01                 - or al,[ecx]  卡跑
+Top-Kart.dll+4A40 - 55                    - push ebp      ret 防撞
+Top-Kart.dll+F969 - 51                    - push ecx       push esp  快速集气
+Top-Kart.dll+1CB1B - D8 8D ECFFFFFF        - fmul dword ptr [ebp-00000014]  引擎加速
+Top-Kart.dll+30A00 - 55                    - push ebp    ret自动集气
+Top-Kart.dll+29AD12C  D9 41 28              - fld dword ptr [ecx+28]  E9 CF2E1F34           - jmp 48530000  飘逸加速
+Top-Kart.dll+C02DB2 - D9 41 34              - fld dword ptr [ecx+34]   D9 41 24   fld dword ptr [ecx+24] 飘逸瞬移

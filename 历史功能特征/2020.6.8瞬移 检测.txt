@@ -1,0 +1,23 @@
+Top-Kart.dll+179FCBC - 90                    - nop 5
+Top-Kart.dll+184A90 - C3                    - ret 
+Top-Kart.dll+18405D - E9 9EBFF2F2           - jmp 03960000
+Top-Kart.dll+1BA83 - 90                    - nop 5
+
+
+
+GameRpcs.dll+1B535 - 90                    - nop 5
+GameRpcs.dll+1B551 - 90                    - nop 5
+GameRpcs.dll+1B55C - 90                    - nop 5
+GameRpcs.dll+1B570 - 90                    - nop 5
+GameRpcs.dll+1B58B - 90                    - nop 5
+GameRpcs.dll+1B5B4 - 90                    - nop 5
+GameRpcs.dll+1B5C0 - 90                    - nop 5
+GameRpcs.dll+94C33 - 90                    - nop 5
+GameRpcs.dll+94C86 - 90                    - nop 5
+GameRpcs.dll+94C8F - 90                    - nop 5
+GameRpcs.dll+94CE6 - 90                    - nop 5
+GameRpcs.dll+94CEC - 90                    - nop 5
+GameRpcs.dll+94D15 - 90                    - nop 5 
+GameRpcs.dll+94D32 - 90                    - nop 5
+GameRpcs.dll+9FA60 - C3                    - ret 
+GameRpcs.dll+25133E - 90                    - nop 5

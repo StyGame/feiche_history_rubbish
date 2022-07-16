@@ -1,0 +1,136 @@
+Top-Kart.IDisplay::operator=+20C24 - E8 87020000           - call Top-Kart.IDisplay::operator=+20EB0
+Top-Kart.IDisplay::operator=+20C29 - D9 00                 - fld dword ptr [eax]
+Top-Kart.IDisplay::operator=+20C2B - D9 5D DC              - fstp dword ptr [ebp-24]
+Top-Kart.IDisplay::operator=+20C2E - 8D 4D E0              - lea ecx,[ebp-20]
+Top-Kart.IDisplay::operator=+20C31 - E8 7A020000           - call Top-Kart.IDisplay::operator=+20EB0
+Top-Kart.IDisplay::operator=+20C36 - D9 40 04              - fld dword ptr [eax+04]
+Top-Kart.IDisplay::operator=+20C39 - D9 5D F0              - fstp dword ptr [ebp-10]
+Top-Kart.IDisplay::operator=+20C3C - D9 45 F8              - fld dword ptr [ebp-08]
+Top-Kart.IDisplay::operator=+20C3F - D8 65 D8              - fsub dword ptr [ebp-28]
+Top-Kart.IDisplay::operator=+20C42 - D9 45 F0              - fld dword ptr [ebp-10]
+Top-Kart.IDisplay::operator=+20C45 - D8 65 F4              - fsub dword ptr [ebp-0C]
+Top-Kart.IDisplay::operator=+20C48 - DEC9                  - fmulp st(1),st(0)
+Top-Kart.IDisplay::operator=+20C4A - D9 45 DC              - fld dword ptr [ebp-24]
+Top-Kart.IDisplay::operator=+20C4D - D8 65 D8              - fsub dword ptr [ebp-28]
+Top-Kart.IDisplay::operator=+20C50 - DEF9                  - fdivp st(1),st(0)
+Top-Kart.IDisplay::operator=+20C52 - D8 45 F4              - fadd dword ptr [ebp-0C]
+Top-Kart.IDisplay::operator=+20C55 - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.IDisplay::operator=+20C58 - EB 1C                 - jmp Top-Kart.IDisplay::operator=+20C76
+Top-Kart.IDisplay::operator=+20C5A - EB 05                 - jmp Top-Kart.IDisplay::operator=+20C61
+Top-Kart.IDisplay::operator=+20C5C - E9 55FFFFFF           - jmp Top-Kart.IDisplay::operator=+20BB6
+Top-Kart.IDisplay::operator=+20C61 - EB 0E                 - jmp Top-Kart.IDisplay::operator=+20C71
+Top-Kart.IDisplay::operator=+20C63 - 8D 4D C8              - lea ecx,[ebp-38]
+Top-Kart.IDisplay::operator=+20C66 - E8 45020000           - call Top-Kart.IDisplay::operator=+20EB0
+Top-Kart.IDisplay::operator=+20C6B - D9 40 04              - fld dword ptr [eax+04]
+Top-Kart.IDisplay::operator=+20C6E - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.IDisplay::operator=+20C71 - E9 40FFFFFF           - jmp Top-Kart.IDisplay::operator=+20BB6
+Top-Kart.IDisplay::operator=+20C76 - D9 45 FC              - fld dword ptr [ebp-04]
+Top-Kart.IDisplay::operator=+20C79 - D8 4D EC              - fmul dword ptr [ebp-14]/////////////////////////fmul dword ptr [ebp-04]
+Top-Kart.IDisplay::operator=+20C7C - D9 5D FC              - fstp dword ptr [ebp-04]
+Top-Kart.IDisplay::operator=+20C7F - D9 45 FC              - fld dword ptr [ebp-04]
+Top-Kart.IDisplay::operator=+20C82 - 8B E5                 - mov esp,ebp
+Top-Kart.IDisplay::operator=+20C84 - 5D                    - pop ebp
+Top-Kart.IDisplay::operator=+20C85 - C2 0C00               - ret 000C
+
+D9 45 FCD8 4D ECD9 5D FCD9 45 FC
+
+Top-Kart.IDisplay::operator=+7DB29 - 0A DC                 - or bl,ah
+Top-Kart.IDisplay::operator=+7DB2B - 35 184DF90A           - xor eax,Top-Kart.dll+16E4D18
+Top-Kart.IDisplay::operator=+7DB30 - D9 5D E4              - fstp dword ptr [ebp-1C]///////////////// fstp dword ptr [ebp-0C]
+Top-Kart.IDisplay::operator=+7DB33 - D9 45 E4              - fld dword ptr [ebp-1C]
+Top-Kart.IDisplay::operator=+7DB36 - D9 45 FC              - fld dword ptr [ebp-04]
+Top-Kart.IDisplay::operator=+7DB39 - DED9                  - fcompp 
+Top-Kart.IDisplay::operator=+7DB3B - DFE0                  - fnstsw ax
+Top-Kart.IDisplay::operator=+7DB3D - F6 C4 41              - test ah,41
+Top-Kart.IDisplay::operator=+7DB40 - 75 0B                 - jne Top-Kart.IDisplay::operator=+7DB4D
+Top-Kart.IDisplay::operator=+7DB42 - 8B 4D EC              - mov ecx,[ebp-14]
+Top-Kart.IDisplay::operator=+7DB45 - 83 C9 04              - or ecx,04
+Top-Kart.IDisplay::operator=+7DB48 - 89 4D EC              - mov [ebp-14],ecx
+Top-Kart.IDisplay::operator=+7DB4B - EB 09                 - jmp Top-Kart.IDisplay::operator=+7DB56
+Top-Kart.IDisplay::operator=+7DB4D - 8B 55 EC              - mov edx,[ebp-14]
+Top-Kart.IDisplay::operator=+7DB50 - 83 CA 08              - or edx,08
+Top-Kart.IDisplay::operator=+7DB53 - 89 55 EC              - mov [ebp-14],edx
+Top-Kart.IDisplay::operator=+7DB56 - 8B 45 EC              - mov eax,[ebp-14]
+Top-Kart.IDisplay::operator=+7DB59 - 8B E5                 - mov esp,ebp
+Top-Kart.IDisplay::operator=+7DB5B - 5D                    - pop ebp
+Top-Kart.IDisplay::operator=+7DB5C - C3                    - ret 
+
+D9 5D E4D9 45 E4 D9 45 FC 
+
+Network.dll+7753 - 83 C4 08              - add esp,08
+Network.dll+7756 - 8B 55 14              - mov edx,[ebp+14]
+Network.dll+7759 - 52                    - push edx
+Network.dll+775A - 8B 45 10              - mov eax,[ebp+10]
+Network.dll+775D - 50                    - push eax
+Network.dll+775E - 8B 8D 3CFFFFFF        - mov ecx,[ebp-000000C4]
+Network.dll+7764 - E8 D7432800           - call Network.dll+28BB40
+Network.dll+7769 - E9 8FE60000           - jmp Network.dll+15DFD
+Network.dll+776E - 8B 4D 0C              - mov ecx,[ebp+0C]
+Network.dll+7771 - 89 8D 38FFFFFF        - mov [ebp-000000C8],ecx
+Network.dll+7777 - 8B 55 14              - mov edx,[ebp+14]
+Network.dll+777A - 66 C7 02 0E00         - mov word ptr [edx],000E
+Network.dll+777F - 68 3C4ACF07           - push Network.dll+554A3C
+Network.dll+7784 - 6A 5B                 - push 5B
+Network.dll+7786 - E8 25E60900           - call Network.dll+A5DB0
+Network.dll+778B - 83 C4 08              - add esp,08
+Network.dll+778E - 0FB6 C0               - movzx eax,al
+Network.dll+7791 - 85 C0                 - test eax,eax
+Network.dll+7793 - 74 1A                 - je Network.dll+77AF
+Network.dll+7795 - 8B 8D 38FFFFFF        - mov ecx,[ebp-000000C8]
+Network.dll+779B - E8 40E31D00           - call Network.dll+1E5AE0
+Network.dll+77A0 - 68 3C4ACF07           - push Network.dll+554A3C
+Network.dll+77A5 - 6A 5B                 - push 5B
+Network.dll+77A7 - E8 C4540B00           - call Network.dll+BCC70
+Network.dll+77AC - 83 C4 08              - add esp,08
+Network.dll+77AF - 8B 4D 14              - mov ecx,[ebp+14]
+Network.dll+77B2 - 51                    - push ecx
+Network.dll+77B3 - 8B 55 10              - mov edx,[ebp+10]
+Network.dll+77B6 - 52                    - push edx
+Network.dll+77B7 - 8B 8D 38FFFFFF        - mov ecx,[ebp-000000C8]
+Network.dll+77BD - E8 4EE01D00           - call Network.dll+1E5810
+Network.dll+77C2 - E9 36E60000           - jmp Network.dll+15DFD
+Network.dll+77C7 - 8B 45 0C              - mov eax,[ebp+0C]
+Network.dll+77CA - 89 85 34FFFFFF        - mov [ebp-000000CC],eax
+Network.dll+77D0 - 8B 4D 14              - mov ecx,[ebp+14]
+Network.dll+77D3 - 66 C7 01 067D         - mov word ptr [ecx],7D06
+Network.dll+77D8 - 68 2C4ACF07           - push Network.dll+554A2C
+Network.dll+77DD - 68 1A020000           - push 0000021A
+Network.dll+77E2 - E8 C9E50900           - call Network.dll+A5DB0
+Network.dll+77E7 - 83 C4 08              - add esp,08
+Network.dll+77EA - 0FB6 D0               - movzx edx,al
+Network.dll+77ED - 85 D2                 - test edx,edx
+Network.dll+77EF - 74 1D                 - je Network.dll+780E
+Network.dll+77F1 - 8B 8D 34FFFFFF        - mov ecx,[ebp-000000CC]
+Network.dll+77F7 - E8 64172800           - call Network.dll+288F60
+Network.dll+77FC - 68 2C4ACF07           - push Network.dll+554A2C
+Network.dll+7801 - 68 1A020000           - push 0000021A
+Network.dll+7806 - E8 65540B00           - call Network.dll+BCC70
+Network.dll+780B - 83 C4 08              - add esp,08
+Network.dll+780E - 8B 45 14              - mov eax,[ebp+14]
+Network.dll+7811 - 50                    - push eax
+Network.dll+7812 - 8B 4D 10              - mov ecx,[ebp+10]
+Network.dll+7815 - 51                    - push ecx
+Network.dll+7816 - 8B 8D 34FFFFFF        - mov ecx,[ebp-000000CC]
+Network.dll+781C - E8 AF142800           - call Network.dll+288CD0
+Network.dll+7821 - 90                    - nop ////////////////////////////////////nop
+Network.dll+7822 - 90                    - nop 
+Network.dll+7823 - 90                    - nop 
+Network.dll+7824 - 90                    - nop 
+Network.dll+7825 - 00 8B 550C8995        - add [ebx-6A76F3AB],cl
+Network.dll+782B - 30 FF                 - xor bh,bh
+Network.dll+782D - FF                    - db -01
+Network.dll+782E - FF 8B 451466C7        - dec [ebx-3899EBBB]
+Network.dll+7834 - 00 06                 - add [esi],al
+Network.dll+7836 - 7D 68                 - jnl Network.dll+78A0
+Network.dll+7838 - 1C 4A                 - sbb al,4A
+Network.dll+783A - CF                    - iretd 
+Network.dll+783B - 07                    - pop es
+Network.dll+783C - 68 32020000           - push 00000232
+Network.dll+7841 - E8 6AE50900           - call Network.dll+A5DB0
+Network.dll+7846 - 83 C4 08              - add esp,08
+Network.dll+7849 - 0FB6 C8               - movzx ecx,al
+Network.dll+784C - 85 C9                 - test ecx,ecx
+
+83 C4 088B 45 14508B 4D 10518B 8D 34FFFFFF
+Network.dll+7CD2 - E9 14280100           - jmp Network.dll+1A4EB
+Top-Kart.IDisplay::operator=+7DB90 - D9 5D E4              - fstp dword ptr [ebp-1C]

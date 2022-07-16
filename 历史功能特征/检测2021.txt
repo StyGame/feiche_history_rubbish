@@ -1,0 +1,15 @@
+50 8B 51 28 FF D2 8B 45  0C 50
+Top-Kart.dll+2D74DA7 - 59                    - pop ecx
+Top-Kart.dll+2D74DA8 - 50                    - push eax
+Top-Kart.dll+2D74DA9 - 8B 51 28              - mov edx,[ecx+28]
+Top-Kart.dll+2D74DAC - FF D2                 - call edx-------------------------------------nop
+Top-Kart.dll+2D74DAE - 8B 45 0C              - mov eax,[ebp+0C]
+Top-Kart.dll+2D74DB1 - 50                    - push eax
+Top-Kart.dll+2D74DB2 - 8B 4D 08              - mov ecx,[ebp+08]
+Top-Kart.dll+2D74DB5 - 51                    - push ecx
+Top-Kart.dll+2D74DB6 - E8 15200EFF           - call Top-Kart.dll+1E56DD0
+Top-Kart.dll+2D74DBB - 8B 55 0C              - mov edx,[ebp+0C]
+Top-Kart.dll+2D74DBE - 52                    - push edx
+
+
+74 02 8B 08 8B 7D 10 89 动态检测 瞬移里面的检测和谐了 换这个检测改jne

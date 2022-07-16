@@ -1,0 +1,47 @@
+TerSafe.dll+5926C - 8B 4E 68              - mov ecx,[esi+68]                     TerSafe.dll+7EDCB6     mov eax,[edx]
+TerSafe.dll+5926F - 8D 7C 24 10           - lea edi,[esp+10]
+TerSafe.dll+59273 - 89 4C 24 10           - mov [esp+10],ecx
+TerSafe.dll+59277 - 33 C9                 - xor ecx,ecx
+TerSafe.dll+59279 - 33 D2                 - xor edx,edx
+TerSafe.dll+5927B - F6 C2 01              - test dl,01 { 1 }
+TerSafe.dll+5927E - 8B C1                 - mov eax,ecx
+TerSafe.dll+59280 - 75 12                 - jne TerSafe.dll+59294
+TerSafe.dll+59282 - 8B D9                 - mov ebx,ecx
+TerSafe.dll+59284 - C1 E0 07              - shl eax,07 { 00000007 }
+TerSafe.dll+59287 - C1 EB 03              - shr ebx,03 { 3 }
+TerSafe.dll+5928A - 33 C3                 - xor eax,ebx
+TerSafe.dll+5928C - 33 DB                 - xor ebx,ebx
+TerSafe.dll+5928E - 8A 1F                 - mov bl,[edi]
+TerSafe.dll+59290 - 33 C3                 - xor eax,ebx
+TerSafe.dll+59292 - EB 12                 - jmp TerSafe.dll+592A6
+TerSafe.dll+59294 - 8B D9                 - mov ebx,ecx
+TerSafe.dll+59296 - C1 E0 0B              - shl eax,0B { 11 }
+TerSafe.dll+59299 - C1 EB 05              - shr ebx,05 { 00000005 }
+TerSafe.dll+5929C - 33 C3                 - xor eax,ebx
+TerSafe.dll+5929E - 33 DB                 - xor ebx,ebx
+TerSafe.dll+592A0 - 8A 1F                 - mov bl,[edi]
+TerSafe.dll+592A2 - 33 C3                 - xor eax,ebx
+TerSafe.dll+592A4 - F7 D0                 - not eax
+TerSafe.dll+592A6 - 33 C8                 - xor ecx,eax
+TerSafe.dll+592A8 - 47                    - inc edi
+TerSafe.dll+592A9 - 42                    - inc edx
+TerSafe.dll+592AA - 83 FA 04              - cmp edx,04 { 00000004 }
+TerSafe.dll+592AD - 72 CC                 - jb TerSafe.dll+5927B
+TerSafe.dll+592AF - 81 E1 FFFFFF7F        - and ecx,7FFFFFFF { 2147483647 }
+TerSafe.dll+592B5 - 89 4E 68              - mov [esi+68],ecx                TerSafe.dll+7D5B21     mov [edx],eax
+TerSafe.dll+592B8 - 8B CE                 - mov ecx,esi
+TerSafe.dll+592BA - E8 21000000           - call TerSafe.dll+592E0
+TerSafe.dll+592BF - 8B 56 20              - mov edx,[esi+20]                TerSafe.dll+77686C - mov ecx,[edx]
+TerSafe.dll+592C2 - 8B CE                 - mov ecx,esi
+TerSafe.dll+592C4 - 52                    - push edx
+TerSafe.dll+592C5 - E8 D6060000           - call TerSafe.dll+599A0
+TerSafe.dll+592CA - 8B 4E 20              - mov ecx,[esi+20]                TerSafe.dll+87838E - mov eax,[edx]  
+TerSafe.dll+592CD - 68 84030000           - push 00000384 { 900 }
+TerSafe.dll+592D2 - 41                    - inc ecx
+TerSafe.dll+592D3 - 89 4E 20              - mov [esi+20],ecx                TerSafe.dll+8772E1    mov [edx],eax
+TerSafe.dll+592D6 - FF D5                 - call ebp                        sleep
+TerSafe.dll+592D8 - EB 92                 - jmp TerSafe.dll+5926C           TerSafe.dll+8407D4
+
+
+TerSafe.dll+8772E1  - TerSafe.dll+7EDCB6
+TerSafe.dll+7D5B21    TerSafe.dll+77686C 

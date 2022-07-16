@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="18">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>90</ID>
+      <Description>"封号"</Description>
+      <LastState Value="??" Activated="0" RealAddress="090AB046"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>1</ByteLength>
+      <Address>Top-Kart.dll+1F3B046</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>91</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="08D0A5F7"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>30</ByteLength>
+      <Address>"Top-Kart.dll"+1B9A38B+26c</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>92</ID>
+      <Description>"无描述"</Description>
+      <LastState Value="??" Activated="0" RealAddress="08D0C447"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>6</ByteLength>
+      <Address>"Top-Kart.dll"+1B9A38B+26c+1E50</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>93</ID>
+      <Description>"FF 20 00 00 ff 0C "</Description>
+      <LastState Value="??" Activated="0" RealAddress="08D0AC07"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>6</ByteLength>
+      <Address>"Top-Kart.dll"+1B9A38B+26c+610</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>94</ID>
+      <Description>"无描述"</Description>
+      <LastState Value="??" Activated="0" RealAddress="08D0BE37"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>6</ByteLength>
+      <Address>"Top-Kart.dll"+1B9A38B+26c+1840</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>95</ID>
+      <Description>"无描述"</Description>
+      <LastState Value="??" Activated="0" RealAddress="08D0B827"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>6</ByteLength>
+      <Address>"Top-Kart.dll"+1B9A38B+26c+1230</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>96</ID>
+      <Description>"无描述"</Description>
+      <LastState Value="??" Activated="0" RealAddress="08D0B217"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>6</ByteLength>
+      <Address>"Top-Kart.dll"+1B9A38B+26c+C20</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>97</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="0915B61B"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>10</ByteLength>
+      <Address>Top-Kart.dll+1FEB61B</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>98</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="072C174C"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>7</ByteLength>
+      <Address>Top-Kart.DllUnregisterServer+6344C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>99</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="00000000"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>10</ByteLength>
+      <Address>Top-Kart.dll+1FDF5BC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>100</ID>
+      <Description>"动态CRC 8B 16 33 D6 33 FA 83 C6 04 48"</Description>
+      <LastState Value="??" Activated="0" RealAddress="033D1C85"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>10</ByteLength>
+      <Address>033D1C85</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>101</ID>
+      <Description>"静态CRC"</Description>
+      <LastState Value="??" Activated="0" RealAddress="00000000"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>10</ByteLength>
+      <Address>Top-Kart.dll+1E4F2D4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>102</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="090DF2D4"/>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>090DF2D4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>103</ID>
+      <Description>"动态CRC关键CALL 51 51 53 56 57 8B 7D 08 8B F1 85 FF 89 75 F8"</Description>
+      <LastState Value="??" Activated="0" RealAddress="033D5914"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>15</ByteLength>
+      <Address>033D5914</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>104</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="00000000"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>Top-Kart.dll+20C605C+2</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>105</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="00000000"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>Top-Kart.dll+20C6064+2</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>106</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="084383E0"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>Top-Kart.luaopen_API+D329CE+2</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>107</ID>
+      <Description>"No description"</Description>
+      <LastState Value="??" Activated="0" RealAddress="084383E8"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Byte</VariableType>
+      <Address>Top-Kart.luaopen_API+D329D6+2</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>108</ID>
+      <Description>"无描述"</Description>
+      <LastState Value="??" Activated="0" RealAddress="0333B110"/>
+      <ShowAsHex>1</ShowAsHex>
+      <Color>80000008</Color>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>5</ByteLength>
+      <Address>0333B110</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>鏀圭殑鍙?mov ebx,[esi]</Description>
+      <Address>090DF2D4</Address>
+      <ModuleName>Top-Kart.dll</ModuleName>
+      <ModuleNameOffset>1E4F2D4</ModuleNameOffset>
+      <Before>
+        <Byte>DC</Byte>
+        <Byte>3B</Byte>
+        <Byte>C8</Byte>
+        <Byte>73</Byte>
+        <Byte>14</Byte>
+      </Before>
+      <Actual>
+        <Byte>8B</Byte>
+        <Byte>1E</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>DE</Byte>
+        <Byte>33</Byte>
+        <Byte>FB</Byte>
+        <Byte>89</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+</CheatTable>

@@ -1,0 +1,510 @@
+TerSafe.dll+14F45 - 8B B4 24 04000000     - mov esi,[esp+00000004]
+TerSafe.dll+14F4C - 8D A4 24 08000000     - lea esp,[esp+00000008]
+TerSafe.dll+14F53 - E9 F1A63100           - jmp TerSafe.DllEntry8+2FA599
+TerSafe.dll+14F58 - 7E 8D                 - jle TerSafe.dll+14EE7
+TerSafe.dll+14F5A - 64 24 04              - and al,04
+TerSafe.dll+14F5D - FF E2                 - jmp edx
+TerSafe.dll+14F5F - EA C38BEC6A FF68      - jmp 68FF:eylogin.dll+58BC3
+TerSafe.dll+14F66 - 10 C9                 - adc cl,cl
+TerSafe.dll+14F68 - 11 10                 - adc [eax],edx
+TerSafe.dll+14F6A - 68 60BB0810           - push TerSafe.DllEntry8+56AB0
+TerSafe.dll+14F6F - 64 A1 00000000        - mov eax,fs:[00000000]
+TerSafe.dll+14F75 - 50                    - push eax
+
+秋名山上行人稀，常有车手竞高低。如今车道依旧在，不见当年老司机。
+
+----------------------------
+
+
+TerSafe.dll+A2B2 - 8B AC 24 0C000000     - mov ebp,[esp+0000000C]
+TerSafe.dll+A2B9 - 01 2C 24              - add [esp],ebp
+TerSafe.dll+A2BC - 81 04 24  2328626F    - add [esp],6F622823
+TerSafe.dll+A2C3 - 81 04 24  81D79D90    - add [esp],909DD781
+TerSafe.dll+A2CA - C3                    - ret 
+TerSafe.dll+A2CB - 90                    - nop 
+TerSafe.dll+A2CC - 90                    - nop 
+TerSafe.dll+A2CD - 90                    - nop 
+TerSafe.dll+A2CE - 00 E1                 - add cl,ah
+TerSafe.dll+A2D0 - 8D 64 24 04           - lea esp,[esp+04]
+TerSafe.dll+A2D4 - 8B 2C 24              - mov ebp,[esp]
+TerSafe.dll+A2D7 - 89 AC 24 08000000     - mov [esp+00000008],ebp
+
+-----------------------------
+
+TerSafe.dll+A263 - 8B 94 24 14000000     - mov edx,[esp+00000014]
+TerSafe.dll+A26A - 89 14 24              - mov [esp],edx
+TerSafe.dll+A26D - 8F 84 24 10000000     - pop [esp+00000010]
+TerSafe.dll+A274 - 5E                    - pop esi
+TerSafe.dll+A275 - E8 4FBF2800           - call TerSafe.DllEntry8+261119
+TerSafe.dll+A27A - 71 C3                 - jno TerSafe.dll+A23F
+TerSafe.dll+A27C - 90                    - nop 
+TerSafe.dll+A27D - 90                    - nop 
+TerSafe.dll+A27E - 90                    - nop 
+TerSafe.dll+A27F - 9D                    - popfd 
+TerSafe.dll+A280 - 89 02                 - mov [edx],eax
+TerSafe.dll+A282 - 56                    - push esi
+TerSafe.dll+A283 - 8B B4 24 08000000     - mov esi,[esp+00000008]
+TerSafe.dll+A28A - 56                    - push esi
+
+-----------------------------
+
+
+TerSafe.dll+14EFF - 8D A4 24 02000000     - lea esp,[esp+00000002]
+TerSafe.dll+14F06 - 50                    - push eax
+TerSafe.dll+14F07 - 8B 84 24 04000000     - mov eax,[esp+00000004]
+TerSafe.dll+14F0E - 89 04 24              - mov [esp],eax
+TerSafe.dll+14F11 - 8F 04 24              - pop [esp]
+TerSafe.dll+14F14 - 58                    - pop eax
+TerSafe.dll+14F15 - 9C                    - pushfd 
+TerSafe.dll+14F16 - C3                    - ret 
+TerSafe.dll+14F17 - 8B 14 24              - mov edx,[esp]
+TerSafe.dll+14F1A - 31 14 24              - xor [esp],edx
+TerSafe.dll+14F1D - 8B 94 24 08000000     - mov edx,[esp+00000008]
+
+
+
+GameApp.exe+21380 - 3C 03                 - cmp al,03
+
+NxCharacter.NxCreateControllerManager+4CC4 - 89 51 08              - mov [ecx+08],edx
+NxCharacter.NxCreateControllerManager+4CC7 - 8B 55 C4              - mov edx,[ebp-3C]
+NxCharacter.NxCreateControllerManager+4CCA - 89 51 0C              - mov [ecx+0C],edx
+NxCharacter.NxCreateControllerManager+4CCD - 8B 55 C8              - mov edx,[ebp-38]
+NxCharacter.NxCreateControllerManager+4CD0 - 89 51 10              - mov [ecx+10],edx
+NxCharacter.NxCreateControllerManager+4CD3 - 8B 55 CC              - mov edx,[ebp-34]
+NxCharacter.NxCreateControllerManager+4CD6 - 89 51 14              - mov [ecx+14],edx
+NxCharacter.NxCreateControllerManager+4CD9 - DD 45 B8              - fld qword ptr [ebp-48]
+NxCharacter.NxCreateControllerManager+4CDC - 8B C8                 - mov ecx,eax
+NxCharacter.NxCreateControllerManager+4CDE - E9 7D05F500           - jmp 05150000
+NxCharacter.NxCreateControllerManager+4CE3 - 90                    - nop 
+NxCharacter.NxCreateControllerManager+4CE4 - 90                    - nop 
+NxCharacter.NxCreateControllerManager+4CE5 - 90                    - nop 
+NxCharacter.NxCreateControllerManager+4CE6 - 8B D6                 - mov edx,esi
+NxCharacter.NxCreateControllerManager+4CE8 - 89 3A                 - mov [edx],edi
+NxCharacter.NxCreateControllerManager+4CEA - 8B 79 04              - mov edi,[ecx+04]
+NxCharacter.NxCreateControllerManager+4CED - 89 7A 04              - mov [edx+04],edi
+NxCharacter.NxCreateControllerManager+4CF0 - 8B 79 08              - mov edi,[ecx+08]
+
+
+Top-Kart.IDisplay::operator=+2C330 - 55                    - push ebp
+Top-Kart.IDisplay::operator=+2C331 - 8B EC                 - mov ebp,esp
+Top-Kart.IDisplay::operator=+2C333 - 51                    - push ecx
+Top-Kart.IDisplay::operator=+2C334 - 89 4D FC              - mov [ebp-04],ecx
+Top-Kart.IDisplay::operator=+2C337 - 8B 45 FC              - mov eax,[ebp-04]
+Top-Kart.IDisplay::operator=+2C33A - E9 218237FD           - jmp 05180000
+Top-Kart.IDisplay::operator=+2C33F - 90                    - nop 
+Top-Kart.IDisplay::operator=+2C340 - 8B E5                 - mov esp,ebp
+Top-Kart.IDisplay::operator=+2C342 - 5D                    - pop ebp
+
+
+
+
+Top-Kart.dll+1CB80B0 - 00 00                 - add [eax],al  地图名
+
+
+送一下连连看内部辅Zhu笔记
+【剧情取车头位置判断第几关】
+第一关：3225940464
+第二关：1078530010
+第三关：0
+第四关：1070141403
+
+【剧情关卡基址】GameApp.exe+12C6170（016c6170）
+一级：48
+首次登陆默认值：1768685684
+默认值：1768685623
+第一关：1768685616
+第二关：1768685617
+第三关：1768685618
+第四关：1768685619
+第五关：1768685620
+
+【自慰UFO】
+改为0腾空
+默认值：1048576000
+落地喷：45B  0，W喷
+漂移轨迹改前轮：462
+
+停车：55A  1停车，R键解除或先读取保存值，写入值解除，每次值不一样
+穿越：56A  第一个弯改1直接瞬移到第二个弯中间
+漂移车子角度：6B0
+          440
+瞬移基址  30
+【hook界面】
+值：3435448553
+eax = 当前人物地址
+
+【窗口句柄】00416320-
+【模式基址】0152197C+252a-
+{
+movsx edx,word ptr [edi+252a]
+}
+默认值：0
+末日值：65542
+接力值：131080
+个人竞速值：65537
+组队竞速值：131073
+情侣值：131077
+
+【是否为房主】0152197C+2560-
+不在房间：0
+房主值：4294901760
+
+
+【人物位置基址】016C6200-
+界面_多人游戏大厅:roomsel
+界面_边境:challenge
+界面_影子挑战:record
+
+【车头基址】15163e8+30+504(瞬移基址)
+转弯训练：1070141403
+沉睡森林：3226013659
+敦煌石窟：0
+【漂移基址】00DA5DC7(00BB6667)
+特征码：84 C0 8B 7C 24 1C 8B 5C 24 18
+下面的:00DA5DC7  74 09       jne 00da5dd2 就是
+默认值：1398212980
+漂移值：1398212980 + 1
+
+
+
+
+
+【提示框基址】016c40cc+80c-
+不是黑色：0
+黑色：非0
+普通类名偏移：44
+特殊类名偏移1：47
+【控件宽度偏移】
+特征码：03 F2 03 F0 39 74 24 08
+往上找，mov eax,[ecx+00000784]
+        mov edx,[ecx+00000764]
+【控件高度偏移】
+特征码：03 CA 03 C8 39 4C 24 0C
+往上找：mov eax,[ecx+00000778]
+        mov edx,[ecx+00000768]
+标题偏移：60
+
+【控件x】
+            764
+控件基址    80C
+
+【控件y】
+            768
+控件基址    80C
+【鼠标所在控件地址】
+控件基址    808
+
+【鼠标所在控件类名】
+             44
+控件基址     808
+
+【鼠标所在控件特殊类名】
+             0
+             44
+控件基址     808
+
+【鼠标所在控件特殊标题】
+             0
+             60
+控件基址     808
+
+【创建房间】
+x:216
+y:164
+类名：1634038339（CreateRoomDlg）
+【喇叭刷完提示购买框】
+x:202
+y:159
+标题：3200967116（提示）
+类名：1299413331（SysMsgbox）
+【进入房间被紫钻T】
+x：202
+y：159
+标题：1936942413（Message）
+类名：1299413331（SysMsgbox）
+【遍历鼠标所在控件地址偏移】
+快速进入=button0=1953789282
+在登陆游戏大厅的时候鼠标移动人物头部=startmenu=1918989427
+
+【账号基址】01520300 或 01521CF0 -
+直接搜账号，第一个就是（读内存长整数型）
+
+【人物信息基址】015210FC-
+mov eax,[016d12e4]
+特征码：51 2C 8B F0 B9 05 00 00 00（跳三次往上找）
+人物名称基址： 一级 ：B98
+QQ号基址 一级：B80
+车队名称：C77
+
+搜QQ整数型
+从下往上找
+00C56465 - mov [esp+08],eax
+00C56469 - jmp CreateDisplay3D+52210
+00C5646B - cmp [ecx+00000C08],edi     //这个就是
+00C56471 - je CreateDisplay3D+52239
+00C56473 - lea ecx,[esp+08]
+继续搜，第一个就是
+GameApp.exe+1138354
+
+人物基址：01538354
+账号：C08
+昵称：账号偏移 + 18 = C20
+车队名称：账号偏移 + F7 = CFF
+个性签名：账号偏移 + 87 = C8F
+
+
+【瞬移基址】15163e8
+【是否可动】0170513c
+【房间人数】01521138-
+
+【hook瞬移】
+0409FA3C - e8 cf f1 ff ff             - call nxcreatecontrollermanager+3e70
+0409FA41 - c6 87 c9 00 00 00 00       - mov byte ptr [edi+000000c9],00
+0409FA48 - 0f 57 c0                   - xorps xmm0,xmm0
+0409FA4B - 0f 2f 45 1c                - comiss xmm0,[ebp+1c]
+0409FA4F - 8b 45 f0                   - mov eax,[ebp-10]
+0409FA52 - 76 25                      - jna nxcreatecontrollermanager+4cd9
+0409FA54 - 8b 55 b8                   - mov edx,[ebp-48]
+0409FA57 - 8b c8                      - mov ecx,eax
+0409FA59 - 89 11                      - mov [ecx],edx
+0409FA5B - 8b 55 bc                   - mov edx,[ebp-44]
+0409FA5E - 89 51 04                   - mov [ecx+04],edx
+0409FA61 - 8b 55 c0                   - mov edx,[ebp-40]
+0409FA64 - 89 51 08                   - mov [ecx+08],edx
+0409FA67 - 8b 55 c4                   - mov edx,[ebp-3c]
+0409FA6A - 89 51 0c                   - mov [ecx+0c],edx
+0409FA6D - 8b 55 c8                   - mov edx,[ebp-38]
+0409FA70 - 89 51 10                   - mov [ecx+10],edx
+0409FA73 - 8b 55 cc                   - mov edx,[ebp-34]
+0409FA76 - 89 51 14                   - mov [ecx+14],edx
+0409FA79 - dd 45 b8                   - fld qword ptr [ebp-48]
+0409FA7C - 8b c8                      - mov ecx,eax
+0409FA7E - 8b 39                      - mov edi,[ecx]//HOOK 0409FA7C 读取ECX
+0409FA80 - 8d b3 00 01 00 00          - lea esi,[ebx+00000100]
+特征码：8B 55 BC 89 51 04 8B 55 C0 89 51 08 8B 55 C4 89 51 0C 8B 55 C8 89 51 10 8B 55 CC 89 51 14
+跳两次即到
+或者找到任意坐标地址，访问出来的直接查看汇编往上找即可
+
+【内存按键】
+W：6FEC2B70   按下：32768      弹起：0
+S：6FEC2B7E   按下：32768      弹起：0
+A：6FEC2B7E   按下：128        弹起：0
+D：6FEC2B7E   按下：8388608    弹起：0
+R：6FEC2B72   按下：32768      弹起：0
+↑：6FEC2C27   按下：32768      弹起：0
+↓：6FEC2C2F   按下：32768      弹起：0
+←：6FEC2C2A   按下：32768      弹起：0
+→：6FEC2C2C   按下：32768      弹起：0
+空格：6FEC2B98   按下：32768      弹起：0
+Ctrl：6FEC2B7C   按下：32768      弹起：0
+Shift：6FEC2B8A  按下：128        弹起：0休闲区备用DLL  PhysXCooking.dll
+不颁奖： 011BCF98 -----游戏中0  颁奖中：改变  10月15日更新
+游戏句柄基址： 00416320----------不用更新01.21
+地图基址： 016818C4    01.月21更新
+
+基址: 01674AFC-------------01.24
+锁定NPC:一级：08  二级：08
+撞墙：一级：14  二级 0  三级：a0   游戏中默认12   撞上：24 撞墙出去
+
+任务关数基址： 017E0CB4偏移：6a------------01.月21更新 
+默认： 3626060  第一关是： 3167308 
+第二关是： 3232844 第三关：3298380 
+第四关：3363916 第五关：3429452
+
+房间准备基址： 01681588一级： 2521    默认：0  准备时： 16777216---------------01.月21更新  特征数组（32 C0 85 C9 74 0C 66 83 B9 EE 24 00 00 0D）
+判断是否是房主：一级： 2524   房主值： 4294901760---------01.月21更新 
+红蓝队基址  偏移一级：2331   红队：0  44288 蓝队：1   44289  黄队：2 44290----没更新
+模试基址： 01484c38     一级偏移：  24ee     未日值：65542-------------10月31日更新
+人物名称基址： 01680d0c一级 ： 24D  B00  337C----------1月21日更新 特征数组（51 2C 8B F0 B9 05 00 00 00）
+QQ号基址 一级：AE8改了会非法绑定QQ  330C   
+车队偏移：261  
+点圈偏移：b1b
+酷比：B1F
+锁定人物不动：一级偏移：3ae  
+是否有氮气一级 2f8  二级：7
+车子变大小   一级1bc 二级：5b
+隐藏车子     一级1BC 二级：a8
+01688618  一级：14 二级：4 三级4  四级 4 然后五到十级：0 十二级：8  十二级：0 十三级：C
+                                          然后五到九0   十级C
+                                        然后五到十级：0 十一级：8 十二级0  十三级：0 十四级C
+提示框基址：017DEBDC一级： 7c0默认值：X  游戏中 X-1 提示框出来了=X----01.月21更新 
+屏蔽解除基址  017DEBDC  80c窗口有颜色是是黑的  不是黑的是0
+人物内存地址： 017E0D11多人游戏大厅中： 1936551791   多人游戏房间中： 7171951  
+登录游戏大厅中： 1953653108 多人游戏跳舞中：1969581409  创建帐号中：1936287589  
+要你去考驾照中：1919906933  颁奖：1701998435
+剧情任务中：1969581409    初级第一个考试：1702126441   驾照大厅中：1852138345 ----------01.月21更新 
+人数基址： 01680D48-----------01.月21更新 
+
+防掉基址： 00E2EECD默认值： 16827905  防掉值：50689-----------01.月21更新  （0A 00 00 81 C1 B0 00 00 00 8D 41 04 50 6A 01 C6 00 01 E8）
+可动基址： 01680e44一级偏移：C         二级偏移：0   ----------01.月21更新 （8B 41 0C 8B 08 83 F9 0A 0F 85） 
+大厅中值为：10    321之前为：9   多人游戏中为：17
+没有网基址：  01480750默认值：0  有网值：1----12月20日更新
+
+侦值基址： 017DB5E4一级：8c    值30是： 1023969417 默认   值7时： 1040983595  ----------01.月21更新
+13：1033969417
+
+所谓道居免疫非法01903809 nop
+0157796c 0 +c  +ae0  写入0  免疫个屁还被炸   
+非法：019c805c  019d859d 0180aa4e
+01903809--十：26228745--数值：2425393296
+0190380D--十：26228749--数值：2375835792
+
+瞬移基址： 0167607c----------12月12更新  特征码数组：（8B 50 48 89 54 24 0C 8B 50 4C 8B 40 50 89 54 24）---01.21更新
+一级：十六到十("30")=44    （64 89 25 00 00 00 00 51 53 56 8B F1 89 74 24 08）                       
+二级：十六到十("43c")=1000  81 EC 80 00 00 00 53 55 56 57 8D 44 24 24 50 8B F1 E8 FA C4 D6 FF 8B 8E   00C867F0
+                            0F 84 B6 00 00 00 8B 00 85 C0 0F 84 AC 00 00 00 8B 88 E8 03 00 00 85 C9   00CF0469
+三级地图位置：十六到十("115")=277    三级地图高度:十六到十("10e")=270   三级车子高度：十六到十("11c")=284
+加速 地址   瞬移基址+ 30  + 三级34c  三级348  数剧牲（50 83 EC 0C 8B C4 89 08）
+无限集气功能 30+765= 4139074284
++30+4DC+5E=3701070103---引擎加速A    1334495970 :300码    585738542  500多码
++30+4DC+60=871768009----引擎加速B  
+30+74E=630108495喷气加速
+
+漂移加速基址：01676074（一级24   默认值：1092616192  改 2092616192  小加速：1099616192）
+  （或者24  默认值：65  改：66）---01.21
+
+
+
+飞在空中0  地上：1    一级30  二级678  三级54------12月9日更新
+全部功能黑认值：3321238132
+小喷叠喷：00E42A39 改JO 
+009E4DD4 加速jae
+009E4E37 改jo 引擎加速
+009E4E0E小喷的内容
+009E54AF道剧段
+
+00AD4E14 引擎加速：默认：4125641844    改jae:4125641843------01.21
+00AD53F6 自动集气  
+00AD556E集气满的
+00CF6DC1  默认值：1183533940   改：1183534059 无限道剧功能---01.22更新
+00F4FF03  默认值：8946703      改：35305    自动小喷加速三倍时间    （8B F8 8B 47 04 8B 30 3B F0 0F）---01.23
+00CF818e  默认值：1     加速 2猫  3导弹  4乌龟  5磁铁  6恶魔  7风  8香蕉皮  9云  10天使（47 BB 01 00 00）----01.24
+00D3FF0f  加速带无限喷： 默认：65735 mov [eax],00000001  上一个是push 01（50 6A 01 C7 00 01 00 00 00）
+（8B CC 8D 41 04 89 64 24 2C 50 6A 01 C7 00 01 00）---01.26
+
+道剧免疫不能喷：00F39D03默认值：99124239    00F390D0 默认：338330639   改jae 不能小喷   00F3A2FE默认：4194075919  改JO 或者JB可以放道剧小喷
+00F3A2EA免疫带叠喷默认：52446151  (C7 43 20 03 00 00 00 8B 4C 24 24)---01.21
+
+00CA2BD2快速漂移  默认：22465904  
+刷商城基址：00DC9DF8  默认值：2784 写入0
+
+叶子的 干掉一个检测 (游戏进程id, “19ca939”, 2425393296, 3109130384) 
+01995C85  不知道0199C2B1
+检测入口点017F8045
+取消模拟漂移0184dd04     184dc90  访问这两个漂移的地址之后退出才出现的
+0180F170 修改值：2374566283  一直走到：01814922      改一个检测漂移的地址：019D723B
+019C07D1  修改值：2374566283 一走走到：019c22b6
+（0180628E  01806232）进游戏前先改  进游戏后再改（019d6e0d）
+
+018043C8过全部非法往前走    （019c800e）也是
+019AB556  mov eax,[0184dddc]  写入： 2229132449个地址就可以过驾照上号默认进入游戏改变321改变退也改变
+一直往后直到 00fdf2cd  的上面几个然后进入就到了:01982409 NOP秒沉睡 人物名称基址： 01680d0c的上面一点
+（10 E8 A5 C1 FF FF 8B C8）
+
+01802EA3： 写入： 2212513163过驾照              
+0198B921   2425393296----改这个不到于退出非法过全部休闲区
+0198B925   2105766032
+哈哈非法：019CE62C：call 01805dde         （019d6e0d）过非法   过非法：019CE638（594641935）过末日非法呀
+019b1b70 退出不非法‘
+进入游戏不检测方法：019983bb（改3502080783不跳改成跳）   01995482（3127149583跳改成不跳）
+
+019aba86 NOP过非法3048637455
+
+call 01800e68 01800606： 写入2792过驾照
+call 0199d2d0   019C592C   019BC60A  01811714  三个一起NOP过驾照末日
+019D6E0D NOP过驾照
+01998b73  jae过驾照重点过末日呀我艹
+0199a294  jae过驾照
+019e10e8  nop过驾照
+019dcf04  nop过驾照
+01982409  nop秒驾照
+
+过末日非法不跳
+01807618   ： 3811935180
+01995957   ： 148603919
+019ad655   ： 1308197647
+01802EA3--十：25177763--数值：2212513163
+0180623D--十：25190973--数值：2341488009
+或以屏蔽很多的东西：xor eax,[0184d7d8]   
+0184c2d8    计算数剧地址 0184d7fc
+瞬移检测：0184D7DC
+休闲检测：0184D7F0
+
+
+
+动态检测入口ret 20  019dfa93  从检测的第一个汇编进
+汇编检测地址一默认值：1350632589    69487755    1462237827
+跳出又返回到动态：01b110ed  ：3968554435
+改了会TP  01B2E8BD
+
+
+提示框出现基址： 0184D2F0-----12月12日更新  0184D2F4-----02.01更新
+
+休闲区瞬移： 01689528偏移：224默值：1073741824不移    瞬移值： 1999999999 ----12月12更新
+特征码（6A 00 89 44 24 0C 8B 01 8B 32 6A 00 6A 00）
+
+商城汇编Code :
+00C7ED30- mov edx,[eax+0c]  默认： 990662795  刷车：999329936  或990664843‘’‘’‘’‘’
+8B 50 0C 3B 94 24 1C 0D 00 00 73 05 8B 40 08 EB
+
+
+接力棒基址：01486194一级：F90二级:0  三级：10 有接力棒1  没有：0
+
+
+
+飞在空中0  地上：1    一级2c  二级624  三级54
+引擎加速=瞬移基址    一级偏移：2c   二级：488     三级：2BCA   
+                   默认：-1934384398                      锁定值为：-1781191830
+013054F2
+超级强喷=瞬移基址     一级2C    二级：6f9   锁定：4139074284
+                                二级：6FA     553039170
+                                      6FB      2183198389
+                                      6FC      75636982                                                             6FD      2802090528
+                                      6FE      3718710402
+        3825932076 
+3825932077                             6FF      484288260
+
+
+血的个数基址： 011BB984   一级： cb8  二级  0    三级：10   10月8日更新
+
+更换道剧： 00A3C6C6：1 氮气卡  2 猫  3导弹  4乌龟  5恶魔  
+加速： 00ABCC35 改成0
+一直漂移的地址：00CA1087改0和2
+00C5D6EF  改成：35305改JMP之后一个氮气喷出来有两三倍的时间上一个：cmp esi,eax   下一个：lea ecx,[esi+08]
+00c5d707  改NOP的
+00AC445B漂移不能改
+00AF828C 改成0不放气
+00B0EB6E改提示框0 1 2
+00C48811无加速不能喷
+00C4EF94 不能喷
+00C61D9D不能集气
+00E131D4不显视集气
+00E333DC不能喷报错
+
+跳舞个数基址：016B18D0  一级：18  二级：1b0  三级：54
+     按键偏移 014906f8   一级： 20   二级：40   三级30  上：2  下：64 左：8  右：16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
